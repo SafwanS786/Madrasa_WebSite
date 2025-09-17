@@ -5,6 +5,8 @@ import Features_Card from "../Component/Home_Component/Features_Card";
 import Features_Btn from "../Component/Home_Component/Features_Btn";
 import Trusted from "../Component/Home_Component/Trusted";
 import Platform from "../Component/Home_Component/PlatForm";
+import PersonalizedDemo from "../Component/Home_Component/PersonalizedDemo";
+import Pricing from "../Component/Home_Component/Pricing";
 export default function HomePages() {
   return (
     <div>
@@ -19,7 +21,9 @@ export default function HomePages() {
       </section>
       <section className="py-24 bg-gradient-to-b from-white to-[#F8F9FA] relative overflow-hidden">
         <Platform />
+        <PersonalizedDemo />
       </section>
+      <Pricing />
     </div>
   );
 }

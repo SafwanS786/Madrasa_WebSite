@@ -9,6 +9,38 @@ export default function Home() {
   return (
     <div>
       <section className="relative min-h-screen flex flex-col md:flex-row items-center justify-between bg-gradient-to-br from-[#F8F9FA] via-white to-[#F8F9FA] overflow-hidden px-8 md:px-16">
+        <div
+          aria-hidden="true"
+          className="absolute top-20 left-20 w-64 h-64 rounded-full 
+            bg-gradient-to-r from-[#126F77]/10 to-[#EB6319]/10 blur-3xl animate-pulse 
+            z-0 pointer-events-none"
+          style={{ animationDelay: "0s" }}
+        />
+        <div
+          aria-hidden="true"
+          className="absolute bottom-20 right-20 w-80 h-80 rounded-full 
+            bg-gradient-to-r from-[#EB6319]/10 to-[#126F77]/10 blur-3xl animate-pulse 
+            z-0 pointer-events-none"
+          style={{ animationDelay: "1s" }}
+        />
+        <div
+          aria-hidden="true"
+          className="absolute top-32 right-[25%] w-8 h-8 bg-[#EB6319]/20 
+            rounded-lg rotate-45 animate-bounce pointer-events-none z-0"
+          style={{ animationDelay: "0.5s" }}
+        />
+        <div
+          aria-hidden="true"
+          className="absolute bottom-40 left-[33.333%] w-6 h-6 bg-[#126F77]/30 
+            rounded-full animate-bounce pointer-events-none z-0"
+          style={{ animationDelay: "1.5s" }}
+        />
+        <div
+          aria-hidden="true"
+          className="absolute top-1/2 left-10 w-4 h-4 bg-[#EB6319]/40 
+            rounded-full animate-ping pointer-events-none z-0"
+          style={{ animationDelay: "2s" }}
+        />
         <div className="flex-1 flex flex-col items-start justify-center">
           <div
             className="inline-flex items-center gap-2 bg-gradient-to-r from-[#126F77]/10 to-[#EB6319]/10 backdrop-blur-sm

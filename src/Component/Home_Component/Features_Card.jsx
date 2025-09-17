@@ -59,6 +59,16 @@ export default function Features_Card() {
               >
                 <card.icon className="w-10 h-10 text-white" />
               </div>
+              <div
+                className="absolute -top-2 -right-2 w-4 h-4 bg-[#EB6319]/30 rounded-full 
+                            opacity-0 group-hover:opacity-100 group-hover:animate-ping transition-opacity duration-500"
+              ></div>
+
+              {/* Bottom-left bouncing circle */}
+              <div
+                className="absolute -bottom-2 -left-2 w-3 h-3 bg-[#126F77]/30 rounded-full 
+                            opacity-0 group-hover:opacity-100 group-hover:animate-bounce transition-opacity duration-700"
+              ></div>
             </div>
             <h3 className="text-xl font-bold text-[#1A1A1A] mb-4 group-hover:text-[#126F77] transition-colors duration-300">
               {card.title}
