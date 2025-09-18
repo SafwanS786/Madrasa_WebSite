@@ -1,8 +1,31 @@
 @import "tailwindcss";
-
+@theme {
+  --color-primary: #126f77;
+  --color-secondary: #eb6319;
+  --color-foreground: #1a1a1a;
+  --color-muted-foreground: #6b6b6b;
+  --text-card-foreground: #1a1a1a;
+}
 .font-body {
   font-family: "Nunito";
 }
 .font-sen {
   font-family: sans-serif;
 }
+.text-foreground {
+  color: #1a1a1a;
+}
+/* @keyframes shine {
+  0% {
+    background-position: 200% 50%;
+  }
+  100% {
+    background-position: -200% 50%;
+  }
+}
+
+.animate-shine {
+  background-size: 400% 400%;
+  animation: shine 6s linear infinite; */
+/* } */
+

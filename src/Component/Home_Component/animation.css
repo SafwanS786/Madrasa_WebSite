@@ -1,0 +1,14 @@
+@keyframes shine {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.animate-shine {
+  background: linear-gradient(90deg, #126f77, #eb6319, #126f77);
+  background-size: 300% 100%;
+  animation: shine 6s linear infinite;
+}

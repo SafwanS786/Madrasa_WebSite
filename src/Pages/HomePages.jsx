@@ -7,6 +7,10 @@ import Trusted from "../Component/Home_Component/Trusted";
 import Platform from "../Component/Home_Component/PlatForm";
 import PersonalizedDemo from "../Component/Home_Component/PersonalizedDemo";
 import Pricing from "../Component/Home_Component/Pricing";
+import Stories from "../Component/Home_Component/Stories";
+import Stories_Card from "../Component/Home_Component/Stories_Card";
+import Stories_Last_Card from "../Component/Home_Component/Stories_Last_Card";
+import Mission from "../Component/Home_Component/Mission";
 export default function HomePages() {
   return (
     <div>
@@ -24,6 +28,10 @@ export default function HomePages() {
         <PersonalizedDemo />
       </section>
       <Pricing />
+      <Stories />
+      <Stories_Card />
+      <Stories_Last_Card />
+      <Mission />
     </div>
   );
 }

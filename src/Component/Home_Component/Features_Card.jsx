@@ -6,6 +6,7 @@ import {
   Wallet,
   MessageCircle,
 } from "lucide-react";
+// import "./animation.css";
 
 export default function Features_Card() {
   const cards = [
@@ -60,13 +61,13 @@ export default function Features_Card() {
                 <card.icon className="w-10 h-10 text-white" />
               </div>
               <div
-                className="absolute -top-2 -right-2 w-4 h-4 bg-[#EB6319]/30 rounded-full 
+                className="absolute -top-2 -right-2 w-4 h-4 bg-[#EB6319]/30 rounded-full
                             opacity-0 group-hover:opacity-100 group-hover:animate-ping transition-opacity duration-500"
               ></div>
 
               {/* Bottom-left bouncing circle */}
               <div
-                className="absolute -bottom-2 -left-2 w-3 h-3 bg-[#126F77]/30 rounded-full 
+                className="absolute -bottom-2 -left-2 w-3 h-3 bg-[#126F77]/30 rounded-full
                             opacity-0 group-hover:opacity-100 group-hover:animate-bounce transition-opacity duration-700"
               ></div>
             </div>
@@ -81,6 +82,38 @@ export default function Features_Card() {
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </div>
           </div>
+          // new che
+          // <div
+          //   key={index}
+          //   className="relative group rounded-2xl overflow-hidden"
+          // >
+          //   {/* 🌈 Gradient Border */}
+          //   <div className="absolute inset-0 rounded-2xl p-[2px] animate-shine">
+          //     <div className="w-full h-full bg-white rounded-2xl"></div>
+          //   </div>
+
+          //   {/* 📦 Card Content */}
+          //   <div className="relative p-8 text-center z-10 bg-white/90 backdrop-blur-sm rounded-2xl shadow-md hover:shadow-xl transition-all duration-500 hover:scale-105">
+          //     <div
+          //       className="w-20 h-20 mx-auto mb-6 rounded-2xl flex items-center justify-center shadow-lg transition-transform duration-500 group-hover:scale-110"
+          //       style={{
+          //         background: `linear-gradient(to right, ${card.gradientFrom}, ${card.gradientTo})`,
+          //       }}
+          //     >
+          //       <card.icon className="w-10 h-10 text-white" />
+          //     </div>
+          //     <h3 className="text-xl font-bold text-[#1A1A1A] mb-4 group-hover:text-[#126F77] transition-colors duration-300">
+          //       {card.title}
+          //     </h3>
+          //     <p className="text-[#6B6B6B] text-sm leading-relaxed mb-6">
+          //       {card.description}
+          //     </p>
+          //     <div className="flex items-center justify-center text-[#126F77] opacity-0 group-hover:opacity-100 transition-all duration-300 cursor-pointer">
+          //       <span className="text-sm font-medium mr-2">Learn More</span>
+          //       <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+          //     </div>
+          //   </div>
+          // </div>
         ))}
       </div>
     </div>
