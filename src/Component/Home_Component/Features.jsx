@@ -19,7 +19,6 @@ export default function Features() {
           Everything You Need to
           <br />
           <span className="block bg-gradient-to-r from-[#126f77] to-[#EB6319] bg-clip-text text-transparent">
-            {" "}
             Manage Your Madrasa
           </span>
         </h2>

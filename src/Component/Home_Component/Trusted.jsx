@@ -70,11 +70,15 @@ export default function Trusted() {
         Trusted by institutions in over 25 countries
       </p>
       <div className="flex flex-row gap-2 justify-center text-[#EB6319]">
-        <Star className=" fill-current" fill="currentColor" />
+        {Array(5)
+          .fill(0)
+          .map((__, i) => (
+            <Star className=" fill-current" fill="currentColor" key={i} />
+          ))}
+        {/* <Star className="fill-current" fill="currentColor" />
         <Star className="fill-current" fill="currentColor" />
         <Star className="fill-current" fill="currentColor" />
-        <Star className="fill-current" fill="currentColor" />
-        <Star className="fill-current" fill="currentColor" />
+        <Star className="fill-current" fill="currentColor" /> */}
         <span className="ml-2 text-[#126F77] font-semibold">
           4.9/5 Customer Satisfaction
         </span>

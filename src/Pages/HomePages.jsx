@@ -11,6 +11,7 @@ import Stories from "../Component/Home_Component/Stories";
 import Stories_Card from "../Component/Home_Component/Stories_Card";
 import Stories_Last_Card from "../Component/Home_Component/Stories_Last_Card";
 import Mission from "../Component/Home_Component/Mission";
+import ScheduleDemo from "../Component/Home_Component/ScheduleDemo";
 export default function HomePages() {
   return (
     <div>
@@ -32,6 +33,7 @@ export default function HomePages() {
       <Stories_Card />
       <Stories_Last_Card />
       <Mission />
+      <ScheduleDemo />
     </div>
   );
 }

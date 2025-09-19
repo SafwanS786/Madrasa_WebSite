@@ -3,7 +3,8 @@ import "./App.css";
 import { Routes, Route, Navigate } from "react-router-dom";
 import Header from "./Component/Header";
 import HomePages from "../src/Pages/HomePages";
-// import Features from "./Component/Features_Component/Features";
+import Footer from "./Component/Footer";
+import FeaturesPages from "./Pages/FeaturesPages";
 function App() {
   return (
     <>
@@ -12,9 +13,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Navigate to="/home" />} />
           <Route path="/home" element={<HomePages />} />
-          {/* <Route path="/features" element={<Features />} />*/}
+          <Route path="/features" element={<FeaturesPages />} />
         </Routes>
       </div>
+      <Footer />
     </>
   );
 }

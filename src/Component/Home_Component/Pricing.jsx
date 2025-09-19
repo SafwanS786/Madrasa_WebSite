@@ -100,9 +100,7 @@ export default function Pricing() {
                     >
                       <data.icon className="w-3 h-3" />
                     </div>
-                    <span className="text-foreground text-[#1A1A1A]">
-                      {data.title}
-                    </span>
+                    <span className="text-[#1A1A1A]">{data.title}</span>
                   </div>
                 ))}
               </div>
@@ -125,7 +123,7 @@ export default function Pricing() {
             </div>
           </div>
           <div className="text-center mt-12">
-            <p className="text-muted-foreground mb-4 text-[#6B6B6B]">
+            <p className="text-muted-foreground mb-4">
               Need a custom plan for your institution?
             </p>
             <button className="rounded-md border border-[#126f77] text-[#126f77] p-1 font-semibold px-2 hover:bg-[#126f77] hover:text-white">

@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { ArrowRight, Target } from "lucide-react";
+import Mission_Card from "../Home_Component/Mission_Card";
+import Global from "./Global";
+
 export default function Mission() {
   const [year, setYear] = useState(0);
   const [countries, setCountries] = useState(0);
@@ -100,6 +103,8 @@ export default function Mission() {
             </div>
           </div>
         </div>
+        <Mission_Card />
+        <Global />
       </div>
     </section>
   );

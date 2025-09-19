@@ -9,7 +9,11 @@ export default function Stories_Last_Card() {
           {Array(5)
             .fill(0)
             .map((_, i) => (
-              <Star className="w-5 h-5 text-secondary" fill="currentColor" />
+              <Star
+                className="w-5 h-5 text-secondary"
+                fill="currentColor"
+                key={i}
+              />
             ))}
           <span className="ml-2 text-2xl font-bold text-foreground">4.9</span>
         </div>
