@@ -1,10 +1,20 @@
 import React from "react";
 import Features from "../Component/Features_Component/Features";
+import Main_Features_Card from "../Component/Features_Component/Main_Features_Card";
+import Capabilities from "../Component/Features_Component/Capabilities";
+import Features_Last_Card from "../Component/Features_Component/Features_Last_Card";
 
 export default function FeaturesPages() {
   return (
     <div>
-      <Features />
+      <div className="min-h-screen bg-gradient-to-b from-white via-[#F8F9FA] to-white">
+        <section className="py-24">
+          <Features />
+          <Main_Features_Card />
+          <Capabilities />
+          <Features_Last_Card />
+        </section>
+      </div>
     </div>
   );
 }
