@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from "../Component/Home_Component/img/DeenNest - logo AI-01.png";
+import Logo1 from "../Component/Home_Component/img/DeenNest - logo AI-01(cr).png";
 import { MessageCircle } from "lucide-react";
 import { Facebook, Linkedin } from "lucide-react";
 
@@ -42,11 +43,11 @@ export default function Footer() {
     <footer className="bg-primary text-white py-2 mx-auto px-10">
       <div className="mx-auto">
         <div className="flex flex-row justify-around gap-2 mb-12">
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 mt-8 ">
             <img
-              src={Logo}
+              src={Logo1}
               alt="DeenNest"
-              className="w-[clamp(80px,10vw,170px)] h-auto invert brightness-0 sepia saturate-100 hue-rotate-[200deg]"
+              className="w-[clamp(80px,10vw,170px)]  h-auto invert brightness-0 sepia saturate-100 hue-rotate-[200deg]"
             />
             <p className="text-white/80 mb-2 max-w-md">
               Empowering Islamic education through modern technology.

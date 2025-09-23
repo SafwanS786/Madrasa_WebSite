@@ -54,7 +54,7 @@ export default function ScheduleDemo() {
   return (
     <section className="py-20 bg-gradient-to-br from-[#126F77] via-[#0F5A61] to-[#126F77] relative overflow-hidden">
       {/* Floating shapes */}
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-20 left-20 w-32 h-32 bg-white/5 rounded-full blur-xl animate-pulse"></div>
         <div className="absolute bottom-20 right-20 w-24 h-24 bg-[#EB6319]/20 rounded-full blur-lg animate-bounce"></div>
         <div
@@ -89,6 +89,7 @@ export default function ScheduleDemo() {
         </div>
       </div>
       <div className="flex flex-row justify-center items-start gap-8">
+        {/* relative z-10 aa ma che ka pachi => pointer-events-none*/}
         <div className="flex flex-col gap-6">
           {card.map((item, index) => (
             <div key={index} className=" p-4 max-w-md">
@@ -112,10 +113,10 @@ export default function ScheduleDemo() {
             <p className="text-white/80">
               Choose your preferred time and we'll contact you
             </p>
-            <button className="group inline-flex items-center justify-center gap-2 font-medium p-2 w-full rounded-md bg-secondary  group-hover:bg-[#d4540e]">
+            <button className="group inline-flex items-center justify-center gap-2 font-medium p-2 w-full rounded-md bg-secondary hover:bg-[#d4540e]">
               Book Demo Now
-              <span>
-                <ArrowRight size={20} />
+              <span className="inline-block transform transition-all duration-300 group-hover:translate-x-2">
+                <ArrowRight size={20} className="w-5 h-5 font-bold" />
               </span>
             </button>
             <p className="text-white/70 text-sm mb-2">Or call us directly:</p>

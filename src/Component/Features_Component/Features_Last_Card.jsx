@@ -26,10 +26,10 @@ export default function Features_Last_Card() {
             transform your madrasa management.
           </p>
           <div className="flex flex-row justify-center gap-4">
-            <button className="bg-white rounded-md p-2 text-[#126F77] font-bold  flex items-center gap-2 px-6 py-3 group">
+            <button className="bg-white rounded-md p-2 text-[#126F77] font-bold  inline-flex  items-center gap-2 px-6 py-3 group">
               Start Free Trial
               <span className="inline-block transform transition-all duration-300 group-hover:translate-x-2">
-                <ArrowRight size={15} className="font-bold h-5 w-5 " />
+                <ArrowRight size={15} className="font-bold h-5 w-5" />
               </span>
             </button>
             <button className="flex items-center gap-2 bg-white  rounded-md p-3 text-[#126F77] font-semibold hover:bg-[#126F77] hover:text-white">

@@ -29,7 +29,7 @@ export default function PricingExplanation() {
       <h1 className="text-3xl font-semibold text-[#1A1A1A] mb-6">
         Why Our Pricing Makes Sense
       </h1>
-      <p className="text-lg text-[#6B6B6B] max-w-2xl mx-auto">
+      <p className="text-lg text-[#6B6B6B] max-w-2xl mx-auto mb-8">
         We believe in transparent, fair pricing that provides exceptional value
         for your investment.
       </p>
