@@ -29,4 +29,24 @@ https://chatgpt.com/share/68d15a53-c77c-8006-97d4-984356474650
 https://chatgpt.com/share/68d2ad21-f7b8-8006-af2b-75012fcecfe9
 2.Drop down Button custom rete
 https://chatgpt.com/share/68d2ad7b-e22c-8006-a618-8aea5c08f87f
+-----------------------------------------------------------------24-Sept
+1.Hover Effect group valu 
+https://chatgpt.com/share/68d3fdbb-15d4-8006-b95b-f9f0c0a73cea
+2.In this Responsive was there but not that much
+https://chatgpt.com/share/68d3fdf3-7ba0-8006-a17f-5377db5aea31
+----------------Grok----------------
+3.All Responsive Done 
+https://grok.com/share/c2hhcmQtMw%3D%3D_61b9bc9a-02bb-4e65-8967-f894ea9b731e
 
+
+
+
+my-work-to-give to chatGPT
+See,this give me in all screen like default,sm,md,lg,xl,2xl because this we are keeping live in 2-3 days so give me
+
+if u change anythings than put comment in that line that this i have change and update so i can get Easily understand ok
+
+See,make this Responsive but don't change any things u only give me that in sm,md,lg,xl,2xl ok,but don't change
+anythings like width and in this my desktop this code is working only i want in responsive so don't change anythings.
+
+But i have given many component but u are not giving properly so give me all size 

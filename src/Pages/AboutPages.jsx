@@ -10,7 +10,7 @@ import Last_Card from "../Component/About_Component/Last_Card";
 export default function AboutPages() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-white via-[#F8F9FA] to-white">
-      <div className="pt-24  relative overflow-hidden">
+      <div className="pt-24 relative overflow-hidden">
         <section>
           <Stories />
           <Card />

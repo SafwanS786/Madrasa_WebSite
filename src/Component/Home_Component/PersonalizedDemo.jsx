@@ -1,42 +1,108 @@
+// import React from "react";
+// import { Zap, ArrowRight, Play } from "lucide-react";
+// // import { LeftArrow } from "react-icons/bi";
+
+// export default function PersonalizedDemo() {
+//   return (
+//     <div className="px-10 text-center">
+//       <div className="mt-20  bg-gradient-to-r from-[#126F77] to-[#EB6319] rounded-3xl p-12 relative overflow-hidden">
+//         <div className="absolute inset-0 opacity-10">
+//           <div className="absolute top-4 right-4 w-20 h-20 border-2 border-white rounded-lg rotate-12"></div>
+//           <div className="absolute bottom-4 left-4 w-16 h-16 border-2 border-white rounded-full"></div>
+//           <div className="absolute top-1/2 left-1/4 w-8 h-8 bg-white rounded-lg rotate-45"></div>
+//         </div>
+//         <div className="relative z-10">
+//           <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm rounded-full px-6 py-2 mb-6">
+//             <Zap className="w-5 h-5 text-white" />
+//             <span className="text-white font-medium">
+//               Ready to Experience More?
+//             </span>
+//           </div>
+//           <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
+//             Get a Personalized Demo
+//           </h3>
+//           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+//             Schedule a live demo with our experts and see how our platform can
+//             transform your madrasa management.
+//           </p>
+//           <div className="flex flex-row justify-center gap-4">
+//             <button className="bg-white rounded-md p-2 text-[#126F77] font-semibold  flex items-center gap-2 px-6 py-3 group">
+//               Book Live Demo
+//               <span className="inline-block transform transition-all duration-300 group-hover:translate-x-2">
+//                 <ArrowRight size={15} className="font-bold h-5 w-5 " />
+//               </span>
+//             </button>
+//             <button className="flex items-center gap-2 bg-white  rounded-md p-3 text-[#126F77] font-semibold hover:bg-[#126F77] hover:text-white">
+//               <span className="">
+//                 <Play size={15} className="inline-block" />
+//               </span>
+//               Watch Video Tour
+//             </button>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
 import React from "react";
 import { Zap, ArrowRight, Play } from "lucide-react";
-// import { LeftArrow } from "react-icons/bi";
 
 export default function PersonalizedDemo() {
   return (
-    <div className="px-10 text-center">
-      <div className="mt-20  bg-gradient-to-r from-[#126F77] to-[#EB6319] rounded-3xl p-12 relative overflow-hidden">
+    <div className="px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 2xl:px-16 text-center">
+      {/* Updated: Added responsive padding for all breakpoints */}
+      <div className="mt-10 sm:mt-12 md:mt-16 lg:mt-20 xl:mt-20 2xl:mt-20 bg-gradient-to-r from-[#126F77] to-[#EB6319] rounded-3xl p-6 sm:p-8 md:p-10 lg:p-12 xl:p-12 2xl:p-12 relative overflow-hidden">
+        {/* Updated: Added responsive margin-top and padding */}
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-4 right-4 w-20 h-20 border-2 border-white rounded-lg rotate-12"></div>
-          <div className="absolute bottom-4 left-4 w-16 h-16 border-2 border-white rounded-full"></div>
-          <div className="absolute top-1/2 left-1/4 w-8 h-8 bg-white rounded-lg rotate-45"></div>
+          <div className="absolute top-4 right-4 w-20 h-20 sm:w-20 sm:h-20 md:w-20 md:h-20 lg:w-20 lg:h-20 xl:w-20 xl:h-20 2xl:w-20 2xl:h-20 border-2 border-white rounded-lg rotate-12"></div>
+          {/* Updated: Added responsive sizes for the decorative square */}
+          <div className="absolute bottom-4 left-4 w-16 h-16 sm:w-16 sm:h-16 md:w-16 md:h-16 lg:w-16 lg:h-16 xl:w-16 xl:h-16 2xl:w-16 2xl:h-16 border-2 border-white rounded-full"></div>
+          {/* Updated: Added responsive sizes for the decorative circle */}
+          <div className="absolute top-1/2 left-1/4 w-8 h-8 sm:w-8 sm:h-8 md:w-8 md:h-8 lg:w-8 lg:h-8 xl:w-8 xl:h-8 2xl:w-8 2xl:h-8 bg-white rounded-lg rotate-45"></div>
+          {/* Updated: Added responsive sizes for the decorative small square */}
         </div>
         <div className="relative z-10">
-          <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm rounded-full px-6 py-2 mb-6">
-            <Zap className="w-5 h-5 text-white" />
-            <span className="text-white font-medium">
+          <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm rounded-full px-4 sm:px-5 md:px-6 lg:px-6 xl:px-6 2xl:px-6 py-1 sm:py-1.5 md:py-2 lg:py-2 xl:py-2 2xl:py-2 mb-6">
+            {/* Updated: Added responsive padding for the badge */}
+            <Zap className="w-4 h-4 sm:w-5 sm:h-5 md:w-5 md:h-5 lg:w-5 lg:h-5 xl:w-5 xl:h-5 2xl:w-5 2xl:h-5 text-white" />
+            {/* Updated: Added responsive icon sizes */}
+            <span className="text-white font-medium text-sm sm:text-base md:text-base lg:text-base xl:text-lg 2xl:text-lg">
               Ready to Experience More?
             </span>
+            {/* Updated: Added responsive font sizes for the badge text */}
           </div>
-          <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
+          <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl 2xl:text-5xl font-bold text-white mb-4">
             Get a Personalized Demo
           </h3>
-          <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+          {/* Updated: Added responsive font sizes for the heading */}
+          <p className="text-base sm:text-lg md:text-xl lg:text-xl xl:text-2xl 2xl:text-2xl text-white/90 mb-8 max-w-2xl mx-auto">
             Schedule a live demo with our experts and see how our platform can
             transform your madrasa management.
           </p>
-          <div className="flex flex-row justify-center gap-4">
-            <button className="bg-white rounded-md p-2 text-[#126F77] font-semibold  flex items-center gap-2 px-6 py-3 group">
-              Book Live Demo
-              <span className="inline-block transform transition-all duration-300 group-hover:translate-x-2">
-                <ArrowRight size={15} className="font-bold h-5 w-5 " />
-              </span>
+          {/* Updated: Added responsive font sizes for the paragraph */}
+          <div className="flex flex-row justify-center gap-2 sm:gap-3 md:gap-4 lg:gap-4 xl:gap-5 2xl:gap-6">
+            {/* Book Live Demo */}
+            <button
+              className="flex items-center gap-2 bg-white rounded-md 
+    text-sm sm:text-base md:text-lg font-semibold text-[#126F77] 
+    px-4 sm:px-5 md:px-6 lg:px-6 xl:px-7 2xl:px-8 
+    py-2 sm:py-2.5 md:py-3 
+    shadow-sm hover:shadow-md transition-all duration-300 group"
+            >
+              <span>Book Live Demo</span>
+              <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5 md:h-5 md:w-5 transition-transform duration-300 group-hover:translate-x-1" />
             </button>
-            <button className="flex items-center gap-2 bg-white  rounded-md p-3 text-[#126F77] font-semibold hover:bg-[#126F77] hover:text-white">
-              <span className="">
-                <Play size={15} className="inline-block" />
-              </span>
-              Watch Video Tour
+
+            {/* Watch Video Tour */}
+            <button
+              className="flex items-center gap-2 bg-white rounded-md 
+    text-sm sm:text-base md:text-lg font-semibold text-[#126F77] 
+    px-4 sm:px-5 md:px-6 lg:px-6 xl:px-7 2xl:px-8 
+    py-2 sm:py-2.5 md:py-3 
+    shadow-sm hover:shadow-md hover:bg-[#126F77] hover:text-white transition-all duration-300"
+            >
+              <Play className="h-4 w-4 sm:h-5 sm:w-5 md:h-5 md:w-5" />
+              <span>Watch Video Tour</span>
             </button>
           </div>
         </div>

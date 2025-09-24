@@ -1,55 +1,31 @@
 import React from "react";
-import Logo from "../Component/Home_Component/img/DeenNest - logo AI-01.png";
 import Logo1 from "../Component/Home_Component/img/DeenNest - logo AI-01(cr).png";
-import { MessageCircle } from "lucide-react";
-import { Facebook, Linkedin } from "lucide-react";
+import { Facebook, Linkedin, MessageCircle } from "lucide-react";
+import Footer_Acc from "../Component/Home_Component/Footer_Acc";
 
 export default function Footer() {
-  const data = [
-    {
-      Links: "Features",
-    },
-    {
-      Links: "Pricing",
-    },
-    {
-      Links: "About Us",
-    },
-    {
-      Links: "Contact",
-    },
-    {
-      Links: "FAQs",
-    },
+  const quickLinks = ["Features", "Pricing", "About Us", "Contact", "FAQs"];
+  const supportLinks = [
+    "Help Center",
+    "Documentation",
+    "Training",
+    "Community",
+    "System Status",
   ];
-  const Suppot = [
-    {
-      sp: "Help Center",
-    },
-    {
-      sp: "Documentation",
-    },
-    {
-      sp: "Training",
-    },
-    {
-      sp: "Community",
-    },
-    {
-      sp: "System Status",
-    },
-  ];
+
   return (
-    <footer className="bg-primary text-white py-2 mx-auto px-10">
-      <div className="mx-auto">
-        <div className="flex flex-row justify-around gap-2 mb-12">
-          <div className="flex flex-col gap-4 mt-8 ">
+    <footer className="bg-primary text-white px-6 md:px-10 lg:px-16 lg:py-16">
+      <div className="max-w-7xl lg:max-w-[96rem] mx-auto">
+        {/* Top section */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-8 lg:justify-center lg:items-center gap-6 md:gap-12 mb-12">
+          {/* Logo + description */}
+          <div>
             <img
               src={Logo1}
               alt="DeenNest"
-              className="w-[clamp(80px,10vw,170px)]  h-auto invert brightness-0 sepia saturate-100 hue-rotate-[200deg]"
+              className="w-[clamp(120px,12vw,180px)] h-auto mb-4 invert brightness-0 sepia saturate-100 hue-rotate-[200deg] mt-8"
             />
-            <p className="text-white/80 mb-2 max-w-md">
+            <p className="text-white/80 mb-6 max-w-md">
               Empowering Islamic education through modern technology.
               Simplifying madrasa management so educators can focus on teaching
               and nurturing young minds.
@@ -57,76 +33,69 @@ export default function Footer() {
             <div className="flex space-x-4">
               <a
                 href="#"
+                aria-label="Facebook"
                 className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-[#EB6319] transition-colors duration-300"
               >
-                <Facebook />
+                <Facebook size={20} />
               </a>
               <a
                 href="#"
+                aria-label="LinkedIn"
                 className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-[#EB6319] transition-colors duration-300"
               >
-                <Linkedin />
-              </a>{" "}
+                <Linkedin size={20} />
+              </a>
               <a
                 href="#"
+                aria-label="Contact Support"
                 className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-[#EB6319] transition-colors duration-300"
               >
-                <MessageCircle />
+                <MessageCircle size={20} />
               </a>
             </div>
           </div>
-          <div className="mt-16">
-            <h3 className="font-semibold text-lg mb-4">Quick Links</h3>
-            <ul className="space-y-2">
-              {data.map((item, index) => (
+
+          {/* Quick Links */}
+          <Footer_Acc title="Quick Links">
+            <ul className="space-y-2 text-white/80 text-sm ">
+              {quickLinks.map((link, index) => (
                 <li key={index}>
-                  <a
-                    href="#"
-                    className="text-white/80 hover:text-white transition-colors"
-                  >
-                    {item.Links}
+                  <a href="#" className="hover:text-white">
+                    {link}
                   </a>
                 </li>
               ))}
             </ul>
-          </div>
-          <div className="mt-16">
-            <h3 className="font-semibold text-lg mb-4">Support</h3>
-            <ul className="space-y-2">
-              {Suppot.map((value, index) => (
+          </Footer_Acc>
+
+          {/* Support */}
+          <Footer_Acc title="Support">
+            <ul className="space-y-2 text-white/80 text-sm">
+              {supportLinks.map((link, index) => (
                 <li key={index}>
-                  <a
-                    href=""
-                    className="text-white/80 hover:text-white transition-colors"
-                  >
-                    {value.sp}
+                  <a href="#" className="hover:text-white">
+                    {link}
                   </a>
                 </li>
               ))}
             </ul>
-          </div>
+          </Footer_Acc>
         </div>
-        <div className="border-t border-white/20 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center ">
+
+        {/* Bottom section */}
+        <div className="border-t border-white/20 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-white/80 text-sm mb-4 md:mb-0">
-            © 2024 Madrasa Management System. All rights reserved.
+            © {new Date().getFullYear()} Madrasa Management System. All rights
+            reserved.
           </p>
           <div className="flex space-x-6 text-sm">
-            <a
-              href=""
-              className="text-white/80 hover:text-white transition-colors"
-            >
+            <a href="#" className="text-white/80 hover:text-white">
               Privacy Policy
             </a>
-            <a
-              href=""
-              className="text-white/80 hover:text-white transition-colors"
-            >
+            <a href="#" className="text-white/80 hover:text-white">
               Terms of Service
             </a>
-            <a
-              href=""
-              className="text-white/80 hover:text-white transition-colors"
-            >
+            <a href="#" className="text-white/80 hover:text-white mb-8">
               Cookie Policy
             </a>
           </div>

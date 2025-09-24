@@ -1,84 +1,85 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { X, Menu } from "lucide-react";
 import Deen_Logo from "../Component/Home_Component/img/DeenNest - logo AI-01.png";
 
 export default function Header() {
+  const [open, setOpen] = useState(false);
+
+  const links = [
+    { path: "/home", label: "Home" },
+    { path: "/features", label: "Features" },
+    { path: "/pricing", label: "Pricing" },
+    { path: "/about", label: "About Us" },
+    { path: "/contact", label: "Contact Us" },
+  ];
+
   return (
-    <header className="fixed top-0 right-0 left-0 z-50 w-full flex flex-row justify-between p-8 gap-2 h-[70px] bg-white shadow-md font-sen border-b border-gray-200">
-      <div className="flex items-center">
-        <img
-          src={Deen_Logo}
-          alt="Deen_Nest_Logo"
-          className="w-[clamp(80px,10vw,180px)] h-auto"
-        />
-        {/* <h1 className="text-[#1A1A1A] font-semibold mt-4">
-          Madrasa Management System
-        </h1> */}
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md border-b border-gray-200">
+      <div className="flex items-center justify-between px-4 sm:px-6 lg:px-12 h-[70px]">
+        {/* Logo */}
+        <div className="flex items-center">
+          <img
+            src={Deen_Logo}
+            alt="DeenNest Logo"
+            className="w-[clamp(130px,12vw,170px)] h-auto"
+          />
+        </div>
+
+        {/* Desktop Navigation */}
+        <nav className="hidden md:flex">
+          <ul className="flex gap-8 font-medium text-gray-700">
+            {links.map((link, i) => (
+              <li key={i}>
+                <NavLink
+                  to={link.path}
+                  className={({ isActive }) =>
+                    isActive
+                      ? "text-[#126F77] font-semibold border-b-2 border-[#126F77] pb-1 transition-colors"
+                      : "text-[#1A1A1A] hover:text-[#126F77] transition-colors"
+                  }
+                >
+                  {link.label}
+                </NavLink>
+              </li>
+            ))}
+          </ul>
+        </nav>
+
+        {/* Hamburger Button (Mobile only) */}
+        <button
+          className="md:hidden text-gray-700"
+          onClick={() => setOpen(!open)}
+          aria-label="Toggle Menu"
+        >
+          {open ? <X size={28} /> : <Menu size={28} />}
+        </button>
       </div>
-      <nav>
-        <ul className="flex gap-6 font-medium text-gray-700">
-          <li>
-            <NavLink
-              to="/home"
-              className={({ isActive }) =>
-                isActive
-                  ? "text-[#126F77] font-bold transition-colors"
-                  : "text-[#1A1A1A] hover:text-[#126F77] transition-colors cursor-pointer"
-              }
-            >
-              Home
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/features"
-              className={({ isActive }) =>
-                isActive
-                  ? "text-[#126F77] font-bold transition-colors"
-                  : "text-[#1A1A1A] hover:text-[#126F77] transition-colors cursor-pointer"
-              }
-            >
-              Features
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/pricing"
-              className={({ isActive }) =>
-                isActive
-                  ? "text-[#126F77] font-bold transition-colors"
-                  : "text-[#1A1A1A] hover:text-[#126F77] transition-colors cursor-pointer"
-              }
-            >
-              Pricing
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/about"
-              className={({ isActive }) =>
-                isActive
-                  ? "text-[#126F77] font-bold transition-colors"
-                  : "text-[#1A1A1A] hover:text-[#126F77] transition-colors"
-              }
-            >
-              About Us
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/contact"
-              className={({ isActive }) =>
-                isActive
-                  ? "text-[#126F77] font-bold transition-colors"
-                  : "text-[#1A1A1A] hover:text-[#126F77] transition-colors cursor-pointer"
-              }
-            >
-              Contact Us
-            </NavLink>
-          </li>
+
+      {/* Mobile Dropdown */}
+      <div
+        className={`md:hidden bg-white border-t border-gray-200 transition-all duration-300 ease-in-out overflow-hidden ${
+          open ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+        }`}
+      >
+        <ul className="flex flex-col p-4 gap-4 font-medium text-gray-700">
+          {links.map((link, i) => (
+            <li key={i}>
+              <NavLink
+                to={link.path}
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-[#126F77] font-semibold border-b-2 border-[#126F77] pb-1 transition-colors"
+                    : "text-[#1A1A1A] hover:text-[#126F77] transition-colors"
+                }
+                onClick={() => setOpen(false)} // close menu when clicking link
+              >
+                {link.label}
+              </NavLink>
+            </li>
+          ))}
         </ul>
-      </nav>
+      </div>
     </header>
   );
 }
