@@ -65,14 +65,39 @@ export default function Global_Office() {
           border border-gray-200 p-8 bg-white hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group"
               key={index}
             >
-              <div className="flex flex-row gap-4">
+              <div className="flex flex-row items-center gap-4 group">
                 <div
-                  className="w-20 h-20 rounded-full flex  items-center text-white justify-center"
+                  className=" w-14 h-14 rounded-full flex  items-center text-white justify-center"
                   style={{
                     background: `linear-gradient(to right,${value.gradientFrom},${value.gradientTo})`,
                   }}
                 >
-                  <value.icon className="w-10 h-10"/>
+                  <value.icon className="w-8 h-8" />
+                </div>
+                <div className="text-xl font-bold  group-hover:text-primary transition-colors">
+                  {value.Name}
+                </div>
+              </div>
+              <div className="space-y-4">
+                <div className="flex flex-row items-start gap-4 mt-4 ">
+                  <div className="text-primary">
+                    <value.loc />
+                  </div>
+                  <div className="text-muted-foreground whitespace-pre-line">
+                    {value.Add}
+                  </div>
+                </div>
+                <div className="flex flex-row gap-4 mt-6">
+                  <div className="text-primary">
+                    <value.Ph className="w-5 h-5" />
+                  </div>
+                  <div className="text-muted-foreground">{value.call}</div>
+                </div>
+                <div className="flex flex-row gap-4 mt-2">
+                  <div className="text-primary">
+                    <value.Ml className="w-5 h-5" />
+                  </div>
+                  <div className="text-muted-foreground">{value.mail}</div>
                 </div>
               </div>
             </div>
