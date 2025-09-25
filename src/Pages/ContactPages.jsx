@@ -8,7 +8,7 @@ import Freq_Asked_Ques from "../Component/Contact_Component/Freq_Asked_Ques";
 export default function ContactPages() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-white via-[#F8F9FA] to-white">
-      <section className="py-24 relative overflow-hidden">
+      <section className="py-12 lg:py-24 relative overflow-hidden">
         <Contact_First_Part />
         <Card />
         <Message_Form />

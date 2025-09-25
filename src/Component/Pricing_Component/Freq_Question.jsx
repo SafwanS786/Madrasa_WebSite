@@ -62,7 +62,7 @@ export default function Freq_Question() {
               </div>
             </div>
           ))}
-        </div>{" "}
+        </div>
       </div>
 
       <div className="text-center">
@@ -73,21 +73,24 @@ export default function Freq_Question() {
             <div className="absolute top-1/2 left-1/4 w-8 h-8 bg-white rounded-lg rotate-45"></div>
           </div>
           <div className="relative z-10 mb-6">
-            <h3 className="text-3xl md:text-4xl font-bold text-white my-8">
+            <h3 className="text-2xl md:text-4xl font-bold text-white my-8">
               Need a Custom Solution?
             </h3>
-            <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+            <p className="text-base sm:text-xl text-white/90 mb-8 max-w-2xl mx-auto">
               Have specific requirements or need volume pricing? Our team is
               here to help create the perfect solution for your institution.
             </p>
             <div className="flex flex-row justify-center gap-4">
-              <button className="bg-white rounded-md p-2 text-[#126F77] font-bold text-lg  flex items-center gap-2 px-6 py-3 group">
+              <button className="bg-white rounded-md p-2 text-[#126F77] font-bold text-base sm:text-lg  flex items-center gap-2 px-6 py-3 group">
                 <span className="inline-block transform transition-all duration-300 group-hover:-translate-x-2">
-                  <Phone size={15} className="font-bold h-5 w-5 " />
+                  <Phone
+                    size={15}
+                    className="font-bold h-4 w-4 sm:h-5 sm:w-5 md:w-6 md:h-6"
+                  />
                 </span>
                 Call Sales Team
               </button>
-              <button className="flex items-center gap-2 bg-white px-6 rounded-md p-3 text-[#126F77] font-semibold hover:bg-[#126F77] hover:text-white">
+              <button className="flex items-center gap-2 bg-white px-6 rounded-md p-3 text-base sm:text-lg text-[#126F77] font-semibold hover:bg-[#126F77] hover:text-white">
                 <span className="">
                   <Mail size={15} className="inline-block" />
                 </span>
@@ -96,11 +99,11 @@ export default function Freq_Question() {
             </div>
             <div className="flex items-center justify-center gap-8 text-white/80 mt-12">
               <div className="flex flex-row items-center gap-2">
-                <MessageCircle />
+                <MessageCircle className="h-4 w-4 sm:h-4 sm:w-4 md:h-5 md:w-5" />
                 <span> Live Chat Available</span>
               </div>
               <div className="flex flex-row items-center gap-2">
-                <Phone />
+                <Phone className="h-4 w-4 sm:h-4 sm:w-4 md:h-5 md:w-5" />
                 <span> +1 (555) 123-4567</span>
               </div>
             </div>
