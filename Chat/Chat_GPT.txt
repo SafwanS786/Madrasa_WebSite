@@ -50,3 +50,5 @@ See,make this Responsive but don't change any things u only give me that in sm,m
 anythings like width and in this my desktop this code is working only i want in responsive so don't change anythings.
 
 But i have given many component but u are not giving properly so give me all size 
+
+See,in this desktop screen is satisfied but in moblie screen it's not satisfied so give me that user satisfied so i can easly do

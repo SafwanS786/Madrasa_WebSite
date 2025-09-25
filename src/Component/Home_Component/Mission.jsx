@@ -29,9 +29,9 @@ export default function Mission() {
     animateCounter(500, setStories);
   }, []);
   return (
-    <section className="py-24 bg-gradient-to-b from-white via-[#F8F9FA] to-white relative overflow-hidden">
+    <section className="py-12 sm:py-16 md:py-20 lg:py-24 xl:py-24 bg-gradient-to-b from-white via-[#F8F9FA] to-white relative overflow-hidden">
       <div className="absolute inset-0">
-        <div className="absolute top-20 left-20 w-64 h-64 bg-[#126F77]/5 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute top-10 left-20 w-64 h-64 bg-[#126F77]/5 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute bottom-20 right-20 w-80 h-80 bg-[#EB6319]/5 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute top-40 right-1/4 w-6 h-6 bg-[#EB6319]/20 rounded-lg rotate-45 animate-bounce"></div>
         <div className="absolute bottom-40 left-1/3 w-4 h-4 bg-[#126F77]/30 rounded-full animate-bounce"></div>
