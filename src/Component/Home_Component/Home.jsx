@@ -67,11 +67,11 @@ export default function Home() {
             <button
               className="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium 
               h-10 sm:h-12 rounded-md bg-gradient-to-r from-[#126F77] to-[#0F5A61]
-              hover:from-[#0F5A61] hover:to-[#126F77] text-white 
+              hover:from-[#0F5A61] hover:to-[#126F77] active:from-[#0F5A61] active:to-[#126F77] text-white 
               px-6 sm:px-8 text-base sm:text-lg shadow-xl hover:shadow-2xl transition-all duration-300 group"
             >
               Start Free Trial
-              <span className="inline-block transform transition-all duration-300 group-hover:translate-x-2">
+              <span className="inline-block transform transition-all duration-300 group-hover:translate-x-2 group-active:translate-x-2">
                 →
               </span>
             </button>
@@ -79,7 +79,7 @@ export default function Home() {
             <button
               className="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium 
               border-2 sm:border-[3px] border-[#EB6319] text-[#EB6319] rounded-md 
-              hover:bg-[#EB6319] hover:text-white 
+              hover:bg-[#EB6319] hover:text-white active:bg-[#EB6319] active:text-white
               px-6 sm:px-8 h-10 sm:h-12 text-base sm:text-lg shadow-md transition-all duration-300 group"
             >
               <Play size={16} />
@@ -106,7 +106,10 @@ export default function Home() {
         <div className="flex-1 flex justify-center mt-10 md:mt-0 mb-12 md:mb-10 ">
           <div className="relative  rounded-2xl shadow-2xl p-4 sm:p-6 w-full max-w-md sm:max-w-lg md:w-full  lg:bg-white lg:max-w-2xl">
             {/* Floating Icon */}
-            <div className="absolute -top-7 -right-4 bg-gradient-to-r from-[#EB6319] to-[#FF8C42] text-white rounded-2xl p-3 sm:p-4 shadow-md transition-transform cursor-pointer hover:scale-110">
+            <div
+              className="absolute -top-7 -right-4 bg-gradient-to-r from-[#EB6319] to-[#FF8C42] text-white rounded-2xl p-3
+             sm:p-4 shadow-md transition-transform cursor-pointer hover:scale-110 active:scale-110"
+            >
               <Sparkles size={22} />
             </div>
 
@@ -156,7 +159,7 @@ export default function Home() {
 
             {/* Features */}
             <div className="space-y-2 sm:space-y-3 mt-3 sm:mt-5">
-              <div className="flex items-center gap-2 sm:gap-3 p-2 sm:p-3 rounded-xl hover:bg-[#126F77]/5 transition-colors">
+              <div className="flex items-center gap-2 sm:gap-3 p-2 sm:p-3 rounded-xl hover:bg-[#126F77]/5 active:bg-[#126f77]/5 transition-colors">
                 <div className="w-6 h-6 sm:w-8 sm:h-8 bg-[#126F77] rounded-lg flex items-center justify-center">
                   <CircleCheckBig className="w-3 h-3 sm:w-4 sm:h-4 text-white" />
                 </div>
@@ -166,7 +169,7 @@ export default function Home() {
                 <div className="w-2 h-2 bg-[#126F77] rounded-full animate-pulse"></div>
               </div>
 
-              <div className="flex items-center gap-2 sm:gap-3 p-2 sm:p-3 rounded-xl hover:bg-[#EB6319]/5 transition-colors">
+              <div className="flex items-center gap-2 sm:gap-3 p-2 sm:p-3 rounded-xl hover:bg-[#EB6319]/5 active:bg-[#EB6319]/5 transition-colors">
                 <div className="w-6 h-6 sm:w-8 sm:h-8 bg-[#EB6319] rounded-lg flex items-center justify-center">
                   <Star className="w-3 h-3 sm:w-4 sm:h-4 text-white" />
                 </div>
@@ -178,7 +181,10 @@ export default function Home() {
             </div>
 
             {/* Bottom Floating Icon */}
-            <div className="absolute -bottom-4 -left-4 bg-[#126F77] text-white p-3 sm:p-4 rounded-2xl shadow-md transition-transform cursor-pointer hover:scale-105">
+            <div
+              className="absolute -bottom-4 -left-4 bg-[#126F77] text-white p-3 sm:p-4 rounded-2xl shadow-md transition-transform
+             cursor-pointer hover:scale-105 active:scale-110"
+            >
               <TrendingUp size={20} />
             </div>
           </div>

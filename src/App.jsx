@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 import Header from "./Component/Header";
 import HomePages from "../src/Pages/HomePages";
 import Footer from "./Component/Footer";
@@ -8,7 +8,13 @@ import FeaturesPages from "./Pages/FeaturesPages";
 import PricingPages from "./Pages/PricingPages";
 import AboutPages from "./Pages/AboutPages";
 import ContactPages from "./Pages/ContactPages";
+import Form_Sign from "./Component/Contact_Component/form";
+import Address from "./Component/Contact_Component/Address";
 function App() {
+  const location = useLocation();
+
+  const hideFooter =
+    location.pathname === "/form" || location.pathname === "/Address";
   return (
     <>
       <Header />
@@ -20,9 +26,11 @@ function App() {
           <Route path="/pricing" element={<PricingPages />} />
           <Route path="/about" element={<AboutPages />} />
           <Route path="/contact" element={<ContactPages />} />
+          <Route path="/form" element={<Form_Sign />} />
+          <Route path="/Address" element={<Address />} />
         </Routes>
       </div>
-      <Footer />
+      {!hideFooter && <Footer />}
     </>
   );
 }

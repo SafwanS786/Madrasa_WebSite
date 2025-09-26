@@ -71,7 +71,7 @@ export default function Stories_Card() {
                 >
                   <item.icon className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                 </div>
-                <div className="text-secondary">
+                <div className="text-secondary ">
                   {Array(5)
                     .fill(0)
                     .map((_, i) => (

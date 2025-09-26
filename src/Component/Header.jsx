@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
+
 import { X, Menu } from "lucide-react";
 import Deen_Logo from "../Component/Home_Component/img/DeenNest - logo AI-01.png";
 
@@ -45,7 +47,9 @@ export default function Header() {
             ))}
           </ul>
         </nav>
-
+        <div className="hidden md:block font-semibold border border-primary px-6 bg-primary text-white py-2 rounded-2xl cursor-pointer">
+          <Link to="/form">sign</Link>
+        </div>
         {/* Hamburger Button (Mobile only) */}
         <button
           className="md:hidden text-gray-700"
@@ -78,6 +82,13 @@ export default function Header() {
               </NavLink>
             </li>
           ))}
+          <li>
+            <div className="font-semibold border border-primary px-6 bg-primary text-white py-2 rounded-2xl cursor-pointer text-center">
+              <Link to="/form" onClick={() => setOpen(false)}>
+                Sign
+              </Link>
+            </div>
+          </li>
         </ul>
       </div>
     </header>
