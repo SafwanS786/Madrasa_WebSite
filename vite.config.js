@@ -8,7 +8,7 @@ export default defineConfig({
   server: {
     // host: '0.0.0.0'
     host: true,     // ✅ expose both localhost and LAN
-    port: 5174,
+    port: 5175,
     strictPort: false, // ✅ allow auto-pick another port if busy
   },
   theme: {

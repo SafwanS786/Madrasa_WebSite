@@ -1,13 +1,42 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Sparkles, TrendingUp, CircleCheckBig, Star, Play } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 export default function Home() {
+  const Navigate = useNavigate();
+  const words = ["Madrasa"]; // ✳️ You can change/add words
+  const [index, setIndex] = useState(0);
+  const [displayText, setDisplayText] = useState("");
+  const [isDeleting, setIsDeleting] = useState(false);
+
+  useEffect(() => {
+    let typingSpeed = isDeleting ? 50 : 100; // ⌨️ speed for typing/deleting
+    const currentWord = words[index % words.length];
+
+    const timeout = setTimeout(() => {
+      setDisplayText((prev) =>
+        isDeleting
+          ? currentWord.substring(0, prev.length - 1)
+          : currentWord.substring(0, prev.length + 1)
+      );
+
+      if (!isDeleting && displayText === currentWord) {
+        setTimeout(() => setIsDeleting(true), 1000); // ⏸ pause before delete
+      } else if (isDeleting && displayText === "") {
+        setIsDeleting(false);
+        setIndex((prev) => prev + 1);
+      }
+    }, typingSpeed);
+
+    return () => clearTimeout(timeout);
+  }, [displayText, isDeleting, index, words]);
+
   return (
     <div>
       <section
-        className="relative min-h-screen flex flex-col md:flex-col md:gap-12 2xl:flex-row items-center justify-between 
+        className="relative min-h-screen flex flex-col md:flex-col md:gap-12 lg:flex-row lg:gap-10 2xl:flex-row items-center justify-between 
         bg-gradient-to-br from-[#F8F9FA] via-white to-[#F8F9FA] overflow-hidden
-        px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 2xl:px-40"
+        px-4 sm:px-8 xl:px-32"
       >
         {/* Background Blobs */}
         <div
@@ -27,7 +56,7 @@ export default function Home() {
         />
         <div
           aria-hidden="true"
-          className="absolute bottom-40 left-[30%] w-4 h-4 sm:w-6 sm:h-6 bg-[#126F77]/30 
+          className="absolute bottom-100 sm:bottom-83 left-[30%] md:bottom-50 md:left-[60%] w-4 h-4 sm:w-6 sm:h-6 bg-[#126F77]/30 
           rounded-full animate-bounce pointer-events-none z-0"
         />
         <div
@@ -37,7 +66,7 @@ export default function Home() {
         />
 
         {/* Left Content */}
-        <div className="flex-1 flex flex-col items-start justify-center z-10 mt-10 md:mt-20">
+        <div className="flex-1 flex flex-col items-start justify-center z-10 mt-10 md:mt-15">
           <div
             className="inline-flex items-center gap-2 bg-gradient-to-r from-[#126F77]/10 to-[#EB6319]/10 backdrop-blur-sm
             rounded-full px-4 sm:px-6 py-2 sm:py-3 border border-[#126F77]/20 shadow-sm mb-6 sm:mb-8"
@@ -49,18 +78,19 @@ export default function Home() {
             <TrendingUp className="text-[#126F77] w-4 h-4 sm:w-5 sm:h-5" />
           </div>
 
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl xl:text-7xl font-bold text-gray-900 leading-tight">
             Transform Your <br />
-            <span className="bg-gradient-to-r from-[#126F77] via-[#0F5A61] to-[#126F77] bg-clip-text text-transparent animate-pulse">
-              Madrasa
+            {/* bg-gradient-to-r from-[#126F77] via-[#0F5A61] to-[#126F77] bg-clip-text text-transparent animate-pulse */}
+            <span className="bg-gradient-to-r from-[#126F77]  to-[#126F77] bg-clip-text text-transparent">
+              {displayText}
             </span>
             <br /> Management
           </h1>
 
           <p className="mt-4 sm:mt-6 text-base sm:text-lg md:text-xl text-[#6B6B6B] leading-relaxed max-w-lg">
-            Streamline operations, enhance learning, and strengthen your
-            educational community with our AI-powered Islamic institution
-            management platform.
+            DeenNest helps Islamic institutes simplify daily operations from
+            student admissions to attendance, fee collection, Maulana & Staff
+            payroll and communication — all in one powerful platform.
           </p>
 
           <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4">
@@ -68,7 +98,8 @@ export default function Home() {
               className="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium 
               h-10 sm:h-12 rounded-md bg-gradient-to-r from-[#126F77] to-[#0F5A61]
               hover:from-[#0F5A61] hover:to-[#126F77] active:from-[#0F5A61] active:to-[#126F77] text-white 
-              px-6 sm:px-8 text-base sm:text-lg shadow-xl hover:shadow-2xl transition-all duration-300 group"
+              px-6 sm:px-3 xl:px-8 text-base sm:text-lg shadow-xl hover:shadow-2xl transition-all duration-300 group cursor-pointer"
+              onClick={() => Navigate("/form")}
             >
               Start Free Trial
               <span className="inline-block transform transition-all duration-300 group-hover:translate-x-2 group-active:translate-x-2">
@@ -80,35 +111,35 @@ export default function Home() {
               className="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium 
               border-2 sm:border-[3px] border-[#EB6319] text-[#EB6319] rounded-md 
               hover:bg-[#EB6319] hover:text-white active:bg-[#EB6319] active:text-white
-              px-6 sm:px-8 h-10 sm:h-12 text-base sm:text-lg shadow-md transition-all duration-300 group"
+              px-6 sm:px-3 h-10 sm:h-12 xl:px-8 text-base sm:text-lg shadow-md transition-all duration-300 group"
             >
-              <Play size={16} />
               Watch Demo
+              <Play size={16} />
             </button>
           </div>
-          <div className="flex md:flex-row md:items-center justify-center flex-col gap-2 mt-10 md:gap-12 md:mt-20">
+          <div className="flex md:flex-row md:items-center justify-center flex-col gap-2 mt-12 ">
             <div className="flex gap-2 text-[#6B6B6B] mb-3">
               <CircleCheckBig className="text-primary" />
-              30-day free trial
+              Free 15-day trial
             </div>
             <div className="flex  gap-2 text-[#6B6B6B] mb-3">
               <CircleCheckBig className="text-primary" />
-              No setup fees
+              No setup required
             </div>
             <div className="flex  gap-2 text-[#6B6B6B] mb-3">
               <CircleCheckBig className="text-primary" />
-              Cancel anytime
+              Quick support
             </div>
           </div>
         </div>
 
         {/* Right Content (Dashboard---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------) */}
-        <div className="flex-1 flex justify-center mt-10 md:mt-0 mb-12 md:mb-10 ">
-          <div className="relative  rounded-2xl shadow-2xl p-4 sm:p-6 w-full max-w-md sm:max-w-lg md:w-full  lg:bg-white lg:max-w-2xl">
+        <div className="flex-1 flex justify-center mt-10 md:mt-0 mb-12  md:mb-10 w-full">
+          <div className="relative rounded-2xl shadow-2xl p-4 sm:p-6 w-full max-w-md sm:max-w-lg md:w-full  lg:bg-white lg:max-w-2xl">
             {/* Floating Icon */}
             <div
-              className="absolute -top-7 -right-4 bg-gradient-to-r from-[#EB6319] to-[#FF8C42] text-white rounded-2xl p-3
-             sm:p-4 shadow-md transition-transform cursor-pointer hover:scale-110 active:scale-110"
+              className="absolute -top-7 -right-2 md:-top-7 md:-right-4 bg-gradient-to-r from-[#EB6319] to-[#FF8C42] rounded-xl p-2 sm:p-3 text-white md:rounded-2xl xl:p-4
+              shadow-md transition-transform cursor-pointer hover:scale-110 active:scale-110"
             >
               <Sparkles size={22} />
             </div>
@@ -135,7 +166,7 @@ export default function Home() {
                 <div className="text-[#6B6B6B] text-xs sm:text-sm">
                   Active Students
                 </div>
-                <div className="flex items-center gap-1 mt-1 sm:mt-2">
+                <div className="flex items-center gap-1 mt-1 sm:mt-2 ">
                   <TrendingUp className="w-3 h-3 text-[#126F77]" />
                   <span className="text-xs text-[#126F77]">
                     +12% this month
@@ -182,7 +213,7 @@ export default function Home() {
 
             {/* Bottom Floating Icon */}
             <div
-              className="absolute -bottom-4 -left-4 bg-[#126F77] text-white p-3 sm:p-4 rounded-2xl shadow-md transition-transform
+              className="absolute -bottom-4 -left-2  md:-bottom-4 md:-left-4 bg-[#126F77] text-white  rounded-xl p-2 sm:p-3 md:p-4 md:rounded-2xl shadow-md transition-transform
              cursor-pointer hover:scale-105 active:scale-110"
             >
               <TrendingUp size={20} />

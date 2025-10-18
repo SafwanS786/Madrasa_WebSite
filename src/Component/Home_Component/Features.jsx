@@ -12,20 +12,20 @@ export default function Features() {
           <Zap className="w-5 h-5 sm:w-5 sm:h-5 text-[#EB6319]" />
 
           <span className="text-sm md:text-base text-[#126F77] font-medium">
-            Powerful Features
+            Comprehensive Features
           </span>
         </div>
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold font-sen text-[#1A1A1A] mb-2 sm:mb-6 leading-tight">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold font-sen text-[#1A1A1A] mb-2 sm:mb-6 leading-tight">
           Everything You Need to
           <br />
           <span className="block bg-gradient-to-r from-[#126f77] to-[#EB6319] bg-clip-text text-transparent">
-            Manage Your Madrasa
+            Run Your Madrasa Smoothly
           </span>
         </h2>
-        <p className="text-xl text-[#6B6B6B] max-w-3xl mx-auto leading-relaxed">
-          Our comprehensive platform provides all the tools you need to
-          streamline operations, enhance learning, and build stronger
-          educational communities.
+        <p className="text-base md:text-xl text-[#6B6B6B] max-w-3xl mx-auto leading-relaxed">
+          Our complete management system helps you handle students, maulana,
+          staff, classes and finances — all from one simple, easy-to-use
+          dashboard.
         </p>
       </div>
     </div>

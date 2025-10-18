@@ -14,7 +14,7 @@ export default function Contact_First_Part() {
           <h2 className="block text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-6xl font-bold font-sen text-[#1A1A1A] mb-4 sm:mb-5 md:mb-6 lg:mb-6 xl:mb-6 2xl:mb-6 leading-tight">
             Get in Touch
             <br />
-            <span className="bg-gradient-to-r from-[#126f77] to-[#EB6319] bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[#126f77]/10 to-[#EB6319] bg-clip-text text-transparent">
               With Our Team
             </span>
           </h2>

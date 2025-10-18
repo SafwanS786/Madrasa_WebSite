@@ -7,6 +7,10 @@ import {
   ChartColumn,
   Bell,
   CircleCheckBig,
+  Proportions,
+  BookOpenCheck,
+  DatabaseZap,
+  Podcast,
 } from "lucide-react";
 
 export default function Main_Features_Card() {
@@ -14,7 +18,7 @@ export default function Main_Features_Card() {
     {
       icon: Users,
       Head: "Student Management",
-      Para: "Complete student information system with profiles, enrollment tracking, and academic history.",
+      Para: "Manage complete student profiles, enrollment details and academic progress in one easy, centralized platform.",
       features: [
         {
           icon_card: CircleCheckBig,
@@ -22,89 +26,69 @@ export default function Main_Features_Card() {
         },
         {
           icon_card: CircleCheckBig,
-          text: "Enrollment management",
+          text: "Enrollment tracking",
         },
         {
           icon_card: CircleCheckBig,
-          text: "Academic history tracking",
+          text: "Academic history",
         },
         {
-          text: "Parent information",
           icon_card: CircleCheckBig,
-        },
-        {
-          text: "Medical records",
-          icon_card: CircleCheckBig,
-        },
-        {
-          text: "Emergency contacts",
-          icon_card: CircleCheckBig,
+          text: "Parent & guardian details",
         },
       ],
-      gradientFrom: "#126F77",
-      gradientTo: "#0F5A61",
+      // gradientFrom: "#126F77",
+      // gradientTo: "#0F5A61",
+      gradientFrom: "#126f77",
+      gradientTo: "#Eb6319",
     },
     {
       icon: Calendar,
-      Head: "Attendance & Scheduling",
-      Para: "Digital attendance tracking with automated reports and smart scheduling capabilities.",
+      Head: "Maulana & Staff Management",
+      Para: "Maintain teacher and staff records, attendance and payroll—ensuring transparency and smooth academic coordination.",
       features: [
         {
-          text: "Digital attendance marking",
+          text: "Personal profiles & contact info",
           icon_card: CircleCheckBig,
         },
         {
-          text: "Automated reports",
+          text: "Attendance tracking",
           icon_card: CircleCheckBig,
         },
         {
-          text: "Class scheduling",
+          text: " Payroll details",
           icon_card: CircleCheckBig,
         },
         {
-          text: "Absence notifications",
-          icon_card: CircleCheckBig,
-        },
-        {
-          text: "Attendance analytics",
-          icon_card: CircleCheckBig,
-        },
-        {
-          text: "Parent alerts",
+          text: " Role & subject assignment",
           icon_card: CircleCheckBig,
         },
       ],
 
-      gradientFrom: "#EB6319",
-      gradientTo: "#D4540E",
+      // gradientFrom: "#EB6319",
+      // gradientTo: "#D4540E",
+      gradientFrom: "#126f77",
+      gradientTo: "#Eb6319",
     },
     {
       icon: Wallet,
-      Head: "Financial Management",
-      Para: "Complete fee management system with online payments and detailed financial reporting.",
+      Head: "Parent Management",
+      Para: "Keep parents connected with real-time updates on attendance, fees and important notifications from admin.",
       features: [
         {
-          text: "Fee collection",
+          text: "Parent profiles",
           icon_card: CircleCheckBig,
         },
         {
-          text: "Online payments",
+          text: " Linked student data",
           icon_card: CircleCheckBig,
         },
         {
-          text: "Receipt generation",
+          text: " Attendance & report sharing",
           icon_card: CircleCheckBig,
         },
         {
-          text: "Expense tracking",
-          icon_card: CircleCheckBig,
-        },
-        {
-          text: "Financial reports",
-          icon_card: CircleCheckBig,
-        },
-        {
-          text: "Payment reminders",
+          text: " View child reviews",
           icon_card: CircleCheckBig,
         },
       ],
@@ -113,31 +97,23 @@ export default function Main_Features_Card() {
     },
     {
       icon: MessageCircle,
-      Head: "Communication Portal",
-      Para: "Seamless communication between parents, teachers, and administration staff.",
+      Head: " Fees Management",
+      Para: "Simplify fee collection and tracking with automatic receipts, due date reminders and instant financial summaries.",
       features: [
         {
-          text: "Parent portal",
+          text: " Fee collection & receipts",
           icon_card: CircleCheckBig,
         },
         {
-          text: "Teacher dashboard",
+          text: " Receipt generation",
           icon_card: CircleCheckBig,
         },
         {
-          text: "Messaging system",
+          text: " Due date reminders",
           icon_card: CircleCheckBig,
         },
         {
-          text: "Announcements",
-          icon_card: CircleCheckBig,
-        },
-        {
-          text: "Event notifications",
-          icon_card: CircleCheckBig,
-        },
-        {
-          text: "Progress updates",
+          text: " Summary reports",
           icon_card: CircleCheckBig,
         },
       ],
@@ -147,69 +123,111 @@ export default function Main_Features_Card() {
     },
     {
       icon: ChartColumn,
-      Head: "Reports & Analytics",
-      Para: "Comprehensive reporting and analytics to track performance and make data-driven decisions.",
+      Head: "Payroll Management",
+      Para: "Manage maulana and staff salaries, payslips and secure record maintenance.",
       features: [
         {
-          text: "Student performance reports",
+          text: " Salary setup & management",
           icon_card: CircleCheckBig,
         },
         {
-          text: "Attendance analytics",
+          text: " Payment tracking",
           icon_card: CircleCheckBig,
         },
         {
-          text: "Financial reports",
+          text: " Payroll slips",
           icon_card: CircleCheckBig,
         },
         {
-          text: "Custom dashboards",
-          icon_card: CircleCheckBig,
-        },
-        {
-          text: "Data export",
-          icon_card: CircleCheckBig,
-        },
-        {
-          text: "Trend analysis",
+          text: " Overview & analytics",
           icon_card: CircleCheckBig,
         },
       ],
-      gradientFrom: "#126F77",
-      gradientTo: "#0F5A61",
+      // gradientFrom: "#126F77",
+      // gradientTo: "#0F5A61",
+      gradientFrom: "#126f77",
+      gradientTo: "#Eb6319",
     },
     {
       icon: Bell,
-      Head: "Notifications & Alerts",
-      Para: "Automated SMS and email notifications to keep everyone informed and engaged.",
+      Head: "Attendance Management",
+      Para: "Record daily attendance digitally and generate reports for students, maulana and staff without manual effort.",
       features: [
         {
-          text: "SMS notifications",
+          text: "Daily attendance marking",
           icon_card: CircleCheckBig,
         },
         {
-          text: "Email alerts",
+          text: " Reports by class or date",
           icon_card: CircleCheckBig,
         },
         {
-          text: "Push notifications",
+          text: " Absence tracking",
           icon_card: CircleCheckBig,
         },
         {
-          text: "Custom alerts",
-          icon_card: CircleCheckBig,
-        },
-        {
-          text: "Scheduled messages",
-          icon_card: CircleCheckBig,
-        },
-        {
-          text: "Emergency broadcasts",
+          text: " Exportable reports",
           icon_card: CircleCheckBig,
         },
       ],
-      gradientFrom: "#EB6319",
-      gradientTo: "#D4540E",
+      // gradientFrom: "#EB6319",
+      // gradientTo: "#D4540E",
+      gradientFrom: "#126f77",
+      gradientTo: "#Eb6319",
+    },
+    {
+      icon: Proportions,
+      Head: "Reports & Analytics",
+      Para: "Generate insightful reports to monitor student attendance trends, fees & payroll history and overall academic progress.",
+      features: [
+        {
+          text: "Fee & payroll summaries",
+          icon_card: CircleCheckBig,
+        },
+        {
+          text: "Student performance trends",
+          icon_card: CircleCheckBig,
+        },
+        {
+          text: " Absence tracking",
+          icon_card: CircleCheckBig,
+        },
+        {
+          text: "Overdue fees report",
+          icon_card: CircleCheckBig,
+        },
+      ],
+      // gradientFrom: "#EB6319",
+      // gradientTo: "#D4540E",
+      gradientFrom: "#126f77",
+      gradientTo: "#Eb6319",
+    },
+    {
+      icon: BookOpenCheck,
+      Head: "Remarks & Complaints",
+      Para: "Record and track complaints, feedback or maintenance issues efficiently with clear categories, priorities and status updates.",
+      features: [
+        {
+          text: " Add new remarks or complaints",
+          icon_card: CircleCheckBig,
+        },
+        {
+          text: "Assign category, priority & location",
+          icon_card: CircleCheckBig,
+        },
+        {
+          text: "Track resolution status in real-time",
+          icon_card: CircleCheckBig,
+        },
+        {
+          text: "Maintain a transparent record for review",
+          icon_card: CircleCheckBig,
+        },
+      ],
+      // gradientFrom: "#EB6319",
+      // gradientTo: "#D4540E",
+      gradientFrom: "#126f77",
+      gradientTo: "#Eb6319",
     },
   ];
   return (
@@ -264,8 +282,9 @@ export default function Main_Features_Card() {
             return (
               <div
                 key={index}
-                className="p-4 sm:p-5 md:p-6 lg:p-6 xl:p-6 2xl:p-6 min-h-[250px] sm:min-h-[280px] md:min-h-[300px] lg:min-h-[300px] xl:min-h-[300px] 2xl:min-h-[300px] rounded-2xl shadow-lg bg-white hover:shadow-2xl transition-all duration-500 transform hover:scale-105 group relative"
+                className="p-4 sm:p-5 md:p-6 lg:p-6 xl:p-6 2xl:p-6 min-h-[200px]  rounded-2xl shadow-lg bg-white hover:shadow-2xl transition-all duration-500 transform hover:scale-105 group relative"
               >
+                {/*  min-h-[250px] sm:min-h-[280px] md:min-h-[300px] lg:min-h-[300px] xl:min-h-[300px] 2xl:min-h-[300px] */}
                 <div className="flex flex-col justify-center items-center md:flex-row gap-4 sm:gap-5 md:gap-6 lg:gap-6 xl:gap-6 2xl:gap-6">
                   <div
                     className="w-12 sm:w-14 md:w-16 lg:w-16 xl:w-16 2xl:w-16 h-12 sm:h-14 md:h-16 lg:h-16 xl:h-16 2xl:h-16 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg text-white group-hover:shadow-xl transition-all duration-500 group-hover:scale-110"

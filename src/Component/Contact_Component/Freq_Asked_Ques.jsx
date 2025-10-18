@@ -1,7 +1,17 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { ArrowRight, Calendar, Star, CheckCircle } from "lucide-react";
 
 export default function Freq_Asked_Ques() {
+  // const [count, setCount] = useState(0);
+
+  // const handleCount = () => {
+  //   setCount((prev) => prev + 1);
+  // };
+  // useEffect(() => {
+  //   // handleCount();
+  //   console.log("Safwan");
+  // }, []);
+
   const Question = [
     {
       Que: "How quickly can we get started?",
@@ -108,6 +118,8 @@ export default function Freq_Asked_Ques() {
       <h1 className="text-2xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-4xl 2xl:text-4xl font-bold text-[#1A1A1A] mb-4 sm:mb-5 md:mb-6 lg:mb-6 xl:mb-6 2xl:mb-6">
         Frequently Asked Questions
       </h1>
+      {/* <h2>{count}</h2>
+      <button onClick={handleCount}>Count</button> */}
       <p className="text-base sm:text-base md:text-lg lg:text-lg xl:text-lg 2xl:text-lg text-[#6B6B6B] max-w-2xl mx-auto">
         Quick answers to common questions. Can't find what you're looking for?
         Contact us directly.

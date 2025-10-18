@@ -85,8 +85,8 @@ export default function Footer() {
         {/* Bottom section */}
         <div className="border-t border-white/20 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-white/80 text-sm mb-4 md:mb-0">
-            © {new Date().getFullYear()} Madrasa Management System. All rights
-            reserved.
+            © {new Date().getFullYear()} DeenNest • All Rights Reserved By Ziaat
+            Technolabs Pvt. Ltd. reserved.
           </p>
           <div className="flex space-x-6 text-sm">
             <a href="#" className="text-white/80 hover:text-white">

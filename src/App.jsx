@@ -10,6 +10,7 @@ import AboutPages from "./Pages/AboutPages";
 import ContactPages from "./Pages/ContactPages";
 import Form_Sign from "./Component/Contact_Component/form";
 import Address from "./Component/Contact_Component/Address";
+import FeaturesDetails from "./Component/Features_Component/FeaturesDetails";
 function App() {
   const location = useLocation();
 
@@ -23,6 +24,7 @@ function App() {
           <Route path="/" element={<Navigate to="/home" />} />
           <Route path="/home" element={<HomePages />} />
           <Route path="/features" element={<FeaturesPages />} />
+          <Route path="/features/details" element={<FeaturesDetails />} />
           <Route path="/pricing" element={<PricingPages />} />
           <Route path="/about" element={<AboutPages />} />
           <Route path="/contact" element={<ContactPages />} />

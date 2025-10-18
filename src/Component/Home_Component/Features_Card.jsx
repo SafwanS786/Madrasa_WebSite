@@ -11,41 +11,45 @@ import {
 export default function Features_Card() {
   const cards = [
     {
-      title: "Student Records",
+      title: "Student, Maulana & Staff Records",
       description:
-        "Comprehensive student information management with easy search and filtering capabilities.",
+        "Maintain complete records for students, maulana and staff with attendance data, contact details and easy search access — all in one place.",
       icon: Users,
-      gradientFrom: "#126F77",
-      gradientTo: "#0F5A61",
-    },
-    {
-      title: "Attendance & Reports",
-      description:
-        "Digital attendance tracking with automated reports and parent notifications.",
-      icon: Calendar,
+      // gradientFrom: "#126F77",
+      // gradientTo: "#0F5A61",
       gradientFrom: "#EB6319",
-      gradientTo: "#FF9F43",
+      gradientTo: "#126F77",
     },
     {
-      title: "Fee & Finance Tracking",
+      title: "Class & Attendance Management",
       description:
-        "Complete financial management with fee collection, receipts, and expense tracking.",
+        "Create class timetables, mark daily attendance and view attendance performance instantly for every class and subject.",
+      icon: Calendar,
+      // gradientFrom: "#EB6319",
+      // gradientTo: "#FF9F43",
+      gradientFrom: "#EB6319",
+      gradientTo: "#126F77",
+    },
+    {
+      title: "Fees & Payroll Management",
+      description:
+        " Easily manage student fees, generate receipts and process maulana & staff payroll with transparency and accuracy.",
       icon: Wallet,
       gradientFrom: "#126F77",
       gradientTo: "#EB6319",
     },
     {
-      title: "Parent & Teacher Portal",
+      title: "Parent, Maulana & Staff Portal",
       description:
-        "Seamless communication between parents, teachers, and administration staff.",
+        " Stay connected through a shared portal for parents, maulana and staff — share updates, notices and attendance insights effortlessly",
       icon: MessageCircle,
       gradientFrom: "#EB6319",
       gradientTo: "#126F77",
     },
   ];
   return (
-    <div className="lg:mb-20 p-12 sm:px-6 md:px-10 lg:px-12 xl:px-16 2xl:px-20">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-4 2xl:grid-cols-4 sm:gap-8 md:gap-10 lg:gap-12 lg:grid-cols-4 gap-8">
+    <div className="lg:mb-20 p-12 sm:px-6 md:px-10 lg:px-12 xl:px-16 2xl:px-20 ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 2xl:grid-cols-4 sm:gap-8 md:gap-10 lg:gap-12 gap-8">
         {cards.map((card, index) => (
           <div
             key={index}
