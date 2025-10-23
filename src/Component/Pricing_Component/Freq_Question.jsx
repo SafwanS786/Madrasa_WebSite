@@ -6,32 +6,32 @@ export default function Freq_Question() {
     {
       icon: CircleQuestionMark,
       Que: "Is there a setup fee?",
-      Ans: "No, there are absolutely no setup fees. You only pay the monthly subscription.",
+      Ans: "No, DeenNest doesn’t charge any setup or onboarding fees. You only pay based on the number of students you enroll.",
     },
     {
       icon: CircleQuestionMark,
       Que: "Can I cancel anytime?",
-      Ans: "Yes, you can cancel your subscription at any time with no penalties or cancellation fees.",
+      Ans: "Yes, you can stop your subscription anytime. Simply choose not to renew at the end of your yearly plan—there are no cancellation fees or penalties.",
     },
     {
       icon: CircleQuestionMark,
       Que: "What's included in the free trial?",
-      Ans: "The 30-day free trial includes access to all features with no limitations. No credit card required.",
+      Ans: "The 15-day free trial gives full access to all DeenNest features with no limits or restrictions—no credit card required.",
     },
     {
       icon: CircleQuestionMark,
       Que: "Do you offer discounts for multiple years?",
-      Ans: "Yes, we offer significant discounts for annual payments. Contact our sales team for details.",
+      Ans: "Yes, annual and multi-year plans come with special discounts. Contact our team for custom pricing options.",
     },
     {
       icon: CircleQuestionMark,
-      Que: "Is training included?",
-      Ans: "Yes, we provide comprehensive training and onboarding support for all new customers.",
+      Que: "Will my data stay safe after the trial ends?",
+      Ans: "Absolutely. Your data remains securely stored, and you can upgrade anytime to continue from where you left off.",
     },
     {
       icon: CircleQuestionMark,
-      Que: "What kind of support do you provide?",
-      Ans: "We offer 24/7 priority support via phone, email, and live chat, plus extensive documentation.",
+      Que: "Do you provide training or onboarding help?",
+      Ans: "Yes, our team provides easy onboarding guidance and video tutorials to help you get started quickly.",
     },
   ];
   return (
@@ -46,7 +46,7 @@ export default function Freq_Question() {
         <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 mt-20 text-center items-center ">
           {Question.map((value, index) => (
             <div
-              className=" p-4 border border-gray-200 h-[150px] rounded-xl hover:shadow-xl transition duration-500"
+              className=" p-4 border border-gray-200 h-[200px] rounded-xl hover:shadow-xl transition duration-500"
               key={index}
             >
               <div className="flex justify-center items-start gap-6 ">
@@ -77,35 +77,42 @@ export default function Freq_Question() {
               Need a Custom Solution?
             </h3>
             <p className="text-base sm:text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-              Have specific requirements or need volume pricing? Our team is
-              here to help create the perfect solution for your institution.
+              Have unique requirements or need pricing for larger student
+              groups? <br /> Our team is here to help you find the right plan for your
+              madrasa.
             </p>
             <div className="flex flex-row justify-center gap-4">
-              <button className="bg-white rounded-md p-2 text-[#126F77] font-bold text-base sm:text-lg  flex items-center gap-2 px-6 py-3 group">
+              <a
+                href="tel:+917575068585"
+                className="bg-white rounded-md text-[#126F77] font-bold text-base sm:text-lg flex items-center gap-2 px-6 py-3 group shadow hover:shadow-md transition-all duration-300"
+              >
                 <span className="inline-block transform transition-all duration-300 group-hover:-translate-x-2">
                   <Phone
-                    size={15}
+                    size={18}
                     className="font-bold h-4 w-4 sm:h-5 sm:w-5 md:w-6 md:h-6"
                   />
                 </span>
                 Call Sales Team
-              </button>
-              <button className="flex items-center gap-2 bg-white px-6 rounded-md p-3 text-base sm:text-lg text-[#126F77] font-semibold hover:bg-[#126F77] hover:text-white">
-                <span className="">
-                  <Mail size={15} className="inline-block" />
-                </span>
+              </a>
+              <a
+                href="mailto:sales@deennest.com"
+                className="flex items-center gap-2 bg-white px-6 py-3 rounded-md text-base sm:text-lg text-[#126F77] font-semibold hover:bg-[#126F77] hover:text-white shadow hover:shadow-md transition-all duration-300"
+              >
+                <Mail size={18} />
                 Email Us
-              </button>
+              </a>
             </div>
             <div className="flex items-center justify-center gap-8 text-white/80 mt-12">
               <div className="flex flex-row items-center gap-2">
                 <MessageCircle className="h-4 w-4 sm:h-4 sm:w-4 md:h-5 md:w-5" />
                 <span> Live Chat Available</span>
               </div>
-              <div className="flex flex-row items-center gap-2">
+              <a href="tel:+917575068585">
+                <div className="flex flex-row items-center gap-2">
                 <Phone className="h-4 w-4 sm:h-4 sm:w-4 md:h-5 md:w-5" />
-                <span> +1 (555) 123-4567</span>
-              </div>
+                  <span> +91 7575 06 8585</span>
+                </div>
+              </a>
             </div>
           </div>
         </div>

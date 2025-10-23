@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import { NavLink, Link, useLocation } from "react-router-dom";
-import { X, Menu, ChevronDown } from "lucide-react";
+import { X, Menu, ChevronDown, UserLock, UserPlus } from "lucide-react";
 import Deen_Logo from "../Component/Home_Component/img/DeenNest - logo AI-01.png";
+import { useNavigate } from "react-router-dom";
 
 export default function Header() {
   const [open, setOpen] = useState(false); // Mobile menu state
@@ -10,16 +11,9 @@ export default function Header() {
   const location = useLocation();
 
   const links = [
-    { path: "/home", label: "Home" },
     {
       path: "/features",
       label: "Features",
-      // children: [
-      //   {
-      //     path: "/features/details",
-      //     label: "Features_Details",
-      //   },
-      // ],
     },
     { path: "/pricing", label: "Pricing" },
     { path: "/about", label: "About Us" },
@@ -36,7 +30,7 @@ export default function Header() {
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
-
+  const navigate = useNavigate();
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md border-b border-gray-200">
       <div className="flex items-center justify-between px-4 sm:px-6 lg:px-12 h-[70px]">
@@ -45,7 +39,8 @@ export default function Header() {
           <img
             src={Deen_Logo}
             alt="DeenNest Logo"
-            className="w-[clamp(130px,12vw,170px)] h-auto"
+            className="w-[clamp(130px,12vw,170px)] h-auto cursor-pointer"
+            onClick={() => navigate("/")}
           />
         </div>
 
@@ -114,11 +109,22 @@ export default function Header() {
             ))}
           </ul>
         </nav>
-        
-        <div className="hidden md:block font-semibold border border-primary px-6 bg-primary text-white py-2 rounded-2xl cursor-pointer">
-          <Link to="/form">Sign</Link>
+
+        <div className="flex flex-row gap-2 justify-between">
+          <div className="font-semibold border border-primary px-6 bg-primary text-white py-2 rounded-2xl cursor-pointer text-center">
+            <UserPlus className="inline-block mr-2" size={18} />
+            <Link to="/form" onClick={() => setOpen(false)}>
+              Sign Up
+            </Link>
+          </div>
+          <div className="font-semibold border border-primary px-6 bg-primary text-white py-2 rounded-2xl cursor-pointer text-center">
+            <UserLock className="inline-block mr-2" size={18} />
+            <Link to="/login" onClick={() => setOpen(false)}>
+              Login
+            </Link>
+          </div>
         </div>
-        
+
         {/* Hamburger Button (Mobile only) */}
         <button
           className="md:hidden text-gray-700"
@@ -156,7 +162,7 @@ export default function Header() {
                       }`}
                     />
                   </button>
-                  
+
                   {/* Nested sub-list */}
                   <ul
                     className={`pl-4 transition-all duration-300 ease-in-out overflow-hidden ${
@@ -182,7 +188,7 @@ export default function Header() {
                         Features Overview
                       </NavLink>
                     </li>
-                    
+
                     {/* Child links */}
                     {link.children.map((child, j) => (
                       <li key={j}>
@@ -220,10 +226,17 @@ export default function Header() {
             </li>
           ))}
           <li>
-            <div className="font-semibold border border-primary px-6 bg-primary text-white py-2 rounded-2xl cursor-pointer text-center">
-              <Link to="/form" onClick={() => setOpen(false)}>
-                Sign
-              </Link>
+            <div className="flex flex-row gap-2 justify-between">
+              <div className="font-semibold border border-primary px-6 bg-primary text-white py-2 rounded-2xl cursor-pointer text-center">
+                <Link to="/form" onClick={() => setOpen(false)}>
+                  Sign
+                </Link>
+              </div>
+              <div className="font-semibold border border-primary px-6 bg-primary text-white py-2 rounded-2xl cursor-pointer text-center">
+                <Link to="/" onClick={() => setOpen(false)}>
+                  Login
+                </Link>
+              </div>
             </div>
           </li>
         </ul>

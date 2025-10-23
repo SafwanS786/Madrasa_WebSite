@@ -19,8 +19,9 @@ export default function Contact_First_Part() {
             </span>
           </h2>
           <p className="text-base sm:text-base md:text-lg lg:text-xl xl:text-xl 2xl:text-xl text-[#6B6B6B] max-w-3xl mx-auto leading-relaxed">
-            Have questions about our platform? Need help getting started? Our
-            dedicated support team is ready to assist you every step of the way.
+            Have a question about DeenNest? Need help getting started? Our
+            friendly support team is always ready to assist you with setup,
+            guidance or technical queries.
           </p>
         </div>
       </div>

@@ -6,7 +6,6 @@ import {
   Wallet,
   MessageCircle,
 } from "lucide-react";
-// import "./animation.css";
 
 export default function Features_Card() {
   const cards = [
@@ -15,8 +14,6 @@ export default function Features_Card() {
       description:
         "Maintain complete records for students, maulana and staff with attendance data, contact details and easy search access — all in one place.",
       icon: Users,
-      // gradientFrom: "#126F77",
-      // gradientTo: "#0F5A61",
       gradientFrom: "#EB6319",
       gradientTo: "#126F77",
     },
@@ -25,8 +22,6 @@ export default function Features_Card() {
       description:
         "Create class timetables, mark daily attendance and view attendance performance instantly for every class and subject.",
       icon: Calendar,
-      // gradientFrom: "#EB6319",
-      // gradientTo: "#FF9F43",
       gradientFrom: "#EB6319",
       gradientTo: "#126F77",
     },

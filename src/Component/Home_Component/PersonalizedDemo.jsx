@@ -1,53 +1,9 @@
-// import React from "react";
-// import { Zap, ArrowRight, Play } from "lucide-react";
-// // import { LeftArrow } from "react-icons/bi";
-
-// export default function PersonalizedDemo() {
-//   return (
-//     <div className="px-10 text-center">
-//       <div className="mt-20  bg-gradient-to-r from-[#126F77] to-[#EB6319] rounded-3xl p-12 relative overflow-hidden">
-//         <div className="absolute inset-0 opacity-10">
-//           <div className="absolute top-4 right-4 w-20 h-20 border-2 border-white rounded-lg rotate-12"></div>
-//           <div className="absolute bottom-4 left-4 w-16 h-16 border-2 border-white rounded-full"></div>
-//           <div className="absolute top-1/2 left-1/4 w-8 h-8 bg-white rounded-lg rotate-45"></div>
-//         </div>
-//         <div className="relative z-10">
-//           <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm rounded-full px-6 py-2 mb-6">
-//             <Zap className="w-5 h-5 text-white" />
-//             <span className="text-white font-medium">
-//               Ready to Experience More?
-//             </span>
-//           </div>
-//           <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
-//             Get a Personalized Demo
-//           </h3>
-//           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-//             Schedule a live demo with our experts and see how our platform can
-//             transform your madrasa management.
-//           </p>
-//           <div className="flex flex-row justify-center gap-4">
-//             <button className="bg-white rounded-md p-2 text-[#126F77] font-semibold  flex items-center gap-2 px-6 py-3 group">
-//               Book Live Demo
-//               <span className="inline-block transform transition-all duration-300 group-hover:translate-x-2">
-//                 <ArrowRight size={15} className="font-bold h-5 w-5 " />
-//               </span>
-//             </button>
-//             <button className="flex items-center gap-2 bg-white  rounded-md p-3 text-[#126F77] font-semibold hover:bg-[#126F77] hover:text-white">
-//               <span className="">
-//                 <Play size={15} className="inline-block" />
-//               </span>
-//               Watch Video Tour
-//             </button>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
 import React from "react";
 import { Zap, ArrowRight, Play } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 export default function PersonalizedDemo() {
+  const navigate = useNavigate();
   return (
     <div className="px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 2xl:px-16 text-center">
       {/* Updated: Added responsive padding for all breakpoints */}
@@ -80,32 +36,33 @@ export default function PersonalizedDemo() {
             transform your madrasa management.
           </p>
           {/* Updated: Added responsive font sizes for the paragraph */}
-        <div className="flex flex-col sm:flex-row justify-center items-center gap-3 sm:gap-4 md:gap-5 lg:gap-6">
-  {/* Book Live Demo */}
-  <button
-    className="flex items-center justify-center gap-2 bg-white rounded-md 
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-3 sm:gap-4 md:gap-5 lg:gap-6">
+            {/* Book Live Demo */}
+            <button
+              className="flex items-center justify-center gap-2 bg-white rounded-md 
       text-sm sm:text-base md:text-lg font-semibold text-[#126F77] 
       px-4 sm:px-5 md:px-6 lg:px-7 
       py-2 sm:py-2.5 md:py-3 
-      shadow-sm hover:shadow-md transition-all duration-300 group w-full sm:w-auto"
-  >
-    <span>Book Live Demo</span>
-    <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5 md:h-5 md:w-5 transition-transform duration-300 group-hover:translate-x-1" />
-  </button>
+      shadow-sm hover:shadow-md transition-all duration-300 group w-full sm:w-auto cursor-pointer"
+              onClick={() => navigate("/contact")}
+            >
+              <span>Book Live Demo</span>
+              <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5 md:h-5 md:w-5 transition-transform duration-300 group-hover:translate-x-1" />
+            </button>
 
-  {/* Watch Video Tour */}
-  <button
-    className="flex items-center justify-center gap-2 bg-white rounded-md 
+            {/* Watch Video Tour */}
+            <button
+              className="flex items-center justify-center gap-2 bg-white rounded-md 
       text-sm sm:text-base md:text-lg font-semibold text-[#126F77] 
       px-4 sm:px-5 md:px-6 lg:px-7 
       py-2 sm:py-2.5 md:py-3 
-      shadow-sm hover:shadow-md hover:bg-[#126F77] hover:text-white transition-all duration-300 w-full sm:w-auto"
-  >
-    <Play className="h-4 w-4 sm:h-5 sm:w-5 md:h-5 md:w-5" />
-    <span>Watch Video Tour</span>
-  </button>
-</div>
-
+      shadow-sm hover:shadow-md hover:bg-[#126F77] hover:text-white transition-all duration-300 w-full sm:w-auto cursor-pointer"
+              onClick={() => navigate("/video-tutorial")}
+            >
+              <Play className="h-4 w-4 sm:h-5 sm:w-5 md:h-5 md:w-5" />
+              <span>Watch Video Tour</span>
+            </button>
+          </div>
         </div>
       </div>
     </div>

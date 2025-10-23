@@ -35,6 +35,8 @@ export default function Card() {
       Number_up: years,
       sign: "+",
       Text: "Years Experience",
+      title:
+        "A trusted journey of innovation and service in Islamic education.",
       gradientFrom: "#126F77",
       gradientTo: "#EB6319",
     },
@@ -43,6 +45,7 @@ export default function Card() {
       Number_up: countries,
       sign: "+",
       Text: "Countries Served",
+      title: " Connecting madrasas and communities across continents.",
       gradientFrom: "#126F77",
       gradientTo: "#EB6319",
     },
@@ -51,6 +54,8 @@ export default function Card() {
       Number_up: success,
       sign: "+",
       Text: "Success Stories",
+      title:
+        " Real results, real transformation — trusted by institutions worldwide.",
       gradientFrom: "#126F77",
       gradientTo: "#EB6319",
     },
@@ -59,6 +64,8 @@ export default function Card() {
       Number_up: student,
       sign: "K+",
       Text: "Students Managed",
+      title:
+        " Streamlining records, attendance, and progress tracking for tens of thousands of learners.",
       gradientFrom: "#126F77",
       gradientTo: "#EB6319",
     },
@@ -67,6 +74,8 @@ export default function Card() {
       Number_up: uptime === 99 ? "99.9" : uptime,
       sign: "%",
       Text: "Uptime Guarantee",
+      title:
+        "Reliable and secure platform ensuring uninterrupted access every day.",
       gradientFrom: "#126F77",
       gradientTo: "#EB6319",
     },
@@ -75,6 +84,8 @@ export default function Card() {
       Number_up: rating === 5 ? "4.5/9" : rating,
       sign: "+",
       Text: "Customer Rating",
+      title:
+        " Highly rated by madrasas for performance, simplicity, and trust.",
       gradientFrom: "#126F77",
       gradientTo: "#EB6319",
     },
@@ -91,16 +102,14 @@ export default function Card() {
         className=" text-[#6B6B6B] max-w-2xl mx-auto  text-base sm:text-base md:text-lg lg:text-lg xl:text-lg 2xl:text-lg
       mt-4 sm:mt-5 md:mt-6 lg:mt-6 xl:mt-6 2xl:mt-6"
       >
-        A decade of dedication to Islamic education has created meaningful
-        impact worldwide.
+        A decade of dedication to Islamic education has created a meaningful
+        impact across madrasas worldwide. From empowering educators to
+        simplifying daily operations, DeenNest continues to build a global
+        network of excellence.
       </p>
       <div
-        //     className="
-        //     text-card-foreground flex flex-col gap-6 rounded-xl border
-        //    text-center p-8 bg-white hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group
         className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 
         lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 gap-3 sm:gap-4 md:gap-4 lg:gap-4 xl:gap-4 2xl:gap-4 mt-12 sm:mt-16 md:mt-18 lg:mt-20 xl:mt-20 2xl:mt-20"
-        //  "
       >
         {Details.map((value, index) => {
           return (
@@ -123,6 +132,9 @@ export default function Card() {
               </div>
               <div className=" text-[#6B6B6B] text-sm sm:text-sm md:text-base font-medium">
                 {value.Text}
+              </div>
+              <div className=" text-[#6B6B6B] text-sm sm:text-sm md:text-base font-normal">
+                {value.title}
               </div>
             </div>
           );

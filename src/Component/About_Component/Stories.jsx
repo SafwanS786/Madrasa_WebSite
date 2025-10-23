@@ -26,13 +26,13 @@ export default function Stories() {
           </h2>
           <p className="text-[#6B6B6B] max-w-3xl mx-auto  text-base sm:text-base md:text-lg lg:text-xl xl:text-xl 2xl:text-xl leading-relaxed">
             We are dedicated to transforming Islamic education through
-            technology while preserving traditional values and strengthening
-            educational communities around the world.
+            innovation and faith helping madrasas manage daily operations
+            effortlessly while preserving core Islamic values and strengthening
+            educational communities across the globe.
           </p>
         </div>
       </div>
       <div
-        // className="mb-20 mt-50 w-[60%] mx-auto  justify-center"
         className="mb-12 sm:mb-16 md:mb-18 lg:mb-20 xl:mb-20 2xl:mb-20 mt-12 p-5 sm:mt-16 md:mt-20 lg:mt-24
         xl:mt-24 2xl:mt-24 w-full sm:w-[80%] md:w-[70%] lg:w-[60%] xl:w-[60%] 2xl:w-[60%] mx-auto justify-center"
       >
@@ -41,19 +41,29 @@ export default function Stories() {
           rounded-xl border-0 bg-gradient-to-r from-primary/5 to-secondary/5 p-6 sm:p-6 md:p-8"
         >
           <h2
-            className="text-foreground  font-bold  mb-8 text-2xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-4xl 2xl:text-4xl
-            sm:mb-7 md:mb-8 lg:mb-8 xl:mb-8 2xl:mb-8"
+            className="text-foreground  font-bold text-2xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-4xl 2xl:text-4xl
+            mb-2"
           >
             Our Mission
           </h2>
+          <h3 className="text-foreground  font-bold text-2xl sm:text-2xl">
+            Transforming Islamic education through innovation and faith.
+          </h3>
           <p
             className=" text-[#1A1A1A] leading-relaxed text-center max-w-4xl mx-auto text-base sm:text-base md:text-lg lg:text-xl xl:text-xl 2xl:text-xl
-            mb-6 sm:mb-7 md:mb-8 lg:mb-8 xl:mb-8 2xl:mb-8"
+            mb-6"
           >
-            To simplify madrasa operations through innovative technology,
-            enabling educators to focus on what truly matters—nurturing young
-            minds, preserving Islamic values, and building stronger educational
-            communities that bridge traditional wisdom with modern excellence.
+            DeenNest simplifies madrasa management so educators can focus on
+            teaching, values and nurturing future generations. Our platform
+            bridges traditional wisdom with modern technology, creating a
+            balanced ecosystem for students, parents and maulana to stay
+            connected, informed and inspired.
+          </p>
+          <p className=" text-[#1A1A1A] leading-relaxed text-center max-w-4xl mx-auto text-base sm:text-base md:text-lg lg:text-xl ">
+            We believe that true progress in education comes from combining
+            knowledge with values and technology with purpose. Every feature we
+            build is designed to serve the noble goal of making Islamic learning
+            more accessible, efficient and spiritually aligned.
           </p>
           <div
             className="flex  flex-col sm:flex-col md:flex-row md:items-center justify-center gap-3 sm:gap-4 md:gap-4 lg:gap-6 xl:gap-6 2xl:gap-6 text-sm 

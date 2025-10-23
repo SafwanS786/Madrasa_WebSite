@@ -4,22 +4,22 @@ export default function PricingExplanation() {
   const card = [
     {
       icon: Users,
-      Head: "Unlimited Users",
-      Para: "No per-user fees. Add as many students, teachers, and administrators as you need.",
+      Head: "Simple Per-Student Pricing",
+      Para: "Pay only for the number of students you manage. Add more anytime as your madrasa grows.",
       gradientFrom: "#126F77",
       gradientTo: "#EB6319",
     },
     {
       icon: Zap,
-      Head: "All Features Included",
-      Para: "Access to every feature and capability with no hidden premium tiers or add-ons.",
+      Head: "Core Features Included",
+      Para: "All essential tools are available to every madrasa, with optional flexibility to expand as needed.",
       gradientFrom: "#126F77",
       gradientTo: "#EB6319",
     },
     {
       icon: Star,
-      Head: "Premium Support",
-      Para: "24/7 priority support, training, and dedicated success manager included.",
+      Head: "Priority Assistance",
+      Para: "Get quick help during working hours through chat and email for a smooth experience.",
       gradientFrom: "#126F77",
       gradientTo: "#EB6319",
     },
@@ -30,8 +30,8 @@ export default function PricingExplanation() {
         Why Our Pricing Makes Sense
       </h1>
       <p className="text-base sm:text-base md:text-lg lg:text-lg xl:text-lg 2xl:text-lg text-[#6B6B6B] max-w-2xl mx-auto mb-6 sm:mb-7 md:mb-8 lg:mb-8 xl:mb-8 2xl:mb-8">
-        We believe in transparent, fair pricing that provides exceptional value
-        for your investment.
+        We believe in clear, fair pricing that gives your madrasa everything it
+        needs—without hidden costs or confusing plans.
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 gap-2 sm:gap-4 md:gap-6 lg:gap-8 xl:gap-8 2xl:gap-8">
         {card.map((value, index) => (
@@ -54,6 +54,9 @@ export default function PricingExplanation() {
             </div>
           </div>
         ))}
+        <div className="mx-auto text-center flex justify-center items-center">
+          <h3> One plan. Clear pricing. Flexibility when you need it.</h3>
+        </div>
       </div>
     </div>
   );

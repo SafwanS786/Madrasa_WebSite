@@ -4,13 +4,6 @@ import { Calculator } from "lucide-react";
 export default function Pricing() {
   return (
     <>
-      {/* <div className="absolute inset-0 ">
-          <div className="absolute top-20 left-20 w-80 h-80 bg-[#126F77]/5 rounded-full blur-3xl animate-pulse"></div>
-          <div
-            className="absolute bottom-20 right-20 w-96 h-96 bg-[#EB6319]/5 rounded-full blur-3xl animate-pulse"
-            style={{ animationDelay: "1s" }}
-          ></div>
-        </div> */}
       <div>
         <div className="mx-auto px-4 sm:px-6 md:px-8 lg:px-8 xl:px-8 2xl:px-8 py-12 sm:py-16 md:py-20 lg:py-24 xl:py-24 2xl:py-24 relative z-10">
           <div className="text-center mb-12 sm:mb-16 md:mb-18 lg:mb-20 xl:mb-20 2xl:mb-20">

@@ -7,12 +7,13 @@ export default function Stories_Card() {
     {
       icon: Quote,
       icon1: Star,
-      title: `"This system has completely revolutionized our madrasa operations. The attendance tracking and parent communication features have saved us countless hours every week."`,
+      title: `"The fee management tools are incredible. We can track payments, send reminders and generate receipts instantly. 
+      Our records are more accurate than ever before."`,
       icon2: CircleCheckBig,
-      title2: "15+ hours saved weekly",
-      Name: "Ahmad Hassan",
+      title2: "100% transparent fee tracking",
+      Name: "Mo. Abdullah Sahab",
       work: "Principal",
-      work_Place: "Al-Noor Islamic Academy",
+      work_Place: "Dar-e-Arqam Academy India",
       img: Stories_img_1,
       gradientFrom: "#126f77",
       gradientTo: "#eb6319",
@@ -20,12 +21,14 @@ export default function Stories_Card() {
     {
       icon: Quote,
       icon1: Star,
-      title: `"The financial management features are simply outstanding. We can track fees, generate receipts, and maintain completely transparent records with ease."`,
+      title: `"
+      DeenNest has completely changed the way our madrasa operates. Attendance, communication, and progress tracking are now effortless. 
+      It truly saves us hours every week."`,
       icon2: CircleCheckBig,
-      title2: "100% fee collection rate",
-      Name: "Fatima Al-Zahra",
+      title2: "15+ hours saved weekly",
+      Name: "Toshif Shahab",
       work: "Administrator",
-      work_Place: "Masjid Al-Falah School",
+      work_Place: "Jamia Arabia Islamia Darul Uloom Bhavnagar Gujarat",
       img: Stories_img_2,
       gradientFrom: "#126f77",
       gradientTo: "#eb6319",
@@ -33,12 +36,13 @@ export default function Stories_Card() {
     {
       icon: Quote,
       icon1: Star,
-      title: `"The user-friendly interface meant our entire staff could learn the system quickly. The student records system has transformed our workflow completely."`,
+      title: `"Our Maulanas adapted to DeenNest in just one day. The interface is simple, and student 
+      updates are visible to parents in real time. It has brought our whole community closer."`,
       icon2: CircleCheckBig,
-      title2: "100% fee collection rate",
-      Name: "Fatima Al-Zahra",
+      title2: "Better communication & faster updates",
+      Name: "Mo. Ayyub",
       work: "Administrator",
-      work_Place: "Masjid Al-Falah School",
+      work_Place: "Madrasa-e-Talimul Islam",
       img: Stories_img_1,
       gradientFrom: "#126f77",
       gradientTo: "#eb6319",
@@ -86,10 +90,6 @@ export default function Stories_Card() {
               <p className="text-foreground leading-relaxed p-4">
                 {item.title}
               </p>
-              {/* <div
-              className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary to-secondary opacity-0 group-hover:opacity-100 
-              transition-opacity duration-300 rounded-t-lg"
-              ></div> */}
               <div className="w-fit ml-4 inline-flex items-center gap-2 bg-secondary/10 text-secondary px-3 py-1 rounded-full text-sm font-medium ">
                 <item.icon2 className="w-3 h-3" />
                 {item.title2}

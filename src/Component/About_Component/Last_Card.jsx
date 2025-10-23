@@ -1,7 +1,9 @@
 import { ArrowRight } from "lucide-react";
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Last_Card() {
+  const navigate = useNavigate();
   return (
     <div>
       <div className="text-center">
@@ -16,9 +18,9 @@ export default function Last_Card() {
               Join Our Mission
             </h3>
             <p className="text-base sm:text-base md:text-lg lg:text-xl xl:text-xl 2xl:text-xl text-white/90 mb-6 sm:mb-7 md:mb-8 lg:mb-8 xl:mb-8 2xl:mb-8 leading-relaxed">
-              Be part of the transformation in Islamic education. Together, we
-              can create stronger educational communities that honor tradition
-              while embracing innovation.
+              Be part of the digital transformation in Islamic education.
+              Together, let’s build smarter madrasas and stronger communities
+              that preserve tradition while embracing innovation.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 md:gap-4 lg:gap-4 xl:gap-4 2xl:gap-4">
@@ -35,10 +37,14 @@ export default function Last_Card() {
               </span>
             </button>
             <button
-              className="flex items-center gap-1 sm:gap-1.5 md:gap-2 lg:gap-2 xl:gap-2 2xl:gap-2 bg-white px-4 sm:px-5 md:px-6 lg:px-6 xl:px-6 2xl:px-6 py-2 sm:py-2.5 md:py-3 lg:py-3 xl:py-3 2xl:py-3 rounded-md text-[#126F77] font-semibold hover:bg-[#126F77] hover:text-white hover:scale-105 transition-all duration-300"
+              className="flex items-center gap-1 sm:gap-1.5 md:gap-2 lg:gap-2 xl:gap-2 2xl:gap-2 bg-white
+               px-4 sm:px-5 md:px-6 lg:px-6 xl:px-6 2xl:px-6 py-2 sm:py-2.5 md:py-3
+                lg:py-3 xl:py-3 2xl:py-3 rounded-md text-[#126F77] font-semibold hover:bg-[#126F77]
+                 hover:text-white hover:scale-105 transition-all duration-300 cursor-pointer"
               aria-label="Learn More About Us"
+              onClick={() => navigate("/contact")}
             >
-              Learn More About Us
+              Get In Touch
             </button>
           </div>
         </div>

@@ -21,8 +21,8 @@ export default function Stories() {
           className="text-[#1A1A1A] max-w-2xl mx-auto mt-6 text-base sm:text-lg md:text-lg
          lg:text-lg xl:text-xl 2xl:text-xl sm:mt-5 md:mt-6 lg:mt-6 xl:mt-6 2xl:mt-6"
         >
-          See how madrasas around the globe are transforming their operations
-          and improving student outcomes with our platform.
+          See how madrasas around the world are transforming their management
+          and improving student learning with DeenNest.
         </p>
       </div>
     </section>

@@ -11,6 +11,16 @@ import {
   BookOpenCheck,
   DatabaseZap,
   Podcast,
+  MonitorCog,
+  BusFront,
+  Star,
+  Shell,
+  TentTree,
+  CopySlash,
+  TableProperties,
+  DoorOpen,
+  BellRing,
+  BrickWallShield,
 } from "lucide-react";
 
 export default function Main_Features_Card() {
@@ -37,8 +47,6 @@ export default function Main_Features_Card() {
           text: "Parent & guardian details",
         },
       ],
-      // gradientFrom: "#126F77",
-      // gradientTo: "#0F5A61",
       gradientFrom: "#126f77",
       gradientTo: "#Eb6319",
     },
@@ -64,9 +72,6 @@ export default function Main_Features_Card() {
           icon_card: CircleCheckBig,
         },
       ],
-
-      // gradientFrom: "#EB6319",
-      // gradientTo: "#D4540E",
       gradientFrom: "#126f77",
       gradientTo: "#Eb6319",
     },
@@ -143,8 +148,6 @@ export default function Main_Features_Card() {
           icon_card: CircleCheckBig,
         },
       ],
-      // gradientFrom: "#126F77",
-      // gradientTo: "#0F5A61",
       gradientFrom: "#126f77",
       gradientTo: "#Eb6319",
     },
@@ -170,8 +173,6 @@ export default function Main_Features_Card() {
           icon_card: CircleCheckBig,
         },
       ],
-      // gradientFrom: "#EB6319",
-      // gradientTo: "#D4540E",
       gradientFrom: "#126f77",
       gradientTo: "#Eb6319",
     },
@@ -197,8 +198,6 @@ export default function Main_Features_Card() {
           icon_card: CircleCheckBig,
         },
       ],
-      // gradientFrom: "#EB6319",
-      // gradientTo: "#D4540E",
       gradientFrom: "#126f77",
       gradientTo: "#Eb6319",
     },
@@ -224,58 +223,315 @@ export default function Main_Features_Card() {
           icon_card: CircleCheckBig,
         },
       ],
-      // gradientFrom: "#EB6319",
-      // gradientTo: "#D4540E",
+      gradientFrom: "#126f77",
+      gradientTo: "#Eb6319",
+    },
+    {
+      icon: DatabaseZap,
+      Head: "Storage Management",
+      Para: "Store all your institute documents safely with categorized folders and clear space usage tracking.",
+      features: [
+        {
+          text: "Upload and manage documents",
+          icon_card: CircleCheckBig,
+        },
+        {
+          text: " Separate folders per module",
+          icon_card: CircleCheckBig,
+        },
+        {
+          text: "File search & manage control",
+          icon_card: CircleCheckBig,
+        },
+        {
+          text: " Storage usage analytics",
+          icon_card: CircleCheckBig,
+        },
+      ],
+      gradientFrom: "#126f77",
+      gradientTo: "#Eb6319",
+    },
+    {
+      icon: BusFront,
+      Head: "Vehicle Management",
+      Para: "Easily manage all institute vehicles with complete details including type, number, driver name and contact information.",
+      features: [
+        {
+          text: " Add or edit vehicle records instantly",
+          icon_card: CircleCheckBig,
+        },
+        {
+          text: "Maintain driver names and phone numbers",
+          icon_card: CircleCheckBig,
+        },
+        {
+          text: "Track vehicle active or inactive status",
+          icon_card: CircleCheckBig,
+        },
+        {
+          text: " Centralized view for quick updates and management",
+          icon_card: CircleCheckBig,
+        },
+      ],
+      gradientFrom: "#126f77",
+      gradientTo: "#Eb6319",
+    },
+    {
+      icon: Star,
+      Head: "Review Management",
+      Para: "Simplify student performance reviews with class and subject-based feedback given by Maulana.",
+      features: [
+        {
+          text: " Rate students using a 5-star system",
+          icon_card: CircleCheckBig,
+        },
+        {
+          text: " Add personalized comments for each student",
+          icon_card: CircleCheckBig,
+        },
+        {
+          text: "Filter reviews by class, subject or Maulana",
+          icon_card: CircleCheckBig,
+        },
+        {
+          text: "Filter reviews by class, subject or Maulana",
+          icon_card: CircleCheckBig,
+        },
+      ],
+      gradientFrom: "#126f77",
+      gradientTo: "#Eb6319",
+    },
+    {
+      icon: Shell,
+      Head: "Notice Management",
+      Para: "Send important updates, reminders or announcements instantly to Students, Maulana or Staff from one place.",
+      features: [
+        {
+          text: "Send notices to individual or multiple users",
+          icon_card: CircleCheckBig,
+        },
+        {
+          text: "Choose recipient type Student, Maulana, or Staff",
+          icon_card: CircleCheckBig,
+        },
+        {
+          text: "Track active or inactive notices",
+          icon_card: CircleCheckBig,
+        },
+        {
+          text: "Manage all announcements in one simple dashboard",
+          icon_card: CircleCheckBig,
+        },
+      ],
+      gradientFrom: "#126f77",
+      gradientTo: "#Eb6319",
+    },
+    {
+      icon: TentTree,
+      Head: "Holiday Management",
+      Para: "Easily create and manage holidays for students, Maulana and staff with full date control.",
+      features: [
+        {
+          text: " Add holiday name, start and end dates",
+          icon_card: CircleCheckBig,
+        },
+        {
+          text: "Select who the holiday applies to  Students, Maulana or Staff",
+          icon_card: CircleCheckBig,
+        },
+        {
+          text: "Set default weekly holidays for the institute",
+          icon_card: CircleCheckBig,
+        },
+        {
+          text: "Keep everyone informed with an updated holiday list",
+          icon_card: CircleCheckBig,
+        },
+      ],
+      gradientFrom: "#126f77",
+      gradientTo: "#Eb6319",
+    },
+    {
+      icon: CopySlash,
+      Head: "Division & Class Management",
+      Para: "Create, organize, and manage classes or divisions with assigned subjects, maulana and structured student groups.",
+      features: [
+        {
+          text: "Class and section setup",
+          icon_card: CircleCheckBig,
+        },
+        {
+          text: "Assign subjects & teachers",
+          icon_card: CircleCheckBig,
+        },
+        {
+          text: " Auto-linked attendance",
+          icon_card: CircleCheckBig,
+        },
+        {
+          text: "  Timetable structure",
+          icon_card: CircleCheckBig,
+        },
+      ],
+      gradientFrom: "#126f77",
+      gradientTo: "#Eb6319",
+    },
+    {
+      icon: TableProperties,
+      Head: "Subject Management",
+      Para: "Add and manage academic subjects for each class with linked attendance, and maulana assignments.",
+      features: [
+        {
+          text: "Subject creation",
+          icon_card: CircleCheckBig,
+        },
+        {
+          text: "Assign maulana",
+          icon_card: CircleCheckBig,
+        },
+        {
+          text: "Link to attendance & reports",
+          icon_card: CircleCheckBig,
+        },
+        {
+          text: "Update anytime easily",
+          icon_card: CircleCheckBig,
+        },
+      ],
+      gradientFrom: "#126f77",
+      gradientTo: "#Eb6319",
+    },
+    {
+      icon: DoorOpen,
+      Head: "Donor Management",
+      Para: "Keep a clear record of every donor and the students they support to ensure full transparency.",
+      features: [
+        {
+          text: " Add donor name and contact details",
+          icon_card: CircleCheckBig,
+        },
+        {
+          text: "Link donors to multiple students they sponsor",
+          icon_card: CircleCheckBig,
+        },
+        {
+          text: "View and edit all donor records in one list",
+          icon_card: CircleCheckBig,
+        },
+        {
+          text: " Strengthen trust through organized donor management",
+          icon_card: CircleCheckBig,
+        },
+      ],
+      gradientFrom: "#126f77",
+      gradientTo: "#Eb6319",
+    },
+    {
+      icon: BellRing,
+      Head: "Notification Management",
+      Para: "Send instant updates and system alerts via email or app to keep everyone informed and engaged.",
+      features: [
+        {
+          text: "App & email alerts",
+          icon_card: CircleCheckBig,
+        },
+        {
+          text: " Reminder scheduling",
+          icon_card: CircleCheckBig,
+        },
+        {
+          text: "Auto alerts for due dates",
+          icon_card: CircleCheckBig,
+        },
+
+        {
+          text: "Role-based targeting",
+          icon_card: CircleCheckBig,
+        },
+      ],
+      gradientFrom: "#126f77",
+      gradientTo: "#Eb6319",
+    },
+    {
+      icon: BrickWallShield,
+      Head: "Recent Activity",
+      Para: "Track every update happening in your madrasa with clear activity logs for better visibility.",
+
+      features: [
+        {
+          text: " View actions performed by admins, Maulana or staff",
+          icon_card: CircleCheckBig,
+        },
+        {
+          text: "Check time-stamped updates for every module",
+          icon_card: CircleCheckBig,
+        },
+        {
+          text: " Monitor changes made across different sections",
+          icon_card: CircleCheckBig,
+        },
+        {
+          text: "Keep your operations transparent and well-documented",
+          icon_card: CircleCheckBig,
+        },
+      ],
+      gradientFrom: "#126f77",
+      gradientTo: "#Eb6319",
+    },
+
+    {
+      icon: Podcast,
+      Head: "Subscription & Billing",
+      Para: "Manage your DeenNest plan easily—track renewals, invoices, and available add-ons in one place.",
+      features: [
+        {
+          text: " Active plan details",
+          icon_card: CircleCheckBig,
+        },
+        {
+          text: "Add-ons & upgrades",
+          icon_card: CircleCheckBig,
+        },
+        {
+          text: " Renewal reminders",
+          icon_card: CircleCheckBig,
+        },
+        {
+          text: "Invoice download",
+          icon_card: CircleCheckBig,
+        },
+      ],
+      gradientFrom: "#126f77",
+      gradientTo: "#Eb6319",
+    },
+    {
+      icon: MonitorCog,
+      Head: "Configuration & Settings",
+      Para: "Personalize how your madrasa works by enabling, disabling, or editing modules as per your needs.",
+      features: [
+        {
+          text: " Enable/disable modules",
+          icon_card: CircleCheckBig,
+        },
+        {
+          text: "Edit forms & fields",
+          icon_card: CircleCheckBig,
+        },
+        {
+          text: "Role permissions",
+          icon_card: CircleCheckBig,
+        },
+        {
+          text: "Maintain a transparent record for review",
+          icon_card: CircleCheckBig,
+        },
+      ],
       gradientFrom: "#126f77",
       gradientTo: "#Eb6319",
     },
   ];
   return (
     <>
-      {/* <div className="py-12 px-4 mx-auto w-[80%] ">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {card.map((item, index) => {
-            return (
-              <div
-                key={index}
-                className="p-6 min-h-[300px] rounded-2xl shadow-lg bg-white hover:shadow-2xl transition-all duration-500 transform hover:scale-105 group relative"
-              >
-                <div className="flex flex-row gap-6">
-                  <div
-                    className="w-16 h-16 rounded-2xl
-                 flex items-center justify-center flex-shrink-0 shadow-lg text-white
-                  group-hover:shadow-xl transition-all duration-500 group-hover:scale-110"
-                    style={{
-                      background: `linear-gradient(to right,${item.gradientFrom},${item.gradientTo})`,
-                    }}
-                  >
-                    <item.icon className="w-8 h-8  " />
-                  </div>
-                  <div className="flex flex-col">
-                    <h1 className="text-2xl font-bold group-hover:text-[#126F77]">
-                      {item.Head}
-                    </h1>
-                    <p className="text-[#6B6B6B] leading-relaxed">
-                      {item.Para}
-                    </p>
-                  </div>
-                </div>
-                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-10">
-                  {item.features.map((feature, i) => (
-                    <li
-                      key={i}
-                      className="flex items-center gap-2 text-gary-700"
-                    >
-                      <CircleCheckBig className="w-4 h-4 text-[#126f77]" />
-                      {feature.text}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            );
-          })}
-        </div>
-      </div> */}
       <div className="py-8 sm:py-10 md:py-12 lg:py-12 xl:py-12 2xl:py-12 px-4 sm:px-6 md:px-8 lg:px-8 xl:px-8 2xl:px-8 mx-auto w-[80%]">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-8 xl:gap-8 2xl:gap-8">
           {card.map((item, index) => {
@@ -284,7 +540,6 @@ export default function Main_Features_Card() {
                 key={index}
                 className="p-4 sm:p-5 md:p-6 lg:p-6 xl:p-6 2xl:p-6 min-h-[200px]  rounded-2xl shadow-lg bg-white hover:shadow-2xl transition-all duration-500 transform hover:scale-105 group relative"
               >
-                {/*  min-h-[250px] sm:min-h-[280px] md:min-h-[300px] lg:min-h-[300px] xl:min-h-[300px] 2xl:min-h-[300px] */}
                 <div className="flex flex-col justify-center items-center md:flex-row gap-4 sm:gap-5 md:gap-6 lg:gap-6 xl:gap-6 2xl:gap-6">
                   <div
                     className="w-12 sm:w-14 md:w-16 lg:w-16 xl:w-16 2xl:w-16 h-12 sm:h-14 md:h-16 lg:h-16 xl:h-16 2xl:h-16 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg text-white group-hover:shadow-xl transition-all duration-500 group-hover:scale-110"

@@ -3,34 +3,14 @@ import React from "react";
 export default function Journey() {
   const JourneyPoint = [
     {
-      year: "2014",
-      Head: "The Beginning",
-      Text: "Founded by educators who saw the need for better technology in Islamic education.",
-    },
-    {
-      year: "2016",
-      Head: "First 100 Schools",
-      Text: "Reached our first major milestone, serving 100 madrasas across 5 countries.",
-    },
-    {
-      year: "2018",
-      Head: "Global Expansion",
-      Text: "Expanded to serve institutions in 15+ countries with multi-language support.",
-    },
-    {
-      year: "2020",
-      Head: "Mobile Revolution",
-      Text: "Launched comprehensive mobile apps during the pandemic, enabling remote learning.",
-    },
-    {
-      year: "2022",
-      Head: "AI Integration",
-      Text: "Introduced AI-powered analytics and automated reporting features.",
-    },
-    {
       year: "2024",
-      Head: "500+ Institutions",
-      Text: "Proudly serving over 500 Islamic educational institutions worldwide.",
+      Head: "The Beginning",
+      Text: "DeenNest was founded under Ziaat Technolabs Pvt. Ltd., with a vision to bring technology and faith together for better madrasa management.",
+    },
+    {
+      year: "2025",
+      Head: "Product Launch",
+      Text: "Successfully launched our full platform with PWA and Android apps, empowering madrasas to manage students, maulana, staff and parents seamlessly from anywhere.",
     },
   ];
   return (
@@ -39,8 +19,8 @@ export default function Journey() {
         Our Journey
       </h1>
       <p className="text-base sm:text-base md:text-lg text-[#6B6B6B] max-w-2xl mx-auto">
-        From a small idea to a global platform serving hundreds of institutions
-        worldwide.
+        From an inspired idea to a powerful digital platform transforming
+        Islamic education across the world.
       </p>
       <div className="max-w-4xl mx-auto mt-12 sm:mt-16 md:mt-18 lg:mt-20">
         <div className="relative">

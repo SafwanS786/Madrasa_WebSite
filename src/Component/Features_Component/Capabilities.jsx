@@ -1,53 +1,57 @@
 import React from "react";
 import {
-  Shield,
+  ShieldBan,
   Smartphone,
   Globe,
   Archive,
   FileText,
   Settings,
+  BriefcaseBusiness,
+  TabletSmartphone,
+  Languages,
+  Import,
 } from "lucide-react";
 export default function capabilities() {
   const card = [
     {
-      icon: Shield,
-      Head: "Data  Security",
-      Para: "Enterprise-grade security and data protection",
+      icon: BriefcaseBusiness,
+      Head: "Madrasa Workbench",
+      Para: "Manage and switch between multiple madrasas from one secure account.",
       gradientFrom: "#126F77",
       gradientTo: "#EB6319",
     },
     {
-      icon: Smartphone,
-      Head: "Mobile Access",
-      Para: "Full mobile app for iOS and Android devices",
+      icon: TabletSmartphone,
+      Head: "Mobile & PWA Access",
+      Para: " Access your madrasa anytime via Android app or PWA web app.",
       gradientFrom: "#126F77",
       gradientTo: "#EB6319",
     },
     {
-      icon: Globe,
-      Head: "Multi-language",
-      Para: "Support for Arabic, English, and local languages",
+      icon: Languages,
+      Head: "Multi-language Support",
+      Para: "Use the system in Hindi, English or your local language.",
       gradientFrom: "#126F77",
       gradientTo: "#EB6319",
     },
     {
-      icon: Archive,
-      Head: "Data Backup",
-      Para: "Automatic daily backups with cloud storage",
+      icon: ShieldBan,
+      Head: "Data Security",
+      Para: " Keep all madrasa data safe with encrypted and role-based access.",
+      gradientFrom: "#126F77",
+      gradientTo: "#EB6319",
+    },
+    {
+      icon: Import,
+      Head: "Import & Export Data",
+      Para: " Quickly upload or download records in bulk for easy data handling.",
       gradientFrom: "#126F77",
       gradientTo: "#EB6319",
     },
     {
       icon: FileText,
-      Head: "Document Management",
-      Para: "Store and manage all important documents",
-      gradientFrom: "#126F77",
-      gradientTo: "#EB6319",
-    },
-    {
-      icon: Settings,
-      Head: "Customization",
-      Para: "Flexible settings to match your madrasa's needs",
+      Head: "User Roles & Permissions",
+      Para: "Control access levels for Admins, Maulana, Staff and Parents.",
       gradientFrom: "#126F77",
       gradientTo: "#EB6319",
     },
@@ -60,8 +64,8 @@ export default function capabilities() {
           Additional Capabilities
         </h1>
         <p className="block text-base sm:text-base md:text-lg lg:text-lg xl:text-lg 2xl:text-lg text-[#6B6B6B] max-w-2xl">
-          Even more features to ensure your madrasa has everything it needs to
-          operate efficiently.
+          Even more features to make your madrasa management simpler, smarter
+          and fully connected.
         </p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 items-center gap-4 sm:gap-6 md:gap-8 lg:gap-8 xl:gap-8 2xl:gap-8 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-16 2xl:px-16">

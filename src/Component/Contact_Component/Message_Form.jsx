@@ -1,173 +1,3 @@
-// import React from "react";
-
-// export default function Message_Form() {
-//   return (
-//     <section className="py-20 bg-gradient-to-br from-[#F8F9FA] to-white">
-//       <div className="container mx-auto px-4">
-//         <div className="max-w-4xl mx-auto">
-//           <div className="text-center mb-12">
-//             <h1 className="text-3xl md:text-4xl font-bold text-[#1A1A1A] mb-6">
-//               Send Us a Message
-//             </h1>
-//             <p className="text-lg text-[#6B6B6B] max-w-2xl mx-auto">
-//               Fill out the form below and we'll get back to you within 4 hours
-//               during business hours.
-//             </p>
-//             <div className="text-card-foreground flex flex-col gap-6 rounded-xl border border-gray-200 relative overflow-hidden bg-white shadow-xl mt-20">
-//               <div className="p-12 [&:last-child]:pb-6"></div>
-//               <form className="bg-white shadow-xl rounded-xl  p-12 space-y-6">
-//                 <div className="grid md:grid-cols-2 gap-6">
-//                   <div className="space-y-2">
-//                     <label className="text-sm font-medium ">
-//                       First Name*
-//                     </label>
-//                     <input
-//                       type="text"
-//                       placeholder="Enter Your Name"
-//                       className="w-full bg-[#f3f3f5] text-muted-foreground rounded-lg p-4 outline-none"
-//                     />
-//                   </div>
-//                 </div>
-//               </form>
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }
-// import React from "react";
-// import { ArrowRight, Send } from "lucide-react";
-
-// export default function Message_Form() {
-//   return (
-//     <section className="py-20 bg-gradient-to-br from-[#F8F9FA] to-white">
-//       <div className="container mx-auto px-4">
-//         <div className="max-w-4xl mx-auto">
-//           {/* Heading */}
-//           <div className="text-center mb-12">
-//             <h1 className="text-3xl md:text-4xl font-bold text-[#1A1A1A] mb-6">
-//               Send Us a Message
-//             </h1>
-//             <p className="text-lg text-[#6B6B6B] max-w-2xl mx-auto">
-//               Fill out the form below and we'll get back to you within 4 hours
-//               during business hours.
-//             </p>
-//           </div>
-
-//           {/* Form Card */}
-//           <form className="bg-white shadow-xl rounded-xl border border-gray-200 p-12 space-y-6">
-//             {/* First + Last Name */}
-//             <div className="grid md:grid-cols-2 gap-6">
-//               <div className="space-y-2">
-//                 <label className="text-sm font-medium">First Name *</label>
-//                 <input
-//                   type="text"
-//                   placeholder="Enter your first name"
-//                   className="w-full bg-[#f3f3f5] rounded-lg p-4 outline-none"
-//                 />
-//               </div>
-//               <div className="space-y-2">
-//                 <label className="text-sm font-medium">Last Name *</label>
-//                 <input
-//                   type="text"
-//                   placeholder="Enter your last name"
-//                   className="w-full bg-[#f3f3f5] rounded-lg p-4 outline-none"
-//                 />
-//               </div>
-//             </div>
-
-//             {/* Email + Phone */}
-//             <div className="grid md:grid-cols-2 gap-6">
-//               <div className="space-y-2">
-//                 <label className="text-sm font-medium">Email Address *</label>
-//                 <input
-//                   type="email"
-//                   placeholder="Enter your email"
-//                   className="w-full bg-[#f3f3f5] rounded-lg p-4 outline-none"
-//                 />
-//               </div>
-//               <div className="space-y-2">
-//                 <label className="text-sm font-medium">Phone Number *</label>
-//                 <input
-//                   type="tel"
-//                   placeholder="Enter your phone number"
-//                   className="w-full bg-[#f3f3f5] rounded-lg p-4 outline-none"
-//                 />
-//               </div>
-//             </div>
-
-//             {/* Institution + Role */}
-//             <div className="grid md:grid-cols-2 gap-6">
-//               <div className="space-y-2">
-//                 <label className="text-sm font-medium">Institution Name</label>
-//                 <input
-//                   type="text"
-//                   placeholder="Enter your madrasa/school name"
-//                   className="w-full bg-[#f3f3f5] rounded-lg p-4 outline-none"
-//                 />
-//               </div>
-//               <div className="space-y-2">
-//                 <label className="text-sm font-medium">Your Role</label>
-//                 <select className="w-full bg-[#f3f3f5] rounded-lg p-4 outline-none">
-//                   <option>Select your role</option>
-//                   <option>Administrator</option>
-//                   <option>Teacher</option>
-//                   <option>Parent</option>
-//                   <option>Other</option>
-//                 </select>
-//               </div>
-//             </div>
-
-//             {/* Subject */}
-//             <div className="space-y-2">
-//               <select className="w-full bg-[#f3f3f5]  rounded-lg p-4 outline-none">
-//                 <option className="">Schedule a Demo</option>
-//                 <option>Pricing Questions</option>
-//                 <option>Feature Inquiry</option>
-//                 <option>Technical Support</option>
-//                 <option>Partnership</option>
-//                 <option>Other</option>
-//               </select>
-//             </div>
-
-//             {/* Message */}
-//             <div className="space-y-2">
-//               <label className="text-sm font-medium">Message *</label>
-//               <textarea
-//                 rows={4}
-//                 placeholder="Tell us more about how we can help you..."
-//                 className="w-full bg-[#f3f3f5] rounded-lg p-4 outline-none"
-//               ></textarea>
-//             </div>
-
-//             {/* Checkbox */}
-//             <div className="flex items-center gap-2">
-//               <input type="checkbox" className="w-4 h-4" />
-//               <span className="text-sm text-[#333]">
-//                 I'd like to receive updates about new features and educational
-//                 resources
-//               </span>
-//             </div>
-
-//             {/* Submit Button */}
-//             <button
-//               type="submit"
-//               className="group w-full flex items-center justify-center gap-2 px-6 py-4 text-lg  text-white font-medium rounded-lg bg-gradient-to-r from-[#126F77] to-[#EB6319] hover:opacity-90 transition"
-//             >
-//               <Send size={18} />
-//               Send Message
-//               <ArrowRight
-//                 size={18}
-//                 className="group-hover:translate-x-1 transition-transform"
-//               />
-//             </button>
-//           </form>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }
 import React from "react";
 import { ArrowRight, Send } from "lucide-react";
 
@@ -182,8 +12,8 @@ export default function Message_Form() {
               Send Us a Message
             </h1>
             <p className="text-base sm:text-base md:text-lg lg:text-lg xl:text-lg 2xl:text-lg text-[#6B6B6B] max-w-2xl mx-auto">
-              Fill out the form below and we'll get back to you within 4 hours
-              during business hours.
+              Have a question or need help getting started? Send us a message
+              and we’ll reply shortly.
             </p>
           </div>
 
@@ -207,13 +37,13 @@ export default function Message_Form() {
               </div>
               <div className="space-y-2">
                 <label className="text-xs sm:text-sm md:text-sm lg:text-sm xl:text-sm 2xl:text-sm font-medium text-[#1A1A1A]">
-                  Last Name *
+                  Last Name (Optional)
                 </label>
                 <input
                   type="text"
                   placeholder="Enter your last name"
                   className="w-full bg-[#f3f3f5] rounded-lg p-2 sm:p-3 md:p-4 lg:p-4 xl:p-4 2xl:p-4 outline-none focus:ring-2 focus:ring-[#126F77] transition-all"
-                  required
+                  optional
                 />
               </div>
             </div>
@@ -248,11 +78,11 @@ export default function Message_Form() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 md:gap-6 lg:gap-6 xl:gap-6 2xl:gap-6">
               <div className="space-y-2">
                 <label className="text-xs sm:text-sm md:text-sm lg:text-sm xl:text-sm 2xl:text-sm font-medium text-[#1A1A1A]">
-                  Institution Name
+                  Institution / Madrasa Name
                 </label>
                 <input
                   type="text"
-                  placeholder="Enter your madrasa/school name"
+                  placeholder="Enter your madrasa name"
                   className="w-full bg-[#f3f3f5] rounded-lg p-2 sm:p-3 md:p-4 lg:p-4 xl:p-4 2xl:p-4 outline-none focus:ring-2 focus:ring-[#126F77] transition-all"
                 />
               </div>
@@ -262,9 +92,11 @@ export default function Message_Form() {
                 </label>
                 <select className="w-full bg-[#f3f3f5] rounded-lg p-2 sm:p-3 md:p-4 lg:p-4 xl:p-4 2xl:p-4 outline-none focus:ring-2 focus:ring-[#126F77] transition-all">
                   <option>Select your role</option>
-                  <option>Administrator</option>
-                  <option>Teacher</option>
+                  <option>Admin / Principal</option>
+                  <option>Maulana / Staff</option>
                   <option>Parent</option>
+                  <option>IT / Technical Team</option>
+                  <option>Student</option>
                   <option>Other</option>
                 </select>
               </div>
@@ -273,18 +105,19 @@ export default function Message_Form() {
             {/* Subject */}
             <div className="space-y-2">
               <label className="text-xs sm:text-sm md:text-sm lg:text-sm xl:text-sm 2xl:text-sm font-medium text-[#1A1A1A]">
-                Subject *
+                Purpose / Inquiry Type *
               </label>
               <select
                 className="w-full bg-[#f3f3f5] rounded-lg p-2 sm:p-3 md:p-4 lg:p-4 xl:p-4 2xl:p-4 outline-none focus:ring-2 focus:ring-[#126F77] transition-all"
                 required
+                placeholder="Select what you’d like help with"
               >
+                {/* <option>Select what you’d like help with</option> */}
                 <option>Schedule a Demo</option>
-                <option>Pricing Questions</option>
-                <option>Feature Inquiry</option>
+                <option>Need Help with Setup</option>
+                <option>Pricing / Subscription Query</option>
                 <option>Technical Support</option>
-                <option>Partnership</option>
-                <option>Other</option>
+                <option>General Inquiry</option>
               </select>
             </div>
 

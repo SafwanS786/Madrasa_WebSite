@@ -1,93 +1,3 @@
-// import React from "react";
-// import { Star, Shield, Zap, Settings } from "lucide-react";
-// export default function Trusted() {
-//   const data = [
-//     {
-//       icon: Shield,
-//       Title: "Enterprise Security",
-//       Desc: "Bank-level encryption and cloud infrastructure protecting your sensitive data 24/7.",
-//       gradientFrom: "#126F77",
-//       gradientTo: "#0F5A61",
-//     },
-//     {
-//       icon: Zap,
-//       Title: "Lightning Fast",
-//       Desc: "Intuitive design with zero learning curve. Get up and running in minutes, not days.",
-//       gradientFrom: "#EB6319",
-//       gradientTo: "#D4540E",
-//     },
-//     {
-//       icon: Settings,
-//       Title: "Fully Customizable",
-//       Desc: "Flexible platform that adapts to your madrasa's unique teaching methods and requirements.",
-//       gradientFrom: "#126F77",
-//       gradientTo: "#EB6319",
-//     },
-//   ];
-//   return (
-//     <div className="text-center px-4 sm:px-6 md:px-10 lg:px-16 xl:px-24 2xl:px-32">
-//       <div className="rounded-full flex flex-row items-center gap-2 bg-gradient-to-r from-[#126f77]/10 to-[#EB6319]/10 py-3 px-6 mx-auto border border-[#126f77]/20 w-fit">
-//         <Star className="w-4 h-4 text-[#EB6319]" />
-//         <span className="text-[#126F77] font-medium">Trusted Worldwide</span>
-//       </div>
-//       <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mt-8 mb-6 text-[#1A1A1A] leading-tight font-sen">
-//         Trusted by
-//         <span className="block bg-gradient-to-r from-[#126F77] to-[#EB6319] bg-clip-text text-transparent">
-//           Modern Madrasas
-//         </span>
-//       </h1>
-//       <p className="text-base sm:text-lg md:text-xl text-[#6B6B6B] max-w-3xl mx-auto leading-relaxed">
-//         Join hundreds of forward-thinking institutions that have revolutionized
-//         their management with our cutting-edge platform.
-//       </p>
-//       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12 px-12  sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
-//         {data.map((item, index) => (
-//           <div
-//             className="text-card-foreground flex flex-col gap-6 rounded-xl group border border-gray-200  bg-white relative p-8  sm:p-8  text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
-//             key={index}
-//           >
-//             <div className="p-4 sm:p-6 md:p-8 text-center">
-//               <div className="mb-6">
-//                 <div
-//                   className={`w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-r from-[#126F77] to-[#0F5A61] rounded-2xl flex items-center
-//                  justify-center mx-auto shadow-lg group-hover:shadow-xl group-hover:scale-105 transition-all duration-300`}
-//                   style={{
-//                     background: `linear-gradient(to right, ${item.gradientFrom}, ${item.gradientTo})`,
-//                   }}
-//                 >
-//                   <item.icon className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
-//                 </div>
-//               </div>
-//               <h2 className="text-lg sm:text-xl  font-bold text-[#1A1A1A] group-hover:text-[#126F77] transition-colors duration-300">
-//                 {item.Title}
-//               </h2>
-//               <p className="text-sm sm:text-base md:text-xl text-[#6B6B6B] mt-4 leading-relaxed">
-//                 {item.Desc}
-//               </p>
-//             </div>
-//           </div>
-//         ))}
-//       </div>
-//       <p className="text-[#6B6B6B] mb-4 mt-20">
-//         Trusted by institutions in over 25 countries
-//       </p>
-//       <div className="flex flex-row gap-2 justify-center text-[#EB6319]">
-//         {Array(5)
-//           .fill(0)
-//           .map((__, i) => (
-//             <Star className=" fill-current" fill="currentColor" key={i} />
-//           ))}
-//         {/* <Star className="fill-current" fill="currentColor" />
-//         <Star className="fill-current" fill="currentColor" />
-//         <Star className="fill-current" fill="currentColor" />
-//         <Star className="fill-current" fill="currentColor" /> */}
-//         <span className="ml-2 text-[#126F77] font-semibold ">
-//           4.9/5 Customer Satisfaction
-//         </span>
-//       </div>
-//     </div>
-//   );
-// }
 import React from "react";
 import { Star, Shield, Zap, Settings } from "lucide-react";
 
@@ -96,21 +6,21 @@ export default function Trusted() {
     {
       icon: Shield,
       Title: "Enterprise Security",
-      Desc: "Bank-level encryption and cloud infrastructure protecting your sensitive data 24/7.",
+      Desc: "Your madrasa’s data is encrypted and stored securely with modern protection standards to ensure complete safety and privacy.",
       gradientFrom: "#126F77",
       gradientTo: "#0F5A61",
     },
     {
       icon: Zap,
       Title: "Lightning Fast",
-      Desc: "Intuitive design with zero learning curve. Get up and running in minutes, not days.",
+      Desc: "Simple, modern and fast—get started in minutes without any technical setup or training required.",
       gradientFrom: "#EB6319",
       gradientTo: "#D4540E",
     },
     {
       icon: Settings,
       Title: "Fully Customizable",
-      Desc: "Flexible platform that adapts to your madrasa's unique teaching methods and requirements.",
+      Desc: "Every madrasa is unique. DeenNest adapts easily to your workflow, subjects and teaching style.",
       gradientFrom: "#126F77",
       gradientTo: "#EB6319",
     },
@@ -168,7 +78,7 @@ export default function Trusted() {
         ))}
       </div>
       <p className="text-[#6B6B6B] mb-4 mt-20 text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl 2xl:text-xl">
-        Trusted by institutions in over 25 countries
+        Trusted by 500+ institutions across 25+ countries
       </p>
       {/* Updated: Added responsive font sizes for the footer text */}
       <div className="flex flex-row gap-2 justify-center text-[#EB6319]">

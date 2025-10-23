@@ -14,8 +14,8 @@ export default function Global() {
             Transforming Islamic Education Worldwide
           </h1>
           <p className="text-muted-foreground max-w-2xl mx-auto text-sm  sm:text-sm ms:text-base">
-            Join our mission to digitize and modernize Islamic education while
-            preserving traditional values and teaching methods.
+            Join us in our mission to modernize madrasa education while
+            preserving traditional values and teaching excellence.
           </p>
         </div>
       </div>

@@ -1,8 +1,9 @@
 import React from "react";
 import { Zap, ArrowRight, Play, Crown } from "lucide-react";
 // import { LeftArrow } from "react-icons/bi";
-
+import { useNavigate } from "react-router-dom";
 export default function Features_Last_Card() {
+  const navigate = useNavigate();
   return (
     <div className="px-4 sm:px-8 md:px-12 lg:px-16 xl:px-16 2xl:px-16 text-center">
       <div className="mt-12 sm:mt-16 md:mt-18 lg:mt-20 xl:mt-20 2xl:mt-20 bg-gradient-to-r from-[#126F77] to-[#EB6319] rounded-3xl p-6 sm:p-8 md:p-10 lg:p-12 xl:p-12 2xl:p-12 relative overflow-hidden">
@@ -19,11 +20,11 @@ export default function Features_Last_Card() {
             </span>
           </div>
           <h3 className="text-2xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-4xl 2xl:text-4xl font-bold text-white mb-3 sm:mb-3.5 md:mb-4 lg:mb-4 xl:mb-4 2xl:mb-4">
-            Experience All Features
+            Experience DeenNest
           </h3>
           <p className="text-base sm:text-base md:text-lg lg:text-xl xl:text-xl 2xl:text-xl text-white/90 mb-6 sm:mb-7 md:mb-8 lg:mb-8 xl:mb-8 2xl:mb-8 max-w-2xl mx-auto">
-            Start your free trial today and see how these powerful features can
-            transform your madrasa management.
+            Start your free trial today and see how DeenNest transforms daily
+            operations into smooth, organized management.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 md:gap-4 lg:gap-4 xl:gap-4 2xl:gap-4">
             <button className="bg-white rounded-md p-1.5 sm:p-2 md:p-2 lg:p-2 xl:p-2 2xl:p-2 text-[#126F77] font-bold inline-flex items-center gap-1 sm:gap-1.5 md:gap-2 lg:gap-2 xl:gap-2 2xl:gap-2 px-4 sm:px-5 md:px-6 lg:px-6 xl:px-6 2xl:px-6 py-2 sm:py-2.5 md:py-3 lg:py-3 xl:py-3 2xl:py-3 group">
@@ -35,7 +36,11 @@ export default function Features_Last_Card() {
                 />
               </span>
             </button>
-            <button className="flex items-center gap-1 sm:gap-1.5 md:gap-2 lg:gap-2 xl:gap-2 2xl:gap-2 bg-white rounded-md p-1.5 sm:p-2 md:p-2.5 lg:p-3 xl:p-3 2xl:p-3 text-[#126F77] font-semibold hover:bg-[#126F77] hover:text-white">
+            <button
+              className="flex items-center gap-1 sm:gap-1.5 md:gap-2 lg:gap-2 xl:gap-2 2xl:gap-2 bg-white rounded-md p-1.5 sm:p-2 md:p-2.5 lg:p-3 xl:p-3 2xl:p-3
+             text-[#126F77] font-semibold hover:bg-[#126F77] hover:text-white cursor-pointer transition-colors duration-300"
+              onClick={() => navigate("/contact")}
+            >
               <span>
                 <Play
                   size={15}

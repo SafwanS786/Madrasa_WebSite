@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { ArrowRight, Target } from "lucide-react";
 import Mission_Card from "../Home_Component/Mission_Card";
 import Global from "./Global";
+import { useNavigate } from "react-router-dom";
 
 export default function Mission() {
   const [year, setYear] = useState(0);
@@ -28,6 +29,7 @@ export default function Mission() {
     animateCounter(25, setCountries);
     animateCounter(500, setStories);
   }, []);
+  const navigate = useNavigate();
   return (
     <section className="py-12 sm:py-16 md:py-20 lg:py-24 xl:py-24 bg-gradient-to-b from-white via-[#F8F9FA] to-white relative overflow-hidden">
       <div className="absolute inset-0">
@@ -55,18 +57,21 @@ export default function Mission() {
           </h2>
           <div className="max-w-4xl mx-auto">
             <p className="text-xl sm:text-lg md:text-xl text-[#1A1A1A] leading-relaxed mb-6 mt-8">
-              We are dedicated to empowering Islamic education with technology.
-              Our mission is to simplify madrasa operations so educators can
-              focus on what truly matters—teaching and learning.
+              We’re on a mission to empower Islamic education through
+              technology. DeenNest helps madrasas manage daily tasks with ease,
+              so educators can focus on what truly matters teaching and
+              nurturing young minds.
             </p>
             <p className="text-base sm:text-lg md:text-xl text-[#6B6B6B] leading-relaxed mb-8">
-              Founded by educators who understand the unique needs of Islamic
-              institutions, we combine decades of experience with cutting-edge
-              technology to serve the global Muslim community.
+              Built by educators who understand the needs of Islamic
+              institutions, DeenNest blends years of experience with modern
+              technology to support learning, community, and growth for the
+              global Muslim ummah.
             </p>
             <button
               className="group inline-flex items-center justify-center gap-2 border-2 sm:px-7 md:px-8 px-6 py-1.5 sm:py-2 rounded-md
-             text-primary border-primary hover:bg-primary hover:text-white"
+             text-primary border-primary hover:bg-primary hover:text-white cursor-pointer"
+              onClick={() => navigate("/contact")}
             >
               Read More About Our Story
               <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4 group-hover:translate-x-1 transition-transform" />

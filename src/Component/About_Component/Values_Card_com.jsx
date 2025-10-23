@@ -1,29 +1,37 @@
 import React from "react";
-import { Heart, Lightbulb, Users } from "lucide-react";
+import { Heart, Lightbulb, Users, Shrimp } from "lucide-react";
 
 export default function Values_Card_com() {
   const data = [
     {
       icon: Heart,
       head: "Education First",
-      para: `We believe in the transformative power of education and are passionate about empowering Islamic educational institutions with cutting-edge
-       technology that respects traditional values.`,
+      title: "We believe in the power of education to change lives.",
+      para: `DeenNest is dedicated to helping Islamic institutions grow with modern tools that respect and preserve traditional values.`,
       gradientFrom: "#126f77",
-      gradientTo: "#0F5A61",
+      gradientTo: "#eb6319",
     },
     {
       icon: Lightbulb,
       head: "Innovation with Purpose",
-      para: `Modern technology meets traditional Islamic wisdom. We innovate not for the
-       sake of technology alone, but to genuinely improve educational outcomes and strengthen communities.`,
-      gradientFrom: "#eb6319",
-      gradientTo: "#D4540E",
+      title: "Technology should serve faith, not replace it.",
+      para: ` Our goal is to create smart solutions that simplify madrasa management and strengthen learning communities.`,
+      gradientFrom: "#126f77",
+      gradientTo: "#eb6319",
     },
     {
       icon: Users,
       head: "Community Building",
-      para: `Strong educational communities are built on trust, communication, 
-      and shared values. Our platform helps strengthen bonds between students, families, teachers, and administrators.`,
+      title: "We grow stronger together.",
+      para: ` DeenNest connects maulana, parents and students through a single platform that builds trust, communication and unity.`,
+      gradientFrom: "#126f77",
+      gradientTo: "#eb6319",
+    },
+    {
+      icon: Shrimp,
+      head: "Integrity & Trust",
+      title: "Faith and honesty are at the heart of everything we build.",
+      para: ` We ensure every feature, update and interaction reflects transparency, reliability and responsibility toward our users and their mission.`,
       gradientFrom: "#126f77",
       gradientTo: "#eb6319",
     },
@@ -31,7 +39,7 @@ export default function Values_Card_com() {
 
   return (
     <div className="w-full  py-8 sm:py-12 md:py-16 lg:py-20  px-4 sm:px-6 md:px-8 to-white">
-      <div className="max-w-6xl  h-full mx-auto grid grid-cols-1 sm:grid-cols-2  md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 lg:gap-10">
+      <div className="max-w-6xl  h-full mx-auto grid grid-cols-1 sm:grid-cols-2  md:grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-10">
         {data.map((item, index) => {
           const Icon = item.icon;
           return (
@@ -68,8 +76,6 @@ export default function Values_Card_com() {
               <p className="text-sm sm:text-sm md:text-base lg:text-md xl:text-md text-muted-foreground text-center mt-3 sm:mt-3.5 md:mt-4 leading-relaxed">
                 {item.para}
               </p>
-
-              {/* Decorative bubbles */}
             </div>
           );
         })}

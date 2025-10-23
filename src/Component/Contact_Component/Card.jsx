@@ -1,42 +1,47 @@
 import React from "react";
 import { Phone, Mail, MessageCircle, Calendar } from "lucide-react";
-// import "./animation.css";
 
 export default function Card() {
   const cards = [
     {
       icon: Phone,
       title: "Phone Support",
-      description: "Speak directly with our support team",
-      title_down: "+1 (555) 123-4567",
-      smt: "24/7 Available",
+      description: "Speak directly with our support team for quick help.",
+      title_down: "+91 (7575068585)",
+      smt_Head: " Available: ",
+      smt: " Monday to Friday, 10 AM – 6 PM (IST)",
       gradientFrom: "#126F77",
       gradientTo: "#0F5A61",
     },
     {
       icon: Mail,
       title: "Email Support",
-      description: "Send us your questions anytime",
-      title_down: "support@madrasatech.com",
-      smt: "Response within 4 hours",
+      description:
+        "Send us your questions anytime and get a detailed response.",
+      title_down: "support@deennest.com",
+      smt_Head: " Response time: ",
+      smt: " Within 24 hours on working days",
       gradientFrom: "#EB6319",
       gradientTo: "#D4540E",
     },
     {
       icon: MessageCircle,
       title: "Live Chat",
-      description: "Chat with our team in real-time",
-      title_down: "Available on website",
+      description: "Chat with our team in real-time instant answers.",
+      title_down: "http://deennest.com/",
+      smt_Head: " Hours: ",
       smt: "Mon-Fri, 9AM-6PM EST",
       gradientFrom: "#126F77",
       gradientTo: "#EB6319",
     },
     {
       icon: Calendar,
-      title: "Schedule Demo",
-      description: "Book a personalized demonstration",
-      title_down: "calendly.com/madrasatech",
-      smt: "Flexible scheduling",
+      title: "Schedule a Demo",
+      description:
+        "Book a personalized walkthrough of DeenNest with our product expert.",
+      title_down: "http://calendly.com/deennest",
+      smt_Head: " Availability: ",
+      smt: "Flexible  time slots",
       gradientFrom: "#EB6319",
       gradientTo: "#126F77",
     },
@@ -45,11 +50,11 @@ export default function Card() {
     <div className="mb-12 sm:mb-16 md:mb-18 lg:mb-20 xl:mb-20 2xl:mb-20 p-6 sm:p-8 md:p-10 lg:p-12 xl:p-12 2xl:p-12">
       <div className="text-center">
         <h1 className="text-2xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-4xl 2xl:text-4xl font-bold text-[#1A1A1A] mb-4 sm:mb-5 md:mb-6 lg:mb-6 xl:mb-6 2xl:mb-6">
-          Choose Your Preferred Contact Method
+          Choose How You’d Like to Reach Us
         </h1>
         <p className="text-base sm:text-base md:text-lg lg:text-lg xl:text-lg 2xl:text-lg text-[#6B6B6B] max-w-2xl mx-auto">
-          We offer multiple ways to get in touch. Choose what works best for
-          you.
+          We offer multiple ways to connect — choose the one that’s most
+          convenient for you.
         </p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-4 gap-4 sm:gap-6 md:gap-8 lg:gap-8 xl:gap-8 2xl:gap-8 mt-12 sm:mt-16 md:mt-18 lg:mt-20 xl:mt-20 2xl:mt-20">
@@ -77,12 +82,18 @@ export default function Card() {
             <p className="text-sm sm:text-sm md:text-base lg:text-base xl:text-base 2xl:text-base text-[#6B6B6B] leading-relaxed mb-6 sm:mb-7 md:mb-6 lg:mb-6 xl:mb-6 2xl:mb-6">
               {card.description}
             </p>
-            <span className="text-primary font-semibold mb-2 sm:mb-2.5 md:mb-3 lg:mb-3 xl:mb-3 2xl:mb-3 text-sm sm:text-sm md:text-base lg:text-base xl:text-base 2xl:text-base">
-              {card.title_down}
-            </span>
-            <p className="text-xs sm:text-sm md:text-sm lg:text-sm xl:text-sm 2xl:text-sm text-[#6B6B6B] mt-4 sm:mt-4 md:mt-4 lg:mt-4 xl:mt-4 2xl:mt-4">
-              {card.smt}
-            </p>
+
+            <div className="">
+              <h2 className="inline font-semibold">{card.smt_Head}</h2>
+              <p className="inline text-xs sm:text-sm md:text-sm lg:text-sm xl:text-sm 2xl:text-sm text-[#6B6B6B] mt-4 sm:mt-4 md:mt-4 lg:mt-4 xl:mt-4 2xl:mt-4">
+                {card.smt}
+              </p>
+            </div>
+            <div className="mt-5">
+              <span className=" text-primary font-semibold mb-2 sm:mb-2.5 md:mb-3 lg:mb-3 xl:mb-3 2xl:mb-3 text-sm sm:text-sm md:text-base lg:text-base xl:text-base 2xl:text-base">
+                {card.title_down}
+              </span>
+            </div>
           </div>
         ))}
       </div>
