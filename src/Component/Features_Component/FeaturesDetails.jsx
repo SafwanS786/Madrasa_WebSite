@@ -1,11 +1,11 @@
 import React from "react";
 import { UserPlus, Zap, ArrowRight, Play, Crown } from "lucide-react";
-
+import details_Img from "../../assets/img/details.png";
 export default function FeaturesDetails() {
   return (
     <>
       {/* 🌟 Header Section */}
-      <div className="relative overflow-hidden mt-10">
+      <div className="relative overflow-hidden mt-10 md:mt-40">
         {/* 🔵 Background Glows */}
         <div className="absolute inset-0">
           <div className="absolute top-10 sm:top-12 md:top-16 lg:top-20 xl:top-20 2xl:top-20 left-10 sm:left-12 md:left-16 lg:left-20 xl:left-20 2xl:left-20 w-48 sm:w-64 md:w-72 lg:w-80 xl:w-80 2xl:w-80 h-48 sm:h-64 md:h-72 lg:h-80 xl:h-80 2xl:h-80 bg-[#126F77]/5 rounded-full blur-3xl animate-pulse"></div>
@@ -23,17 +23,25 @@ export default function FeaturesDetails() {
               In-Depth Feature Details
             </span>
           </div> */}
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl 2xl:text-5xl font-bold font-sen text-[#1A1A1A] mb-4 sm:mb-5 md:mb-6 lg:mb-6 xl:mb-6 2xl:mb-6 leading-tight">
-            Dive Deeper into Our
-            <br />
-            <span className="block bg-gradient-to-r from-[#126F77] to-[#EB6319] bg-clip-text text-transparent">
-              Powerful Features
-            </span>
-          </h1>
-          <p className="text-base sm:text-lg md:text-xl lg:text-xl xl:text-xl 2xl:text-xl text-[#6B6B6B] max-w-3xl mx-auto leading-relaxed">
-            Explore detailed explanations of each feature and how they empower
-            modern madrasas to operate more efficiently and effectively.
-          </p>
+          <div className="flex flex-row gap-4 justify-center items-center">
+            <div className="">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl 2xl:text-5xl font-bold font-sen text-[#1A1A1A] mb-4 sm:mb-5 md:mb-6 lg:mb-6 xl:mb-6 2xl:mb-6 leading-tight">
+                Dive Deeper into Our
+                <br />
+                <span className="block bg-gradient-to-r from-[#126F77] to-[#EB6319] bg-clip-text text-transparent">
+                  Powerful Features
+                </span>
+              </h1>
+              <p className="text-base sm:text-lg md:text-xl lg:text-xl xl:text-xl 2xl:text-xl text-[#6B6B6B] max-w-3xl mx-auto leading-relaxed">
+                Explore detailed explanations of each feature and how they
+                empower modern madrasas to operate more efficiently and
+                effectively.
+              </p>
+            </div>
+            <div className="">
+              <img src={details_Img} alt="Image" />
+            </div>
+          </div>
         </div>
       </div>
 
@@ -41,14 +49,14 @@ export default function FeaturesDetails() {
       <div className="py-8 sm:py-10 md:py-12 lg:py-12 xl:py-12 2xl:py-12 px-4 sm:px-6 md:px-8 lg:px-8 xl:px-8 2xl:px-8 mx-auto max-w-7xl">
         <section className="mb-12 sm:mb-16 md:mb-20 lg:mb-20 xl:mb-20 2xl:mb-20 border-b border-[#E5E7EB] pb-8 sm:pb-10 md:pb-12 lg:pb-12 xl:pb-12 2xl:pb-12">
           <div className="flex flex-col md:flex-row items-start gap-6 sm:gap-8 md:gap-10 lg:gap-10 xl:gap-10 2xl:gap-10">
-            <div
+            {/* <div
               className="w-16 sm:w-20 md:w-24 lg:w-24 xl:w-24 2xl:w-24 h-16 sm:h-20 md:h-24 lg:h-24 xl:h-24 2xl:h-24 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-xl text-white group-hover:scale-110 transition-transform duration-300"
               style={{
                 background: `linear-gradient(to right, #126F77, #EB6319)`,
               }}
             >
               <UserPlus className="w-8 sm:w-10 md:w-12 lg:w-12 xl:w-12 2xl:w-12 h-8 sm:h-10 md:h-12 lg:h-12 xl:h-12 2xl:h-12" />
-            </div>
+            </div> */}
             <div className="flex-1">
               <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-3xl 2xl:text-3xl font-bold font-sen text-[#1A1A1A] mb-4 sm:mb-5 md:mb-6 lg:mb-6 xl:mb-6 2xl:mb-6 leading-tight">
                 <span className="bg-gradient-to-r from-[#126F77] to-[#EB6319] bg-clip-text text-transparent">
@@ -148,7 +156,7 @@ export default function FeaturesDetails() {
       </div>
 
       {/* CTA Section */}
-      <div className="px-4 sm:px-8 md:px-12 lg:px-16 xl:px-16 2xl:px-16 text-center mb-12 sm:mb-16 md:mb-20 lg:mb-20 xl:mb-20 2xl:mb-20">
+      {/* <div className="px-4 sm:px-8 md:px-12 lg:px-16 xl:px-16 2xl:px-16 text-center mb-12 sm:mb-16 md:mb-20 lg:mb-20 xl:mb-20 2xl:mb-20">
         <div className="bg-gradient-to-r from-[#126F77] to-[#EB6319] rounded-3xl p-6 sm:p-8 md:p-10 lg:p-12 xl:p-12 2xl:p-12 relative overflow-hidden">
           <div className="absolute inset-0 opacity-10">
             <div className="absolute top-2 sm:top-3 md:top-4 lg:top-4 xl:top-4 2xl:top-4 right-2 sm:right-3 md:right-4 lg:right-4 xl:right-4 2xl:right-4 w-12 sm:w-16 md:w-20 lg:w-20 xl:w-20 2xl:w-20 h-12 sm:h-16 md:h-20 lg:h-20 xl:h-20 2xl:h-20 border-2 border-white rounded-lg rotate-12"></div>
@@ -192,7 +200,7 @@ export default function FeaturesDetails() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }

@@ -6,6 +6,7 @@ import Values_Card_com from "../Component/About_Component/Values_Card_com";
 import Journey from "../Component/About_Component/Journey";
 import Team from "../Component/About_Component/Team";
 import Last_Card from "../Component/About_Component/Last_Card";
+import Vision from "../Component/About_Component/Vision";
 
 export default function AboutPages() {
   return (
@@ -13,6 +14,7 @@ export default function AboutPages() {
       <div className="pt-5 lg:pt-24 relative overflow-hidden">
         <section>
           <Stories />
+          <Vision />
           <Card />
           <Values />
           <Values_Card_com />

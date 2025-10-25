@@ -22,8 +22,10 @@ import {
   BellRing,
   BrickWallShield,
 } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 export default function Main_Features_Card() {
+  const Navigate = useNavigate();
   const card = [
     {
       icon: Users,
@@ -49,6 +51,7 @@ export default function Main_Features_Card() {
       ],
       gradientFrom: "#126f77",
       gradientTo: "#Eb6319",
+      Path: "/studentDetails",
     },
     {
       icon: Calendar,
@@ -74,6 +77,7 @@ export default function Main_Features_Card() {
       ],
       gradientFrom: "#126f77",
       gradientTo: "#Eb6319",
+      Path: "/maulanaDetails",
     },
     {
       icon: Wallet,
@@ -99,6 +103,7 @@ export default function Main_Features_Card() {
       ],
       gradientFrom: "#126f77",
       gradientTo: "#Eb6319",
+      Path: "/parentManagement",
     },
     {
       icon: MessageCircle,
@@ -125,6 +130,7 @@ export default function Main_Features_Card() {
 
       gradientFrom: "#Eb6319",
       gradientTo: "#126f77",
+      Path: "/feesManagement",
     },
     {
       icon: ChartColumn,
@@ -150,6 +156,7 @@ export default function Main_Features_Card() {
       ],
       gradientFrom: "#126f77",
       gradientTo: "#Eb6319",
+      Path: "/payrollManagement",
     },
     {
       icon: Bell,
@@ -175,6 +182,7 @@ export default function Main_Features_Card() {
       ],
       gradientFrom: "#126f77",
       gradientTo: "#Eb6319",
+      Path: "/attendanceManagement",
     },
     {
       icon: Proportions,
@@ -200,6 +208,7 @@ export default function Main_Features_Card() {
       ],
       gradientFrom: "#126f77",
       gradientTo: "#Eb6319",
+      Path: "/reportsAnalytics",
     },
     {
       icon: BookOpenCheck,
@@ -225,6 +234,7 @@ export default function Main_Features_Card() {
       ],
       gradientFrom: "#126f77",
       gradientTo: "#Eb6319",
+      Path: "/remarksComplaints",
     },
     {
       icon: DatabaseZap,
@@ -250,6 +260,7 @@ export default function Main_Features_Card() {
       ],
       gradientFrom: "#126f77",
       gradientTo: "#Eb6319",
+      Path: "/storageManagement",
     },
     {
       icon: BusFront,
@@ -275,6 +286,7 @@ export default function Main_Features_Card() {
       ],
       gradientFrom: "#126f77",
       gradientTo: "#Eb6319",
+      Path: "/vehicleManagement",
     },
     {
       icon: Star,
@@ -300,6 +312,7 @@ export default function Main_Features_Card() {
       ],
       gradientFrom: "#126f77",
       gradientTo: "#Eb6319",
+      Path: "/reviewManagement",
     },
     {
       icon: Shell,
@@ -325,6 +338,7 @@ export default function Main_Features_Card() {
       ],
       gradientFrom: "#126f77",
       gradientTo: "#Eb6319",
+      Path: "/noticeManagement",
     },
     {
       icon: TentTree,
@@ -350,6 +364,7 @@ export default function Main_Features_Card() {
       ],
       gradientFrom: "#126f77",
       gradientTo: "#Eb6319",
+      Path: "/holidayManagement",
     },
     {
       icon: CopySlash,
@@ -375,6 +390,7 @@ export default function Main_Features_Card() {
       ],
       gradientFrom: "#126f77",
       gradientTo: "#Eb6319",
+      Path: "/divisionClassManagement",
     },
     {
       icon: TableProperties,
@@ -400,6 +416,7 @@ export default function Main_Features_Card() {
       ],
       gradientFrom: "#126f77",
       gradientTo: "#Eb6319",
+      Path: "/subjectManagement",
     },
     {
       icon: DoorOpen,
@@ -425,6 +442,7 @@ export default function Main_Features_Card() {
       ],
       gradientFrom: "#126f77",
       gradientTo: "#Eb6319",
+      Path: "/donorManagement",
     },
     {
       icon: BellRing,
@@ -451,6 +469,7 @@ export default function Main_Features_Card() {
       ],
       gradientFrom: "#126f77",
       gradientTo: "#Eb6319",
+      Path: "/notificationManagement",
     },
     {
       icon: BrickWallShield,
@@ -477,6 +496,7 @@ export default function Main_Features_Card() {
       ],
       gradientFrom: "#126f77",
       gradientTo: "#Eb6319",
+      Path: "/recentActivity",
     },
 
     {
@@ -503,6 +523,7 @@ export default function Main_Features_Card() {
       ],
       gradientFrom: "#126f77",
       gradientTo: "#Eb6319",
+      Path: "/subscriptionBilling",
     },
     {
       icon: MonitorCog,
@@ -528,6 +549,7 @@ export default function Main_Features_Card() {
       ],
       gradientFrom: "#126f77",
       gradientTo: "#Eb6319",
+      Path: "/configurationSettings",
     },
   ];
   return (
@@ -538,7 +560,9 @@ export default function Main_Features_Card() {
             return (
               <div
                 key={index}
-                className="p-4 sm:p-5 md:p-6 lg:p-6 xl:p-6 2xl:p-6 min-h-[200px]  rounded-2xl shadow-lg bg-white hover:shadow-2xl transition-all duration-500 transform hover:scale-105 group relative"
+                className="p-4 sm:p-5 md:p-6 lg:p-6 xl:p-6 2xl:p-6 min-h-[200px]  rounded-2xl shadow-lg bg-white hover:shadow-2xl
+                 transition-all duration-500 transform hover:scale-105 group relative cursor-pointer"
+                onClick={() => Navigate(`${item.Path}`)}
               >
                 <div className="flex flex-col justify-center items-center md:flex-row gap-4 sm:gap-5 md:gap-6 lg:gap-6 xl:gap-6 2xl:gap-6">
                   <div

@@ -1,12 +1,20 @@
 import React, { useState, useEffect, useRef } from "react";
 import { NavLink, Link, useLocation } from "react-router-dom";
-import { X, Menu, ChevronDown, UserLock, UserPlus } from "lucide-react";
+import {
+  X,
+  Menu,
+  ChevronDown,
+  UserLock,
+  UserPlus,
+  ChevronUp,
+} from "lucide-react";
 import Deen_Logo from "../Component/Home_Component/img/DeenNest - logo AI-01.png";
 import { useNavigate } from "react-router-dom";
 
 export default function Header() {
   const [open, setOpen] = useState(false); // Mobile menu state
   const [openDropdown, setOpenDropdown] = useState(null); // Track which dropdown is open (index or null)
+  const [isVisible, setisVisible] = useState(false);
   const dropdownRef = useRef(null);
   const location = useLocation();
 
@@ -14,6 +22,12 @@ export default function Header() {
     {
       path: "/features",
       label: "Features",
+      children:[{
+
+        path:"/featuresdetails",
+        label:"Details",
+      }
+      ]
     },
     { path: "/pricing", label: "Pricing" },
     { path: "/about", label: "About Us" },
@@ -31,6 +45,22 @@ export default function Header() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
   const navigate = useNavigate();
+  // Handle scroll to show/hide arrow button
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 300) {
+        // Show button after scrolling 300px
+        setisVisible(true);
+      } else {
+        setisVisible(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md border-b border-gray-200">
       <div className="flex items-center justify-between px-4 sm:px-6 lg:px-12 h-[70px]">
@@ -111,18 +141,20 @@ export default function Header() {
         </nav>
 
         <div className="flex flex-row gap-2 justify-between ">
-          <div className="sm:block hidden  font-semibold border border-primary px-6 bg-primary text-white py-2 rounded-2xl cursor-pointer text-center">
+          <button
+            className="sm:block hidden  font-semibold border border-primary px-6 bg-primary text-white py-2 rounded-2xl cursor-pointer text-center"
+            onClick={() => navigate("/form")}
+          >
             <UserPlus className="inline-block mr-2" size={18} />
-            <Link to="/form" onClick={() => setOpen(false)}>
-              Sign Up
-            </Link>
-          </div>
-          <div className="sm:block hidden font-semibold border border-primary px-6 bg-primary text-white py-2 rounded-2xl cursor-pointer text-center">
+            Sign Up
+          </button>
+          <button
+            className="sm:block hidden font-semibold border border-primary px-6 bg-primary text-white py-2 rounded-2xl cursor-pointer text-center "
+            onClick={() => navigate("/login")}
+          >
             <UserLock className="inline-block mr-2" size={18} />
-            <Link to="/login" onClick={() => setOpen(false)}>
-              Login
-            </Link>
-          </div>
+            Login
+          </button>
         </div>
 
         {/* Hamburger Button (Mobile only) */}
@@ -241,6 +273,21 @@ export default function Header() {
           </li>
         </ul>
       </div>
+      {isVisible && (
+        <button
+          onClick={scrollToTop}
+          className="fixed bottom-6 right-6 bg-[#126F77] text-white p-3 rounded-full shadow-lg hover:bg-[#0E575D] 
+                transition-all duration-200 ease-out hover:translate-y-[-4px] cursor-pointer z-60"
+          style={{
+            boxShadow: "0 8px 16px rgba(3, 4, 28, 0.3)",
+            lineHeight: "44px",
+            textAlign: "center",
+          }}
+          aria-label="Scroll to Top"
+        >
+          <ChevronUp size={24} />
+        </button>
+      )}
     </header>
   );
 }
