@@ -27,7 +27,12 @@ export default function Features_Last_Card() {
             operations into smooth, organized management.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 md:gap-4 lg:gap-4 xl:gap-4 2xl:gap-4">
-            <button className="bg-white rounded-md p-1.5 sm:p-2 md:p-2 lg:p-2 xl:p-2 2xl:p-2 text-[#126F77] font-bold inline-flex items-center gap-1 sm:gap-1.5 md:gap-2 lg:gap-2 xl:gap-2 2xl:gap-2 px-4 sm:px-5 md:px-6 lg:px-6 xl:px-6 2xl:px-6 py-2 sm:py-2.5 md:py-3 lg:py-3 xl:py-3 2xl:py-3 group">
+            <button
+              className="bg-white rounded-md p-1.5 sm:p-2 md:p-2 lg:p-2 xl:p-2 2xl:p-2 text-[#126F77] font-bold inline-flex items-center gap-1 
+            sm:gap-1.5 md:gap-2 lg:gap-2 xl:gap-2 2xl:gap-2 px-4 sm:px-5 md:px-6 lg:px-6 xl:px-6
+             2xl:px-6 py-2 sm:py-2.5 md:py-3 lg:py-3 xl:py-3 2xl:py-3 group cursor-pointer"
+              onClick={() => navigate("/form")}
+            >
               Start Free Trial
               <span className="inline-block transform transition-all duration-300 group-hover:translate-x-2">
                 <ArrowRight

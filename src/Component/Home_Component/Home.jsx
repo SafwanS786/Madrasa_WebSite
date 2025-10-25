@@ -111,7 +111,8 @@ export default function Home() {
               className="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium 
               border-2 sm:border-[3px] border-[#EB6319] text-[#EB6319] rounded-md 
               hover:bg-[#EB6319] hover:text-white active:bg-[#EB6319] active:text-white
-              px-6 sm:px-3 h-10 sm:h-12 xl:px-8 text-base sm:text-lg shadow-md transition-all duration-300 group"
+              px-6 sm:px-3 h-10 sm:h-12 xl:px-8 text-base sm:text-lg shadow-md transition-all duration-300 group cursor-pointer"
+              onClick={() => Navigate("/video-tutorial")}
             >
               Watch Demo
               <Play size={16} />

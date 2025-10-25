@@ -20,10 +20,16 @@ function App() {
     location.pathname === "/form" ||
     location.pathname === "/Address" ||
     location.pathname === "/login";
+
+  // const Header = location.pathname !== "/form";
+  const showHeader =
+    location.pathname !== "/form" &&
+    location.pathname !== "/Address" &&
+    location.pathname !== "/login";
   return (
     <>
-      <Header />
-      <div className="pt-[70px]">
+      {showHeader && <Header />}
+      <div style={{ marginTop: showHeader ? "70px" : "0" }}>
         <Routes>
           <Route path="/" element={<HomePages />} />
           <Route path="/video-tutorial" element={<Video />} />

@@ -3,8 +3,10 @@ import { Play, Monitor, Users, ChartColumn } from "lucide-react";
 import demo1 from "../Home_Component/img/demo1.jpg";
 import demo2 from "../Home_Component/img/demo2.jpg";
 import demo3 from "../Home_Component/img/demo3.jpg";
+import { useNavigate } from "react-router-dom";
 
 export default function Platform() {
+  const navigate = useNavigate();
   const cardsDemo = [
     {
       icon: demo1,
@@ -14,7 +16,7 @@ export default function Platform() {
       Arrow_icon: "→",
       Play_Icon: Monitor,
       gradientFrom: "#126F77",
-      gradientTo: "#0f5A61",
+      gradientTo: "#EB6319",
     },
     {
       icon: demo2,
@@ -23,8 +25,8 @@ export default function Platform() {
       Refr_btn: "View Demo",
       Arrow_icon: "→",
       Play_Icon: Users,
-      gradientFrom: "#EB6319",
-      gradientTo: "#D4540E",
+      gradientFrom: "#126F77",
+      gradientTo: "#EB6319",
     },
     {
       icon: demo3,
@@ -106,13 +108,18 @@ export default function Platform() {
                 {item.Desc}
               </p>
               <div className="flex items-center text-[#126F77] group-hover:text-[#EB6319] transition-colors cursor-pointer mt-3">
-                <span className="font-medium mr-2 text-sm sm:text-base md:text-base lg:text-base xl:text-lg 2xl:text-lg">
-                  {item.Refr_btn}
-                </span>
-                {/* Updated: Added responsive font sizes for the button text */}
-                <span className="text-base sm:text-lg md:text-lg lg:text-lg xl:text-xl 2xl:text-xl">
-                  {item.Arrow_icon}
-                </span>
+                <button
+                  className="cursor-pointer"
+                  onClick={() => navigate("/video-tutorial")}
+                >
+                  <span className="font-medium mr-2 text-sm sm:text-base md:text-base lg:text-base xl:text-lg 2xl:text-lg">
+                    {item.Refr_btn}
+                  </span>
+                  {/* Updated: Added responsive font sizes for the button text */}
+                  <span className="text-base sm:text-lg md:text-lg lg:text-lg xl:text-xl 2xl:text-xl">
+                    {item.Arrow_icon}
+                  </span>
+                </button>
                 {/* Updated: Added responsive font sizes for the arrow */}
               </div>
             </div>

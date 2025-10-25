@@ -1,5 +1,6 @@
 import React from "react";
-import { Link, UserLock } from "lucide-react";
+import { UserLock } from "lucide-react";
+import { Link } from "react-router-dom";
 export default function Login() {
   return (
     <div>
@@ -64,9 +65,10 @@ export default function Login() {
               <div className="flex items-end justify-end">
                 <button
                   className="px-6 py-2 bg-[#126F77] text-white font-medium rounded-lg shadow-md hover:bg-[#0f5c63]
-               transition-all hover:scale-105  origin-right"
+               transition-all hover:scale-105  origin-right cursor-pointer"
+                  type="submit"
                 >
-                  <Link to="/Address">Next</Link>
+                  Submit
                 </button>
               </div>
             </form>

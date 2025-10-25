@@ -45,25 +45,26 @@ export default function Pricing() {
         {/* Pricing Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Free Plan Tile */}
-          <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
-            <h3 className="text-xl font-semibold text-gray-800 mb-2">
-              Free Plan
-            </h3>
-            <div className="text-4xl font-bold text-[#126f77] mb-2 inline-flex flex-row gap-1 items-center">
+          <div className="bg-white border border-[#f2f2f2] rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+            <h3 className="text-xl font-bold text-[#126f77] mb-2">Free Plan</h3>
+            <div className="text-4xl font-bold text-[#126f77] mb-2 inline-flex flex-row gap-1 items-end">
               <h1>₹0</h1>
               <p className="text-gray-600 text-base">/ for 15 days</p>
             </div>
             <p className="text-sm text-gray-600 mb-4">
               Try all features free for 15 days. No credit card required.
             </p>
+            <button className="bg-[#126f77] text-white text-base font-semibold px-2 py-1 rounded-lg cursor-pointer">
+              Get Started
+            </button>
           </div>
 
           {/* Standard Plan Tile */}
-          <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+          <div className="bg-white border border-[#f2f2f2] rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
             <h3 className="text-xl font-semibold text-gray-800 mb-2">
               Standard Plan
             </h3>
-            <div className="text-4xl font-bold text-[#126f77] mb-2 inline-flex flex-row gap-1 items-center">
+            <div className="text-4xl font-bold text-[#126f77] mb-2 inline-flex flex-row gap-1 items-end">
               <h1>₹300</h1>
               <p className="text-gray-600 text-base">/ per student / year</p>
             </div>
@@ -71,6 +72,9 @@ export default function Pricing() {
               A complete yearly plan for madrasas of every size—simple, secure
               and scalable.
             </p>
+            <button className="bg-[#126f77] text-white text-base font-semibold px-2 py-1 rounded-lg cursor-pointer">
+              Get Started
+            </button>
           </div>
           <div
             className="inline-flex flex-row gap-2 items-center cursor-pointer"
@@ -91,12 +95,12 @@ export default function Pricing() {
             <Star className="w-5 h-5 text-yellow-400 fill-current" />
           </div>
           <div className="mt-6">
-            <p className="text-gray-600 mb-2">
+            <p className="text-gray-600 mb-6">
               Need a custom plan for your institution?
             </p>
             <Link
-              to="/contact-sales" // Redirect to contact/sales page
-              className="text-[#126f77] font-medium hover:underline"
+              to="/contact" // Redirect to contact/sales page
+              className="text-[#126f77] px-3 py-2 border border-[#126f77] hover:text-white rounded-lg hover:bg-[#126f77] font-medium"
             >
               Contact Sales
             </Link>

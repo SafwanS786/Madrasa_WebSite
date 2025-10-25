@@ -2,15 +2,34 @@ import React from "react";
 import Logo1 from "../Component/Home_Component/img/DeenNest - logo AI-01(cr).png";
 import { Facebook, Linkedin, MessageCircle } from "lucide-react";
 import Footer_Acc from "../Component/Home_Component/Footer_Acc";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   const quickLinks = [
-    "Features",
-    "Pricing",
-    "About Us",
-    "Contact",
-    "Documentation",
-    "Training",
+    {
+      label: "Features",
+      link: "/features",
+    },
+    {
+      label: "Pricing",
+      link: "/pricing",
+    },
+    {
+      label: "About Us",
+      link: "/about",
+    },
+    {
+      label: "Contact",
+      link: "/contact",
+    },
+    {
+      label: "Documentation",
+      link: "/pricing",
+    },
+    {
+      label: "Training",
+      link: "/features",
+    },
   ];
   const supportLinks = [
     "Privacy Policy",
@@ -66,11 +85,11 @@ export default function Footer() {
           {/* Quick Links */}
           <Footer_Acc title="Quick Links">
             <ul className="space-y-2 text-white/80 text-sm ">
-              {quickLinks.map((link, index) => (
+              {quickLinks.map((l, index) => (
                 <li key={index}>
-                  <a href="#" className="hover:text-white">
-                    {link}
-                  </a>
+                  <Link to={l.link} className="hover:text-white">
+                    {l.label}
+                  </Link>
                 </li>
               ))}
             </ul>

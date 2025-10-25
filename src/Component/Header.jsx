@@ -110,14 +110,14 @@ export default function Header() {
           </ul>
         </nav>
 
-        <div className="flex flex-row gap-2 justify-between">
-          <div className="font-semibold border border-primary px-6 bg-primary text-white py-2 rounded-2xl cursor-pointer text-center">
+        <div className="flex flex-row gap-2 justify-between ">
+          <div className="sm:block hidden  font-semibold border border-primary px-6 bg-primary text-white py-2 rounded-2xl cursor-pointer text-center">
             <UserPlus className="inline-block mr-2" size={18} />
             <Link to="/form" onClick={() => setOpen(false)}>
               Sign Up
             </Link>
           </div>
-          <div className="font-semibold border border-primary px-6 bg-primary text-white py-2 rounded-2xl cursor-pointer text-center">
+          <div className="sm:block hidden font-semibold border border-primary px-6 bg-primary text-white py-2 rounded-2xl cursor-pointer text-center">
             <UserLock className="inline-block mr-2" size={18} />
             <Link to="/login" onClick={() => setOpen(false)}>
               Login

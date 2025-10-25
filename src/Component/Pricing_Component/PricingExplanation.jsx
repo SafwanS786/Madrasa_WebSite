@@ -54,9 +54,11 @@ export default function PricingExplanation() {
             </div>
           </div>
         ))}
-        <div className="mx-auto text-center flex justify-center items-center">
-          <h3> One plan. Clear pricing. Flexibility when you need it.</h3>
-        </div>
+      </div>
+      <div className="mt-10 text-center flex justify-center items-center">
+        <h3 className="text-lg font-medium text-[#1A1A1A]">
+          One plan. Clear pricing. Flexibility when you need it.
+        </h3>
       </div>
     </div>
   );
