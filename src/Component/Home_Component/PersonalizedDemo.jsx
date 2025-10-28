@@ -36,30 +36,30 @@ export default function PersonalizedDemo() {
             transform your madrasa management.
           </p>
           {/* Updated: Added responsive font sizes for the paragraph */}
-          <div className="flex flex-col sm:flex-row justify-center items-center gap-3 sm:gap-4 md:gap-5 lg:gap-6">
+          <div className="flex flex-row sm:flex-row justify-center items-center gap-3 sm:gap-4 md:gap-5 lg:gap-6">
             {/* Book Live Demo */}
             <button
               className="flex items-center justify-center gap-2 bg-white rounded-md 
-      text-sm sm:text-base md:text-lg font-semibold text-[#126F77] 
-      px-4 sm:px-5 md:px-6 lg:px-7 
-      py-2 sm:py-2.5 md:py-3 
-      shadow-sm hover:shadow-md transition-all duration-300 group w-full sm:w-auto cursor-pointer"
+                      text-xs sm:text-base md:text-lg font-semibold text-[#126F77] 
+                      px-2 sm:px-5 md:px-6 lg:px-7 
+                      py-2 sm:py-2.5 md:py-3 
+                      shadow-sm hover:shadow-md transition-all duration-300 group w-full sm:w-auto cursor-pointer"
               onClick={() => navigate("/contact")}
             >
               <span>Book Live Demo</span>
-              <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5 md:h-5 md:w-5 transition-transform duration-300 group-hover:translate-x-1" />
+              <ArrowRight className="h-3 w-3 sm:h-5 sm:w-5 md:h-5 md:w-5 transition-transform duration-300 group-hover:translate-x-1" />
             </button>
 
             {/* Watch Video Tour */}
             <button
               className="flex items-center justify-center gap-2 bg-white rounded-md 
-      text-sm sm:text-base md:text-lg font-semibold text-[#126F77] 
-      px-4 sm:px-5 md:px-6 lg:px-7 
-      py-2 sm:py-2.5 md:py-3 
-      shadow-sm hover:shadow-md hover:bg-[#126F77] hover:text-white transition-all duration-300 w-full sm:w-auto cursor-pointer"
+                text-xs sm:text-base md:text-lg font-semibold text-[#126F77] 
+                px-2 sm:px-5 md:px-6 lg:px-7 
+                py-2 sm:py-2.5 md:py-3 
+                shadow-sm hover:shadow-md hover:bg-[#126F77] hover:text-white transition-all duration-300 w-full sm:w-auto cursor-pointer"
               onClick={() => navigate("/video-tutorial")}
             >
-              <Play className="h-4 w-4 sm:h-5 sm:w-5 md:h-5 md:w-5" />
+              <Play className="h-3 w-3 sm:h-5 sm:w-5 md:h-5 md:w-5" />
               <span>Watch Video Tour</span>
             </button>
           </div>

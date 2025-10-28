@@ -51,6 +51,7 @@ export default function Main_Features_Card() {
       ],
       gradientFrom: "#126f77",
       gradientTo: "#Eb6319",
+      // Path: "/studentDetails",
       Path: "/studentDetails",
     },
     {
@@ -77,7 +78,8 @@ export default function Main_Features_Card() {
       ],
       gradientFrom: "#126f77",
       gradientTo: "#Eb6319",
-      Path: "/maulanaDetails",
+      // Path: "/maulanaDetails",
+      Path: "/studentDetails",
     },
     {
       icon: Wallet,
@@ -103,7 +105,8 @@ export default function Main_Features_Card() {
       ],
       gradientFrom: "#126f77",
       gradientTo: "#Eb6319",
-      Path: "/parentManagement",
+      // Path: "/parentManagement",
+      Path: "/studentDetails",
     },
     {
       icon: MessageCircle,
@@ -130,7 +133,8 @@ export default function Main_Features_Card() {
 
       gradientFrom: "#Eb6319",
       gradientTo: "#126f77",
-      Path: "/feesManagement",
+      // Path: "/feesManagement",
+      Path: "/studentDetails",
     },
     {
       icon: ChartColumn,
@@ -156,7 +160,8 @@ export default function Main_Features_Card() {
       ],
       gradientFrom: "#126f77",
       gradientTo: "#Eb6319",
-      Path: "/payrollManagement",
+      // Path: "/payrollManagement",
+      Path: "/studentDetails",
     },
     {
       icon: Bell,
@@ -182,7 +187,8 @@ export default function Main_Features_Card() {
       ],
       gradientFrom: "#126f77",
       gradientTo: "#Eb6319",
-      Path: "/attendanceManagement",
+      // Path: "/attendanceManagement",
+      Path: "/studentDetails",
     },
     {
       icon: Proportions,
@@ -208,7 +214,8 @@ export default function Main_Features_Card() {
       ],
       gradientFrom: "#126f77",
       gradientTo: "#Eb6319",
-      Path: "/reportsAnalytics",
+      // Path: "/reportsAnalytics",
+      Path: "/studentDetails",
     },
     {
       icon: BookOpenCheck,
@@ -234,7 +241,8 @@ export default function Main_Features_Card() {
       ],
       gradientFrom: "#126f77",
       gradientTo: "#Eb6319",
-      Path: "/remarksComplaints",
+      // Path: "/remarksComplaints",
+      Path: "/studentDetails",
     },
     {
       icon: DatabaseZap,
@@ -260,7 +268,8 @@ export default function Main_Features_Card() {
       ],
       gradientFrom: "#126f77",
       gradientTo: "#Eb6319",
-      Path: "/storageManagement",
+      // Path: "/storageManagement",
+      Path: "/studentDetails",
     },
     {
       icon: BusFront,
@@ -286,7 +295,8 @@ export default function Main_Features_Card() {
       ],
       gradientFrom: "#126f77",
       gradientTo: "#Eb6319",
-      Path: "/vehicleManagement",
+      // Path: "/vehicleManagement",
+      Path: "/studentDetails",
     },
     {
       icon: Star,
@@ -312,7 +322,8 @@ export default function Main_Features_Card() {
       ],
       gradientFrom: "#126f77",
       gradientTo: "#Eb6319",
-      Path: "/reviewManagement",
+      // Path: "/reviewManagement",
+      Path: "/studentDetails",
     },
     {
       icon: Shell,
@@ -338,7 +349,8 @@ export default function Main_Features_Card() {
       ],
       gradientFrom: "#126f77",
       gradientTo: "#Eb6319",
-      Path: "/noticeManagement",
+      // Path: "/noticeManagement",
+      Path: "/studentDetails",
     },
     {
       icon: TentTree,
@@ -364,7 +376,8 @@ export default function Main_Features_Card() {
       ],
       gradientFrom: "#126f77",
       gradientTo: "#Eb6319",
-      Path: "/holidayManagement",
+      // Path: "/holidayManagement",
+      Path: "/studentDetails",
     },
     {
       icon: CopySlash,
@@ -390,7 +403,8 @@ export default function Main_Features_Card() {
       ],
       gradientFrom: "#126f77",
       gradientTo: "#Eb6319",
-      Path: "/divisionClassManagement",
+      // Path: "/divisionClassManagement",
+      Path: "/studentDetails",
     },
     {
       icon: TableProperties,
@@ -416,7 +430,8 @@ export default function Main_Features_Card() {
       ],
       gradientFrom: "#126f77",
       gradientTo: "#Eb6319",
-      Path: "/subjectManagement",
+      // Path: "/subjectManagement",
+      Path: "/studentDetails",
     },
     {
       icon: DoorOpen,
@@ -442,7 +457,8 @@ export default function Main_Features_Card() {
       ],
       gradientFrom: "#126f77",
       gradientTo: "#Eb6319",
-      Path: "/donorManagement",
+      // Path: "/donorManagement",
+      Path: "/studentDetails",
     },
     {
       icon: BellRing,
@@ -469,7 +485,8 @@ export default function Main_Features_Card() {
       ],
       gradientFrom: "#126f77",
       gradientTo: "#Eb6319",
-      Path: "/notificationManagement",
+      // Path: "/notificationManagement",
+      Path: "/studentDetails",
     },
     {
       icon: BrickWallShield,
@@ -496,7 +513,8 @@ export default function Main_Features_Card() {
       ],
       gradientFrom: "#126f77",
       gradientTo: "#Eb6319",
-      Path: "/recentActivity",
+      // Path: "/recentActivity",
+      Path: "/studentDetails",
     },
 
     {
@@ -523,7 +541,8 @@ export default function Main_Features_Card() {
       ],
       gradientFrom: "#126f77",
       gradientTo: "#Eb6319",
-      Path: "/subscriptionBilling",
+      // Path: "/subscriptionBilling",
+      Path: "/studentDetails",
     },
     {
       icon: MonitorCog,
@@ -549,7 +568,8 @@ export default function Main_Features_Card() {
       ],
       gradientFrom: "#126f77",
       gradientTo: "#Eb6319",
-      Path: "/configurationSettings",
+      // Path: "/configurationSettings",
+      Path: "/studentDetails",
     },
   ];
   return (

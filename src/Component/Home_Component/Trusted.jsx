@@ -28,8 +28,11 @@ export default function Trusted() {
 
   return (
     <div className="text-center px-4 sm:px-6 md:px-10 lg:px-16 xl:px-24 2xl:px-32">
-      <div className="rounded-full flex flex-row items-center gap-2 bg-gradient-to-r from-[#126f77]/10 to-[#EB6319]/10 py-3 px-6 mx-auto border border-[#126f77]/20 w-fit">
-        <Star className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-[#EB6319]" />
+      <div
+        className="rounded-full flex flex-row items-center gap-2
+       bg-gradient-to-r from-[#126f77]/10 to-[#EB6319]/10 py-2 px-3 md:py-3 md:px-6 mx-auto border border-[#126f77]/20 w-fit"
+      >
+        <Star className="w-3 h-3 sm:w-5 sm:h-5 md:w-6 md:h-6 text-[#EB6319]" />
         {/* Updated: Added sm: and md: classes for responsive Star icon size */}
         <span className="text-[#126F77] font-medium text-sm sm:text-base md:text-lg">
           Trusted Worldwide

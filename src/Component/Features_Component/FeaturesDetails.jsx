@@ -26,7 +26,7 @@ export default function FeaturesDetails() {
             <div className="relative z-10 mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
               <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
                 <div className="flex-1 text-center lg:text-left">
-                  <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 leading-tight mb-6">
+                  <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-7xl font-bold text-gray-900 leading-tight mb-6 text-start">
                     Transform Your <br />
                     <span className="bg-gradient-to-r from-[#126F77] to-[#0F5A61] bg-clip-text text-transparent">
                       Madrasa
@@ -34,7 +34,7 @@ export default function FeaturesDetails() {
                     <br /> Management
                   </h1>
 
-                  <p className="text-lg sm:text-xl text-[#6B6B6B] leading-relaxed max-w-2xl mx-auto lg:mx-0 mb-8">
+                  <p className="text-sm sm:text-base md:text-xl text-[#6B6B6B] leading-relaxed max-w-2xl mx-auto lg:mx-0 mb-8 text-start">
                     DeenNest helps Islamic institutes simplify daily operations
                     from student admissions to attendance, fee collection,
                     Maulana & Staff payroll and communication — all in one
@@ -42,55 +42,58 @@ export default function FeaturesDetails() {
                   </p>
                 </div>
 
-                <div className="flex-1 w-full max-w-2xl">
-                  <div className="relative w-full rounded-2xl shadow-2xl p-6 bg-white">
-                    <div className="absolute -top-4 -right-4 bg-gradient-to-r from-[#EB6319] to-[#FF8C42] rounded-xl p-3 text-white shadow-lg">
-                      <Sparkles size={20} />
+                <div className="flex-1 w-full max-w-2xl mb-6">
+                  <div className="relative w-full  shadow-2xl p-3 rounded-lg md:p-6 md:rounded-2xl bg-white">
+                    <div className="absolute -top-4 -right-2 md:-right-4  md bg-gradient-to-r from-[#EB6319] to-[#FF8C42] rounded-lg p-2 md:rounded-xl md:p-3 text-white shadow-lg">
+                      <Sparkles size={20} className="w-3 h-3 md:w-5 md:h-5" />
                     </div>
                     <div
-                      className="absolute -bottom-4 -left-4 bg-[#126F77] text-white rounded-xl p-3 shadow-lg"
+                      className="absolute -bottom-1 -left-2 md:-left-4 md:-bottom-4 bg-[#126F77] text-white p-2 rounded-lg md:rounded-xl md:p-3 shadow-lg"
                       style={{ animationDelay: "0.5s" }}
                     >
-                      <TrendingUp size={20} />
+                      <TrendingUp size={20} className="w-3 h-3 md:w-5 md:h-5" />
                     </div>
 
                     <div className="flex items-center justify-between mb-6">
-                      <h2 className="flex items-center gap-2 text-base font-semibold">
-                        <span className="w-6 h-6 rounded-lg bg-gradient-to-r from-[#126F77] to-[#EB6319]"></span>
+                      <h2 className="flex items-center gap-2 text-sm md:text-base font-semibold">
+                        <span className="w-3 h-3 rounded-sm md:w-6 md:h-6 md:rounded-lg bg-gradient-to-r from-[#126F77] to-[#EB6319]"></span>
                         DeenNest Dashboard
                       </h2>
                       <div className="flex gap-2">
-                        <div className="w-3 h-3 bg-[#EB6319] rounded-full animate-pulse"></div>
-                        <div className="w-3 h-3 bg-[#126F77] rounded-full"></div>
-                        <div className="w-3 h-3 bg-[#6B6B6B]/30 rounded-full"></div>
+                        <div className="w-2 h-2 md:w-3 md:h-3 bg-[#EB6319] rounded-full animate-pulse"></div>
+                        <div className="w-2 h-2 md:w-3 md:h-3 bg-[#126F77] rounded-full"></div>
+                        <div className="w-2 h-2 md:w-3 md:h-3 bg-[#6B6B6B]/30 rounded-full"></div>
                       </div>
                     </div>
 
                     <div className="grid grid-cols-2 gap-4 mb-5 text-start">
-                      <div className="bg-gradient-to-br from-[#126F77]/10 to-[#126F77]/5 rounded-xl p-4 border border-[#126F77]/10 hover:shadow-md transition-shadow">
-                        <div className="text-3xl font-bold text-[#126F77] mb-1">
+                      <div
+                        className="bg-gradient-to-br from-[#126F77]/10 to-[#126F77]/5 rounded-xl p-2 md:p-4 
+                      border border-[#126F77]/10 hover:shadow-md transition-shadow"
+                      >
+                        <div className="text-base md:text-3xl font-bold text-[#126F77] mb-1">
                           1,247
                         </div>
                         <div className="text-[#6B6B6B] text-sm mb-2">
                           Active Students
                         </div>
-                        <div className="flex items-center gap-1">
-                          <TrendingUp className="w-3 h-3 text-[#126F77]" />
+                        <div className="inline-flex flex-row items-center gap-1">
+                          <TrendingUp className="w-2 h-2 md:w-3 md:h-3 text-[#126F77]" />
                           <span className="text-xs text-[#126F77]">
                             +12% this month
                           </span>
                         </div>
                       </div>
 
-                      <div className="bg-gradient-to-br from-[#EB6319]/10 to-[#EB6319]/5 rounded-xl p-4 border border-[#EB6319]/10 hover:shadow-md transition-shadow">
-                        <div className="text-3xl font-bold text-[#EB6319] mb-1">
+                      <div className="bg-gradient-to-br from-[#EB6319]/10 to-[#EB6319]/5 rounded-xl p-2 md:p-4 border border-[#EB6319]/10 hover:shadow-md transition-shadow">
+                        <div className="text-base md:text-3xl font-bold text-[#EB6319] mb-1">
                           98.5%
                         </div>
                         <div className="text-[#6B6B6B] text-sm mb-2">
                           Attendance Rate
                         </div>
-                        <div className="flex items-center gap-1">
-                          <Star className="w-3 h-3 text-[#EB6319]" />
+                        <div className="inline-flex flex-row items-center gap-1">
+                          <Star className="w-2 h-2 md:w-3 md:h-3 text-[#EB6319]" />
                           <span className="text-xs text-[#EB6319]">
                             Excellent
                           </span>
@@ -99,7 +102,10 @@ export default function FeaturesDetails() {
                     </div>
 
                     <div className="space-y-3">
-                      <div className="flex flex-row items-center justify-between gap-3 p-3 rounded-xl hover:bg-[#126F77]/5 transition-colors group cursor-pointer">
+                      <div
+                        className="flex flex-row items-center justify-between p-2 m-0 rounded-xl hover:bg-[#126F77]/5 
+                      transition-colors group cursor-pointer md:p-3"
+                      >
                         <div className="flex flex-row gap-4">
                           <div className="w-8 h-8 bg-[#126F77] rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
                             <CircleCheckBig className="w-4 h-4 text-white" />
@@ -115,7 +121,10 @@ export default function FeaturesDetails() {
                         </div>
                       </div>
 
-                      <div className="flex items-center justify-between gap-3 p-3 rounded-xl hover:bg-[#EB6319]/5 transition-colors group cursor-pointer">
+                      <div
+                        className="flex items-center justify-between gap-3 p-2 rounded-xl hover:bg-[#EB6319]/5
+                       transition-colors group cursor-pointer md:p-3"
+                      >
                         <div className="flex flex-row gap-4">
                           <div className="w-8 h-8 bg-[#EB6319] rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
                             <Star className="w-4 h-4 text-white" />
@@ -148,20 +157,21 @@ export default function FeaturesDetails() {
                 </span>
               </h2>
               <p className="text-base sm:text-lg md:text-xl lg:text-xl xl:text-xl 2xl:text-xl text-[#6B6B6B] mb-4 sm:mb-5 md:mb-6 lg:mb-6 xl:mb-6 2xl:mb-6 leading-relaxed">
-                CAMPUSDEAN’s online student admission management system is a
-                powerful and user-friendly solution for automating and
-                simplifying the student admission process in schools, colleges,
-                universities, and training institutes.
+                DeenNest’s Online Student Admission Management System is an
+                intuitive and efficient solution designed to simplify and
+                automate the admission process for Islamic institutes, madrasas,
+                schools, and educational organizations.
               </p>
               <p className="text-sm sm:text-base md:text-lg lg:text-lg xl:text-lg 2xl:text-lg text-[#6B6B6B] mb-6 sm:mb-8 md:mb-10 lg:mb-10 xl:mb-10 2xl:mb-10 leading-relaxed">
-                This cloud-based ERP software enables institutions to
-                effectively manage admission forms, collect documents, and
-                shortlist candidates in a secure online environment. The system
-                centralizes every step of the student enrollment process,
-                reducing paperwork, errors, and improving data accuracy.
-                Admissions teams can manage applications from any location using
-                mobile and web access, ensuring a smooth, transparent, and
-                streamlined experience for both administrators and applicants.
+                This cloud-based platform enables institutions to seamlessly
+                manage admission forms, document submissions, and student
+                shortlisting — all within a secure online environment. By
+                centralizing every step of the enrollment process, DeenNest
+                minimizes paperwork, reduces errors, and enhances data accuracy.
+                With mobile and web access, administrators and staff can manage
+                admissions anytime, anywhere, ensuring a transparent,
+                streamlined, and hassle-free experience for both students and
+                management.
               </p>
               <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-[#126F77] mb-4">
                 Features of CAMPUSDEAN Online Student Admission System:
@@ -205,33 +215,34 @@ export default function FeaturesDetails() {
                 Online Student Admission System
               </h3>
               <p className="text-sm sm:text-base md:text-lg lg:text-lg xl:text-lg 2xl:text-lg text-[#6B6B6B] mt-4 leading-relaxed">
-                CAMPUSDEAN has developed a robust and future-ready Online
-                Student Admission System that simplifies and automates the
-                entire admission process for educational institutions. From
-                inquiry to enrollment, the software offers a seamless digital
-                experience for students and school administrators alike.
+                DeenNest offers a powerful and future-ready Online Student
+                Admission System designed specifically for Islamic institutes,
+                madrasas, and educational organizations. It simplifies and
+                automates the entire admission process — from student inquiries
+                to final enrollment — providing a seamless digital experience
+                for both applicants and administrators.
               </p>
               <p className="text-sm sm:text-base md:text-lg lg:text-lg xl:text-lg 2xl:text-lg text-[#6B6B6B] mt-4 leading-relaxed">
-                Students can fill out admission forms online, upload required
-                documents, and securely pay application fees using various
-                payment methods such as credit/debit cards, net banking, or
+                Students can easily fill out admission forms online, upload
+                necessary documents, and securely submit fees through multiple
+                payment options such as UPI, credit/debit cards, net banking, or
                 digital wallets.
               </p>
               <p className="text-sm sm:text-base md:text-lg lg:text-lg xl:text-lg 2xl:text-lg text-[#6B6B6B] mt-4 leading-relaxed">
-                The system also supports manual data entry by schools for
-                walk-in inquiries, making it flexible for both online and
-                offline admission processes. Entrance exams and results can be
-                managed within the platform, and merit lists are auto-generated
-                based on predefined criteria, saving valuable administrative
-                time.
+                The system also allows institutes to manually enter walk-in
+                inquiries, ensuring flexibility for both online and offline
+                admissions. Entrance assessments and results can be efficiently
+                managed within the same platform, with auto-generated merit
+                lists based on predefined criteria — saving valuable
+                administrative time.
               </p>
               <p className="text-sm sm:text-base md:text-lg lg:text-lg xl:text-lg 2xl:text-lg text-[#6B6B6B] mt-4 leading-relaxed">
-                Once a student is selected, the software helps generate
-                admission or offer letters, track follow-ups, manage special
-                notes or recommendations, and even integrate with the school’s
-                Student Information System (SIS) for smooth data transfer. With
-                a strong focus on data security and compliance, CAMPUSDEAN
-                ensures that all applicant information remains confidential and
+                Once a student is shortlisted, DeenNest enables staff to
+                generate admission or offer letters, record follow-ups, manage
+                recommendations, and sync data directly with the Student
+                Information System (SIS) for smooth integration. With advanced
+                data security and cloud compliance, DeenNest ensures that every
+                applicant’s information remains confidential, accurate, and
                 protected.
               </p>
             </div>

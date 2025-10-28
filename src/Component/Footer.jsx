@@ -393,7 +393,7 @@ import {
   MessageCircle,
   PhoneCall,
 } from "lucide-react";
-import Logo1 from "../Component/Home_Component/img/DeenNest - logo AI-01(cr).png";
+import Logo1 from "../Component/Home_Component/img/DeenNest - logo AI-01(cr)cpy.png";
 import { Link } from "react-router-dom";
 import Footer_Acc from "../Component/Home_Component/Footer_Acc";
 

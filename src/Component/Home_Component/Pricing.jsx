@@ -87,12 +87,12 @@ export default function Pricing() {
 
         {/* Trust Badge and Custom Plan */}
         <div className="text-center mt-12">
-          <div className="inline-flex items-center gap-3 bg-gray-50 p-4 rounded-lg shadow-sm">
-            <Users className="w-6 h-6 text-[#126f77]" />
-            <span className="text-lg font-bold text-gray-800">
+          <div className="inline-flex items-center gap-3 bg-gray-50 p-2 md:p-4 rounded-lg shadow-sm">
+            <Users className="w-4 h-4 md:w-6 md:h-6 text-[#126f77]" />
+            <span className="text-base md:text-lg font-bold text-gray-800">
               Trusted by 500+ institutions worldwide
             </span>
-            <Star className="w-5 h-5 text-yellow-400 fill-current" />
+            <Star className="w-4 h-4 md:w-5 md:h-5 text-yellow-400 fill-current" />
           </div>
           <div className="mt-6">
             <p className="text-gray-600 mb-6">

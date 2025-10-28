@@ -163,7 +163,11 @@ export default function Header() {
           onClick={() => setOpen(!open)}
           aria-label="Toggle Menu"
         >
-          {open ? <X size={28} /> : <Menu size={28} />}
+          {open ? (
+            <X size={28} className="opacity-100 animate-fadeIn" />
+          ) : (
+            <Menu size={28} className="opacity-100 animate-fadeIn" />
+          )}
         </button>
       </div>
 
@@ -288,6 +292,18 @@ export default function Header() {
           <ChevronUp size={24} />
         </button>
       )}
+      <style>
+        {`
+
+          @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.8); }
+            to { opacity: 1; transform: scale(1); }
+          }
+          .animate-fadeIn {
+            animation: fadeIn 0.3s ease-in-out;
+            }
+        `}
+      </style>
     </header>
   );
 }

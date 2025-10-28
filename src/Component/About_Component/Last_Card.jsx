@@ -23,7 +23,7 @@ export default function Last_Card() {
               that preserve tradition while embracing innovation.
             </p>
           </div>
-          <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 md:gap-4 lg:gap-4 xl:gap-4 2xl:gap-4">
+          {/* <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 md:gap-4 lg:gap-4 xl:gap-4 2xl:gap-4">
             <button
               className="bg-white rounded-md px-4 sm:px-5 md:px-6 lg:px-6 xl:px-6 2xl:px-6 py-2 sm:py-2.5 md:py-3 lg:py-3 xl:py-3 2xl:py-3 text-[#126F77] font-bold text-base sm:text-base md:text-lg lg:text-lg xl:text-lg 2xl:text-lg flex items-center gap-1 sm:gap-1.5 md:gap-2 lg:gap-2 xl:gap-2 2xl:gap-2 group hover:scale-105 transition-all duration-300"
               aria-label="Start Your Journey"
@@ -45,6 +45,32 @@ export default function Last_Card() {
               onClick={() => navigate("/contact")}
             >
               Get In Touch
+            </button>
+          </div> */}
+          <div className="flex flex-row sm:flex-row justify-center items-center gap-3 sm:gap-4 md:gap-5 lg:gap-6">
+            {/* Book Live Demo */}
+            <button
+              className="flex items-center justify-center gap-2 bg-white rounded-md 
+                      text-xs sm:text-base md:text-lg font-semibold text-[#126F77] 
+                      px-2 sm:px-5 md:px-6 lg:px-7 
+                      py-2 sm:py-2.5 md:py-3 
+                      shadow-sm hover:shadow-md transition-all duration-300 group w-full sm:w-auto cursor-pointer"
+              onClick={() => navigate("/video-tutorial")}
+            >
+              <span> Start Your Journey</span>
+              <ArrowRight className="h-3 w-3 sm:h-5 sm:w-5 md:h-5 md:w-5 transition-transform duration-300 group-hover:translate-x-1" />
+            </button>
+
+            {/* Watch Video Tour */}
+            <button
+              className="flex items-center justify-center gap-2 bg-white rounded-md 
+                text-xs sm:text-base md:text-lg font-semibold text-[#126F77] 
+                px-2 sm:px-5 md:px-6 lg:px-7 
+                py-2 sm:py-2.5 md:py-3 
+                shadow-sm hover:shadow-md hover:bg-[#126F77] hover:text-white transition-all duration-300 w-full sm:w-auto cursor-pointer"
+              onClick={() => navigate("/contact")}
+            >
+              <span>Get In Touch</span>
             </button>
           </div>
         </div>
