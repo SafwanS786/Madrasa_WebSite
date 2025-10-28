@@ -1,7 +1,13 @@
-import React from "react";
-import { CircleQuestionMark, Phone, Mail, MessageCircle } from "lucide-react";
+import React, { useState } from "react";
+import { CircleQuestionMark, Phone, Mail, MessageCircle,ChevronDown } from "lucide-react";
 
 export default function Freq_Question() {
+  const [activeIndex, setActiveIndex] = useState(null);
+
+  const handleToggle = (index) => {
+    setActiveIndex(activeIndex === index ? null : index);
+  };
+
   const Question = [
     {
       icon: CircleQuestionMark,
@@ -44,24 +50,53 @@ export default function Freq_Question() {
           Got questions about our pricing? We've got answers.
         </p>
         <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 mt-20 text-center items-center ">
-          {Question.map((value, index) => (
-            <div
-              className=" p-4 border border-gray-200 h-[200px] rounded-xl hover:shadow-xl transition duration-500"
-              key={index}
-            >
-              <div className="flex justify-center items-start gap-6 ">
-                <div className="text-primary shrink-0">
-                  <value.icon size={28} strokeWidth={2.2} />
-                </div>
-                <div className="text-left">
-                  <div className="font-semibold text-lg text-foreground mb-3">
-                    {value.Que}
+          {Question.map((value, index) => {
+            const Icon = value.icon;
+            const isOpen = activeIndex === index;
+            return (
+              <div
+                // className=" p-4 border border-gray-200 h-[200px] rounded-xl hover:shadow-xl transition duration-500"
+                key={index}
+                className={`border border-gray-200 rounded-xl overflow-hidden shadow-sm transition-all duration-500 ${
+                  isOpen ? "bg-[#f9fafb]" : "bg-white"
+                }`}
+              >
+                <button
+                  onClick={() => handleToggle(index)}
+                  className="w-full flex justify-between items-center p-5 text-left"
+                >
+                  <div className="flex justify-center items-start gap-6 ">
+                    <div className="text-primary shrink-0">
+                      <Icon size={28} strokeWidth={2.2} />
+                    </div>
+                    <div className="text-left">
+                      <div className="font-semibold text-base text-foreground mb-3">
+                        {value.Que}
+                      </div>
+                      {/* <div className="text-muted-foreground">{value.Ans}</div> */}
+                    </div>
                   </div>
-                  <div className="text-muted-foreground">{value.Ans}</div>
+                  <ChevronDown
+                    className={`transform transition-transform duration-300 ${
+                      isOpen
+                        ? "rotate-180 text-[#EB6319]"
+                        : "rotate-0 text-gray-500"
+                    }`}
+                    size={22}
+                  />
+                </button>
+                <div
+                  className={`transition-all duration-500 overflow-hidden ${
+                    isOpen ? "max-h-40 p-5 pt-0" : "max-h-0 p-0"
+                  }`}
+                >
+                  <p className="text-muted-foreground text-base leading-relaxed">
+                    {value.Ans}
+                  </p>
                 </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
 
@@ -78,8 +113,8 @@ export default function Freq_Question() {
             </h3>
             <p className="text-base sm:text-xl text-white/90 mb-8 max-w-2xl mx-auto">
               Have unique requirements or need pricing for larger student
-              groups? <br /> Our team is here to help you find the right plan for your
-              madrasa.
+              groups? <br /> Our team is here to help you find the right plan
+              for your madrasa.
             </p>
             <div className="flex flex-row justify-center gap-4">
               <a
@@ -109,7 +144,7 @@ export default function Freq_Question() {
               </div>
               <a href="tel:+917575068585">
                 <div className="flex flex-row items-center gap-2">
-                <Phone className="h-4 w-4 sm:h-4 sm:w-4 md:h-5 md:w-5" />
+                  <Phone className="h-4 w-4 sm:h-4 sm:w-4 md:h-5 md:w-5" />
                   <span> +91 7575 06 8585</span>
                 </div>
               </a>

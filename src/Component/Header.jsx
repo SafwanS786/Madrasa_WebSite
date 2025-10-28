@@ -22,12 +22,12 @@ export default function Header() {
     {
       path: "/features",
       label: "Features",
-      children:[{
+      // children:[{
 
-        path:"/featuresdetails",
-        label:"Details",
-      }
-      ]
+      //   path:"/featuresdetails",
+      //   label:"Details",
+      // }
+      // ]
     },
     { path: "/pricing", label: "Pricing" },
     { path: "/about", label: "About Us" },

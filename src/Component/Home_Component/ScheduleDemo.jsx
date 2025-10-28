@@ -22,7 +22,7 @@ export default function ScheduleDemo() {
     },
   ];
   return (
-    <section className="py-12 sm:py-16 md:py-18 lg:py-20 xl:py-20 2xl:py-20 bg-gradient-to-br from-[#126F77] via-[#0F5A61] to-[#126F77] relative overflow-hidden">
+    <section className="py-10 sm:py-16 md:py-18 lg:py-20 xl:py-20 2xl:py-20 bg-gradient-to-br from-[#126F77] via-[#0F5A61] to-[#126F77] relative overflow-hidden">
       {/* Floating shapes */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-10 sm:top-12 md:top-16 lg:top-20 xl:top-20 2xl:top-20 left-10 sm:left-12 md:left-16 lg:left-20 xl:left-20 2xl:left-20 w-24 sm:w-28 md:w-32 lg:w-32 xl:w-32 2xl:w-32 h-24 sm:h-28 md:h-32 lg:h-32 xl:h-32 2xl:h-32 bg-white/5 rounded-full blur-xl animate-pulse"></div>
@@ -55,7 +55,7 @@ export default function ScheduleDemo() {
           </p>
         </div>
       </div>
-      <div className="flex flex-col sm:flex-col md:flex-row lg:flex-row xl:flex-row 2xl:flex-row justify-center items-start gap-4 sm:gap-6 md:gap-8 lg:gap-8 xl:gap-8 2xl:gap-8">
+      <div className="flex flex-col sm:flex-col md:flex-row lg:flex-row xl:flex-row 2xl:flex-row justify-center  items-center md:items-start gap-4 sm:gap-6 md:gap-8 lg:gap-8 xl:gap-8 2xl:gap-8">
         <div className="flex flex-col gap-4 sm:gap-5 md:gap-6 lg:gap-6 xl:gap-6 2xl:gap-6">
           {card.map((item, index) => (
             <div
@@ -87,7 +87,10 @@ export default function ScheduleDemo() {
               Choose your preferred time, and <br /> our team will connect with
               you shortly.
             </p>
-            <button onClick={() => navigate("/contact")} className="group inline-flex items-center justify-center gap-1.5 sm:gap-2 md:gap-2 lg:gap-2 xl:gap-2 2xl:gap-2 font-medium p-1.5 sm:p-2 md:p-2 lg:p-2 xl:p-2 2xl:p-2 w-full rounded-md bg-secondary hover:bg-[#d4540e]">
+            <button
+              onClick={() => navigate("/contact")}
+              className="group inline-flex items-center justify-center gap-1.5 sm:gap-2 md:gap-2 lg:gap-2 xl:gap-2 2xl:gap-2 font-medium p-1.5 sm:p-2 md:p-2 lg:p-2 xl:p-2 2xl:p-2 w-full rounded-md bg-secondary hover:bg-[#d4540e]"
+            >
               Book Demo Now
               <span className="inline-block transform transition-all duration-300 group-hover:translate-x-2">
                 <ArrowRight

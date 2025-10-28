@@ -1,0 +1,146 @@
+/* Floating shapes
+.trops {
+  position: absolute;
+  z-index: 1;
+  animation: float 8s ease-in-out infinite;
+  opacity: 0.8;
+}
+
+.trops-1 {
+  top: 10%;
+  left: 15%;
+  animation-delay: 0s;
+}
+.trops-2 {
+  top: 20%;
+  right: 10%;
+  animation-delay: 1s;
+}
+.trops-3 {
+  bottom: 15%;
+  left: 10%;
+  animation-delay: 2s;
+}
+.trops-4 {
+  bottom: 25%;
+  right: 15%;
+  animation-delay: 3s;
+}
+.trops-5 {
+  top: 40%;
+  left: 50%;
+  animation-delay: 4s;
+}
+.trops-6 {
+  top: 70%;
+  right: 30%;
+  animation-delay: 5s;
+}
+.trops-7 {
+  bottom: 10%;
+  left: 40%;
+  animation-delay: 6s;
+}
+
+/* Levitation animation for phone and avatars 
+.levitate {
+  animation: levitate 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(10deg);
+  }
+}
+
+@keyframes levitate {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+} */
+/* HeroSection.css */
+
+/* Levitation animation for mobile */
+.levitate {
+  animation: levitate 3s ease-in-out infinite;
+}
+
+/* Floating animation for elements */
+@keyframes levitate {
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(5deg);
+  }
+}
+
+.animate-float-slow {
+  animation: float-slow 6s ease-in-out infinite;
+}
+
+.animate-float-medium {
+  animation: float-medium 4s ease-in-out infinite;
+}
+
+@keyframes float-slow {
+  0%,
+  100% {
+    transform: translateY(0px) translateX(0px);
+  }
+  33% {
+    transform: translateY(-15px) translateX(10px);
+  }
+  66% {
+    transform: translateY(10px) translateX(-5px);
+  }
+}
+
+@keyframes float-medium {
+  0%,
+  100% {
+    transform: translateY(0px) translateX(0px);
+  }
+  50% {
+    transform: translateY(-10px) translateX(5px);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 8s linear infinite;
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .levitate {
+    animation: levitate-mobile 3s ease-in-out infinite;
+  }
+
+  @keyframes levitate-mobile {
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+}

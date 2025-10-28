@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 import Header from "./Component/Header";
@@ -33,8 +33,27 @@ import NotificationManagement from "./Component/Features_Component/Features_Deta
 import RecentActivity from "./Component/Features_Component/Features_Details/RecentActivityDetails";
 import SubscriptionBilling from "./Component/Features_Component/Features_Details/SubscriptionBillingDetails";
 import ConfigurationSettings from "./Component/Features_Component/Features_Details/ConfigurationSettingsDetails";
+import Loader from "./Component/Loader_Component/Loader";
+import PageTransitionLoader from "./Component/Loader_Component/PageTransitionLoader";
+import { usePageLoader } from "./Component/Loader_Component/usePageLoader";
+
 function App() {
   const location = useLocation();
+  const isPageLoading = usePageLoader();
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    document.body.classList.add("loading");
+
+    const timer = setTimeout(() => {
+      setLoading(false);
+      document.body.classList.remove("loading");
+    }, 1500);
+
+    return () => {
+      clearTimeout(timer);
+      document.body.classList.remove("loading");
+    };
+  }, []);
 
   const hideFooter =
     location.pathname === "/form" ||
@@ -48,7 +67,16 @@ function App() {
     location.pathname !== "/login";
   return (
     <>
+      {/* {loading && <Loader />} */}
+      {/* {isPageLoading && <PageTransitionLoader />} */}
       {showHeader && <Header />}
+      {/* <div
+        className={
+          isPageLoading
+            ? "opacity-50 transition-opacity duration-300"
+            : "opacity-100 transition-opacity duration-300"
+        }
+      > */}
       <div style={{ marginTop: showHeader ? "70px" : "0" }}>
         <Routes>
           <Route path="/" element={<HomePages />} />
@@ -98,6 +126,7 @@ function App() {
           <Route path="/Address" element={<Address />} />
         </Routes>
       </div>
+      {/* </div> */}
       {!hideFooter && <Footer />}
     </>
   );

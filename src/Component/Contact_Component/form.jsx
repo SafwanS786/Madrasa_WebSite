@@ -514,9 +514,6 @@ export default function SignupForm() {
           {/* Logo & Badge */}
           <div className="flex items-center gap-3 mb-8">
             <img src={Logo} alt="DeenNest Logo" className="h-14 w-auto" />
-            <div className="bg-gradient-to-r from-cyan-600  to-[#126f77] text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
-              🚀 Premium Edition
-            </div>
           </div>
 
           {/* Main Heading */}
@@ -603,14 +600,14 @@ export default function SignupForm() {
                     </div>
                     <div
                       className={`w-16 h-1 mx-2 ${
-                        currentStep >= 2 ? "bg-[#126f77]/70" : "bg-cyan-400"
+                        currentStep >= 2 ? "bg-[#126f77]/70" : "bg-[#126f77]"
                       } transition-all duration-300`}
                     ></div>
                     <div
                       className={`w-10 h-10 rounded-full flex items-center justify-center border-2 ${
                         currentStep >= 2
                           ? "bg-[#126f77] text-white border-[#126f77]"
-                          : "bg-cyan-600 text-white border-cyan-400"
+                          : "bg-[#126f77]/50 text-white border-[#126f77]"
                       } transition-all duration-300`}
                     >
                       2
@@ -629,8 +626,8 @@ export default function SignupForm() {
                         {/* Madrasa Name */}
                         <div className="space-y-2">
                           <label className="text-sm font-semibold text-gray-700 flex items-center">
-                            <Building className="w-4 h-4 mr-2 text-cyan-600" />
-                            Madrasa Name{" "}
+                            <Building className="w-4 h-4 mr-2 text-[#126f77]" />
+                            Madrasa Name
                             <span className="text-red-500 ml-1">*</span>
                           </label>
                           <div className="relative">
@@ -640,7 +637,8 @@ export default function SignupForm() {
                               value={formData.madrasaName}
                               onChange={handleChange}
                               placeholder="Enter Madrasa name"
-                              className="w-full bg-gray-50 border border-gray-200 rounded-xl px-12 py-4 outline-none focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 transition-all duration-200 placeholder-gray-400"
+                              className="w-full bg-gray-50 border border-gray-200 rounded-xl px-12 py-4 outline-none focus:ring-2 focus:ring-[#126f77] focus:border-[#126f77]
+                               transition-all duration-200 placeholder-gray-400"
                               required
                             />
                             <Building className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
@@ -650,8 +648,8 @@ export default function SignupForm() {
                         {/* Admin Name */}
                         <div className="space-y-2">
                           <label className="text-sm font-semibold text-gray-700 flex items-center">
-                            <User className="w-4 h-4 mr-2 text-cyan-600" />
-                            Admin Name{" "}
+                            <User className="w-4 h-4 mr-2 text-[#126f77]" />
+                            Admin Name
                             <span className="text-red-500 ml-1">*</span>
                           </label>
                           <div className="relative">
@@ -661,7 +659,7 @@ export default function SignupForm() {
                               value={formData.adminName}
                               onChange={handleChange}
                               placeholder="Enter Admin name"
-                              className="w-full bg-gray-50 border border-gray-200 rounded-xl px-12 py-4 outline-none focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 transition-all duration-200 placeholder-gray-400"
+                              className="w-full bg-gray-50 border border-gray-200 rounded-xl px-12 py-4 outline-none focus:ring-2 focus:ring-[#126f77] focus:border-[#126f77] transition-all duration-200 placeholder-gray-400"
                               required
                             />
                             <User className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
@@ -671,8 +669,8 @@ export default function SignupForm() {
                         {/* Email */}
                         <div className="space-y-2">
                           <label className="text-sm font-semibold text-gray-700 flex items-center">
-                            <Mail className="w-4 h-4 mr-2 text-cyan-600" />
-                            Email Address{" "}
+                            <Mail className="w-4 h-4 mr-2 text-[#126f77]" />
+                            Email Address
                             <span className="text-red-500 ml-1">*</span>
                           </label>
                           <div className="relative">
@@ -682,7 +680,7 @@ export default function SignupForm() {
                               value={formData.email}
                               onChange={handleChange}
                               placeholder="your@email.com"
-                              className="w-full bg-gray-50 border border-gray-200 rounded-xl px-12 py-4 outline-none focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 transition-all duration-200 placeholder-gray-400"
+                              className="w-full bg-gray-50 border border-gray-200 rounded-xl px-12 py-4 outline-none focus:ring-2 focus:ring-[#126f77] focus:border-[#126f77] transition-all duration-200 placeholder-gray-400"
                               required
                             />
                             <Mail className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
@@ -692,8 +690,8 @@ export default function SignupForm() {
                         {/* Phone */}
                         <div className="space-y-2">
                           <label className="text-sm font-semibold text-gray-700 flex items-center">
-                            <Phone className="w-4 h-4 mr-2 text-cyan-600" />
-                            Phone Number{" "}
+                            <Phone className="w-4 h-4 mr-2 text-[#126f77]" />
+                            Phone Number
                             <span className="text-red-500 ml-1">*</span>
                           </label>
                           <div className="relative">
@@ -703,7 +701,7 @@ export default function SignupForm() {
                               value={formData.phone}
                               onChange={handleChange}
                               placeholder="+1 234 567 890"
-                              className="w-full bg-gray-50 border border-gray-200 rounded-xl px-12 py-4 outline-none focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 transition-all duration-200 placeholder-gray-400"
+                              className="w-full bg-gray-50 border border-gray-200 rounded-xl px-12 py-4 outline-none focus:ring-2 focus:ring-[#126f77] focus:border-[#126f77] transition-all duration-200 placeholder-gray-400"
                               required
                             />
                             <Phone className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
@@ -715,7 +713,8 @@ export default function SignupForm() {
                       <button
                         type="button"
                         onClick={() => setCurrentStep(2)}
-                        className="w-full bg-gradient-to-r from-cyan-600 to-blue-600 text-white font-semibold py-4 px-6 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 flex items-center justify-center space-x-2 group"
+                        className="w-full bg-gradient-to-r from-[#126f77]/80 to-[#EB6319]/80 text-white font-bold py-4 px-6 rounded-xl shadow-lg
+                         hover:shadow-xl transform hover:scale-105 transition-all duration-200 flex items-center justify-center space-x-2 group"
                       >
                         <span>Continue to Security</span>
                         <Sparkles className="w-5 h-5 group-hover:rotate-12 transition-transform" />
@@ -730,8 +729,8 @@ export default function SignupForm() {
                         {/* Password */}
                         <div className="space-y-2">
                           <label className="text-sm font-semibold text-gray-700 flex items-center">
-                            <UserLock className="w-4 h-4 mr-2 text-cyan-600" />
-                            Password{" "}
+                            <UserLock className="w-4 h-4 mr-2 text-[#126f77]" />
+                            Password
                             <span className="text-red-500 ml-1">*</span>
                           </label>
                           <div className="relative">
@@ -741,7 +740,7 @@ export default function SignupForm() {
                               value={formData.password}
                               onChange={handleChange}
                               placeholder="Create secure password"
-                              className="w-full bg-gray-50 border border-gray-200 rounded-xl px-12 py-4 pr-12 outline-none focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 transition-all duration-200 placeholder-gray-400"
+                              className="w-full bg-gray-50 border border-gray-200 rounded-xl px-12 py-4 pr-12 outline-none focus:ring-2 focus:ring-[#126f77] focus:border-[#126f77] transition-all duration-200 placeholder-gray-400"
                               required
                             />
                             <UserLock className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
@@ -762,7 +761,7 @@ export default function SignupForm() {
                         {/* Confirm Password */}
                         <div className="space-y-2">
                           <label className="text-sm font-semibold text-gray-700 flex items-center">
-                            <Shield className="w-4 h-4 mr-2 text-cyan-600" />
+                            <Shield className="w-4 h-4 mr-2 text-[#126f77]" />
                             Confirm Password{" "}
                             <span className="text-red-500 ml-1">*</span>
                           </label>
@@ -773,7 +772,7 @@ export default function SignupForm() {
                               value={formData.confirmPassword}
                               onChange={handleChange}
                               placeholder="Confirm your password"
-                              className="w-full bg-gray-50 border border-gray-200 rounded-xl px-12 py-4 pr-12 outline-none focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 transition-all duration-200 placeholder-gray-400"
+                              className="w-full bg-gray-50 border border-gray-200 rounded-xl px-12 py-4 pr-12 outline-none focus:ring-2 focus:ring-[#126f77] focus:border-[#126f77] transition-all duration-200 placeholder-gray-400"
                               required
                             />
                             <Shield className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
@@ -796,8 +795,8 @@ export default function SignupForm() {
                         {/* Address */}
                         <div className="space-y-2">
                           <label className="text-sm font-semibold text-gray-700 flex items-center">
-                            <MapPin className="w-4 h-4 mr-2 text-cyan-600" />
-                            Institute Address{" "}
+                            <MapPin className="w-4 h-4 mr-2 text-[#126f77]" />
+                            Institute Address
                             <span className="text-red-500 ml-1">*</span>
                           </label>
                           <div className="relative">
@@ -807,7 +806,7 @@ export default function SignupForm() {
                               value={formData.address}
                               onChange={handleChange}
                               placeholder="Enter your institute address"
-                              className="w-full bg-gray-50 border border-gray-200 rounded-xl px-12 py-4 outline-none focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 transition-all duration-200 placeholder-gray-400"
+                              className="w-full bg-gray-50 border border-gray-200 rounded-xl px-12 py-4 outline-none focus:ring-2 focus:ring-[#126f77] focus:border-[#126f77] transition-all duration-200 placeholder-gray-400"
                               required
                             />
                             <MapPin className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
@@ -822,7 +821,7 @@ export default function SignupForm() {
                             name="agreeToTerms"
                             checked={formData.agreeToTerms}
                             onChange={handleChange}
-                            className="w-5 h-5 text-cyan-600 border-gray-300 rounded focus:ring-cyan-500 mt-1"
+                            className="w-5 h-5 accent-[#126f77] text-[#126f77] border-gray-300 rounded focus:ring-[#126f77] mt-1"
                             required
                           />
                           <label
@@ -832,14 +831,14 @@ export default function SignupForm() {
                             I agree to the{" "}
                             <Link
                               to="/terms"
-                              className="text-cyan-600 hover:text-cyan-700 font-medium underline"
+                              className="text-[#126f77] hover:text-cyan-700 font-medium underline"
                             >
                               Terms & Conditions
                             </Link>{" "}
                             and{" "}
                             <Link
                               to="/privacy"
-                              className="text-cyan-600 hover:text-cyan-700 font-medium underline"
+                              className="text-[#126f77] hover:text-cyan-700 font-medium underline"
                             >
                               Privacy Policy
                             </Link>
@@ -859,7 +858,7 @@ export default function SignupForm() {
                         <button
                           type="submit"
                           disabled={isLoading}
-                          className="flex-1 bg-gradient-to-r from-cyan-600 to-blue-600 text-white font-semibold py-4 px-6 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center space-x-2"
+                          className="flex-1 bg-gradient-to-r from-[#126f77]/80 to-[#EB6319]/90 text-white font-semibold py-4 px-6 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center space-x-2"
                         >
                           {isLoading ? (
                             <>
@@ -884,7 +883,7 @@ export default function SignupForm() {
                     Already have an account?{" "}
                     <Link
                       to="/login"
-                      className="text-cyan-600 font-semibold hover:text-cyan-700 hover:underline transition-all"
+                      className="text-[#126f77] font-semibold hover:text-[#126f77]/80 hover:underline transition-all"
                     >
                       Sign In Here
                     </Link>

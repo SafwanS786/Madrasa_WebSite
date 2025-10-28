@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Sparkles, TrendingUp, CircleCheckBig, Star, Play } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-
+import HeroSection from "./HeroSection";
 export default function Home() {
   const Navigate = useNavigate();
   const words = ["Madrasa"]; // ✳️ You can change/add words
@@ -220,6 +220,7 @@ export default function Home() {
               <TrendingUp size={20} />
             </div>
           </div>
+          {/* <HeroSection/> */}
         </div>
       </section>
     </div>
