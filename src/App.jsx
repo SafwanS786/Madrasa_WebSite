@@ -56,13 +56,13 @@ function App() {
   }, []);
 
   const hideFooter =
-    location.pathname === "/form" ||
+    location.pathname === "/sign_up" ||
     location.pathname === "/Address" ||
     location.pathname === "/login";
 
   // const Header = location.pathname !== "/form";
   const showHeader =
-    location.pathname !== "/form" &&
+    location.pathname !== "/sign_up" &&
     location.pathname !== "/Address" &&
     location.pathname !== "/login";
   return (
@@ -120,7 +120,7 @@ function App() {
           <Route path="/pricing" element={<PricingPages />} />
           <Route path="/about" element={<AboutPages />} />
           <Route path="/contact" element={<ContactPages />} />
-          <Route path="/form" element={<Form_Sign />} />
+          <Route path="/sign_up" element={<Form_Sign />} />
           <Route path="/login" element={<Login />} />
 
           <Route path="/Address" element={<Address />} />

@@ -59,7 +59,7 @@ export default function capabilities() {
   return (
     // ---------------------
     <div className="text-center mx-auto">
-      <div className="flex flex-col items-center mb-8 sm:mb-9 md:mb-10 lg:mb-10 xl:mb-10 2xl:mb-10">
+      <div className="flex flex-col p-4 items-center mb-8 sm:mb-9 md:mb-10 lg:mb-10 xl:mb-10 2xl:mb-10">
         <h1 className="text-2xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-4xl 2xl:text-4xl font-bold text-[#1A1A1A] mb-4 sm:mb-5 md:mb-6 lg:mb-6 xl:mb-6 2xl:mb-6 mt-12 sm:mt-16 md:mt-18 lg:mt-20 xl:mt-20 2xl:mt-20">
           Additional Capabilities
         </h1>
@@ -73,7 +73,9 @@ export default function capabilities() {
           return (
             <div
               key={index}
-              className="text-card-foreground flex flex-col gap-4 sm:gap-5 md:gap-6 lg:gap-6 xl:gap-6 2xl:gap-6 rounded-xl border-2 border-[#E5E7EB] group bg-white transition-all duration-300 hover:-translate-y-3 hover:shadow-[0_20px_50px_rgba(0,0,0,0.1)]"
+              className="text-card-foreground flex flex-col gap-4 sm:gap-5 
+              md:gap-6 lg:gap-6 xl:gap-6 2xl:gap-6 rounded-xl border-2 border-[#E5E7EB]
+               group bg-white transition-all duration-300 hover:-translate-y-3 hover:shadow-[0_20px_50px_rgba(0,0,0,0.1)] p-2"
             >
               <div
                 className="text-white w-12 sm:w-14 md:w-16 lg:w-16 xl:w-16 2xl:w-16 h-12 sm:h-14 md:h-16 lg:h-16 xl:h-16 2xl:h-16 mt-3 sm:mt-3.5 md:mt-4 lg:mt-4 xl:mt-4 2xl:mt-4 flex items-center justify-center rounded-xl mx-auto mb-1 sm:mb-1.5 md:mb-2 lg:mb-2 xl:mb-2 2xl:mb-2 transform group-hover:scale-110 transition-transform duration-300"

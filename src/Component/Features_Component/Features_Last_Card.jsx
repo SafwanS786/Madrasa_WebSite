@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 export default function Features_Last_Card() {
   const navigate = useNavigate();
   return (
-    <div className="px-4 sm:px-8 md:px-12 lg:px-16 xl:px-16 2xl:px-16 text-center">
+    <div className="px-4 py-4 sm:px-8 sm:py-8 md:px-12 lg:px-16 xl:px-16 2xl:px-16 text-center">
       <div className="mt-12 sm:mt-16 md:mt-18 lg:mt-20 xl:mt-20 2xl:mt-20 bg-gradient-to-r from-[#126F77] to-[#EB6319] rounded-3xl p-6 sm:p-8 md:p-10 lg:p-12 xl:p-12 2xl:p-12 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-2 sm:top-3 md:top-4 lg:top-4 xl:top-4 2xl:top-4 right-2 sm:right-3 md:right-4 lg:right-4 xl:right-4 2xl:right-4 w-12 sm:w-16 md:w-20 lg:w-20 xl:w-20 2xl:w-20 h-12 sm:h-16 md:h-20 lg:h-20 xl:h-20 2xl:h-20 border-2 border-white rounded-lg rotate-12"></div>
@@ -26,7 +26,7 @@ export default function Features_Last_Card() {
             Start your free trial today and see how DeenNest transforms daily
             operations into smooth, organized management.
           </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 md:gap-4 lg:gap-4 xl:gap-4 2xl:gap-4">
+          {/* <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 md:gap-4 lg:gap-4 xl:gap-4 2xl:gap-4">
             <button
               className="bg-white rounded-md p-1.5 sm:p-2 md:p-2 lg:p-2 xl:p-2 2xl:p-2 text-[#126F77] font-bold inline-flex items-center gap-1 
             sm:gap-1.5 md:gap-2 lg:gap-2 xl:gap-2 2xl:gap-2 px-4 sm:px-5 md:px-6 lg:px-6 xl:px-6
@@ -53,6 +53,33 @@ export default function Features_Last_Card() {
                 />
               </span>
               Schedule Demo
+            </button>
+          </div> */}
+          <div className="flex flex-row sm:flex-row justify-center items-center gap-3 sm:gap-4 md:gap-5 lg:gap-6">
+            <button
+              className="flex items-center justify-center gap-2 bg-white rounded-md 
+                                text-xs sm:text-base md:text-lg font-semibold text-[#126F77] 
+                                px-2 sm:px-5 md:px-6 lg:px-7 
+                                py-2 sm:py-2.5 md:py-3 
+                                shadow-sm hover:shadow-md transition-all duration-300 group w-full sm:w-auto cursor-pointer"
+              onClick={() => navigate("/video-tutorial")}
+            >
+              <span> Start Free Trial</span>
+              <ArrowRight className="h-3 w-3 sm:h-5 sm:w-5 md:h-5 md:w-5 transition-transform duration-300 group-hover:translate-x-1" />
+            </button>
+            <button
+              className="flex  items-center justify-center gap-2 bg-white rounded-md 
+                          text-xs sm:text-base md:text-lg font-semibold text-[#126F77] 
+                          px-2 sm:px-5 md:px-6 lg:px-7 
+                          py-2 sm:py-2.5 md:py-3 
+                          shadow-sm hover:shadow-md hover:bg-[#126F77] hover:text-white transition-all duration-300 w-full sm:w-auto cursor-pointer"
+              onClick={() => navigate("/contact")}
+            >
+              <Play
+                size={15}
+                className="h-4 sm:h-4 md:h-5 lg:h-5 xl:h-5 2xl:h-5 w-4 sm:w-4 md:w-5 lg:w-5 xl:w-5 2xl:w-5"
+              />
+              <span>Schedule Demo</span>
             </button>
           </div>
         </div>

@@ -26,10 +26,10 @@ export default function PricingExplanation() {
   ];
   return (
     <div className="mx-auto px-4 sm:px-6 md:px-8 lg:px-8 xl:px-8 2xl:px-8 py-8 sm:py-12 md:py-16 lg:py-20 xl:py-20 2xl:py-20 text-center">
-      <h1 className="text-2xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-3xl 2xl:text-3xl font-semibold text-[#1A1A1A] mb-4 sm:mb-5 md:mb-6 lg:mb-6 xl:mb-6 2xl:mb-6">
+      <h1 className="text-lg md:text-2xl lg:text-3xl xl:text-3xl 2xl:text-3xl font-semibold text-[#1A1A1A] mb-4 sm:mb-5 md:mb-6 lg:mb-6 xl:mb-6 2xl:mb-6">
         Why Our Pricing Makes Sense
       </h1>
-      <p className="text-base sm:text-base md:text-lg lg:text-lg xl:text-lg 2xl:text-lg text-[#6B6B6B] max-w-2xl mx-auto mb-6 sm:mb-7 md:mb-8 lg:mb-8 xl:mb-8 2xl:mb-8">
+      <p className="text-sm md:text-lg lg:text-lg xl:text-lg 2xl:text-lg text-[#6B6B6B] max-w-2xl mx-auto mb-6 sm:mb-7 md:mb-8 lg:mb-8 xl:mb-8 2xl:mb-8">
         We believe in clear, fair pricing that gives your madrasa everything it
         needs—without hidden costs or confusing plans.
       </p>
@@ -55,8 +55,8 @@ export default function PricingExplanation() {
           </div>
         ))}
       </div>
-      <div className="mt-10 text-center flex justify-center items-center">
-        <h3 className="text-lg font-medium text-[#1A1A1A]">
+      <div className="mt-6 md:mt-10 text-center flex justify-center items-center">
+        <h3 className="text-base md:text-lg font-medium text-[#1A1A1A]">
           One plan. Clear pricing. Flexibility when you need it.
         </h3>
       </div>

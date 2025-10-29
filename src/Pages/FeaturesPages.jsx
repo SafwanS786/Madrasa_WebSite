@@ -10,7 +10,7 @@ export default function FeaturesPages() {
     <div>
       <div className="min-h-screen bg-gradient-to-b from-white via-[#F8F9FA] to-white">
         <FeaturesDetails />
-        <section className="py-24">
+        <section className="xl:py-24">
           <Features />
           <Main_Features_Card />
           <Capabilities />

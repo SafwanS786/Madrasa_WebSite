@@ -100,7 +100,7 @@ export default function Pricing() {
             </p>
             <Link
               to="/contact" // Redirect to contact/sales page
-              className="text-[#126f77] px-3 py-2 border border-[#126f77] hover:text-white rounded-lg hover:bg-[#126f77] font-medium"
+              className="text-[#126f77] px-3 py-2 border border-[#126f77] hover:text-white rounded-lg hover:bg-[#126f77] font-medium transition-colors duration-500"
             >
               Contact Sales
             </Link>

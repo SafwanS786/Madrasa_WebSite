@@ -512,12 +512,12 @@ export default function SignupForm() {
         {/* Left Column - Premium Content */}
         <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
           {/* Logo & Badge */}
-          <div className="flex items-center gap-3 mb-8">
+          <div className="flex items-center gap-3 mb-3 sm:mb-4 md:mb-8">
             <img src={Logo} alt="DeenNest Logo" className="h-14 w-auto" />
           </div>
 
           {/* Main Heading */}
-          <h1 className="text-4xl bg-gradient-to-r from-[#126F77]  to-[#126F77] bg-clip-text text-transparent lg:text-5xl xl:text-6xl font-bold mb-6 leading-tight">
+          <h1 className="text-xl sm:text-2xl md:text-4xl bg-gradient-to-r from-[#126F77]  to-[#126F77] bg-clip-text text-transparent lg:text-5xl xl:text-6xl font-bold mb-3 md:mb-6 leading-tight">
             Transform Your{" "}
             <span className="bg-gradient-to-r from-cyan-600 to-[#126f77] bg-clip-text text-transparent">
               Madrasa Management
@@ -525,28 +525,28 @@ export default function SignupForm() {
           </h1>
 
           {/* Subheading */}
-          <p className="text-xl text-gray-600 mb-12 max-w-2xl leading-relaxed">
+          <p className="text-sm sm:text-base md:text-xl text-gray-600 mb-5 md:mb-12 max-w-2xl leading-relaxed">
             Join{" "}
             <span className="font-semibold text-cyan-700">
-              5,000+ Islamic institutions
+              5,000+ Islamic institutions{" "}
             </span>
             that trust DeenNest for seamless administration, student tracking,
             and academic excellence.
           </p>
 
           {/* Features Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-12 w-full max-w-2xl">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-4 sm:gap-4 md:gap-6 md:mb-12 w-full max-w-2xl">
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="flex items-center gap-4 p-4 bg-white/80 backdrop-blur-sm rounded-2xl shadow-sm border border-white/50"
+                className="flex items-center gap-4 p-2 sm:p-4 bg-white/80 backdrop-blur-sm rounded-2xl shadow-sm border border-white/50"
               >
                 {/* text-[#EB6319] [#126F77] */}
 
-                <div className="w-12 h-12 bg-gradient-to-r from-[#126f77] to-[#EB6319] rounded-xl flex items-center justify-center">
-                  <feature.icon className="w-6 h-6 text-white" />
+                <div className="w-7 h-7 sm:w-10 sm:h-10 md:w-12 md:h-12 bg-gradient-to-r from-[#126f77] to-[#EB6319] rounded-xl flex items-center justify-center">
+                  <feature.icon className="w-3 h-3 sm:w-4 sm:h-4 md:w-6 md:h-6 text-white" />
                 </div>
-                <span className="text-gray-700 font-medium">
+                <span className="text-sm sm:text-base lg:text-lg text-gray-700 font-medium">
                   {feature.text}
                 </span>
               </div>
@@ -554,18 +554,24 @@ export default function SignupForm() {
           </div>
 
           {/* Stats */}
-          <div className="flex gap-8 text-center">
+          <div className="flex gap-4 sm:gap-5 md:gap-8 text-center">
             <div>
-              <div className="text-3xl font-bold text-cyan-700">5K+</div>
-              <div className="text-gray-600">Madrasas</div>
+              <div className="text-lg sm:text-xl md:text-3xl font-bold text-cyan-700">
+                5K+
+              </div>
+              <div className="text-gray-600 text-xs sm:text-sm md:text-base">Madrasas</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-cyan-700">50K+</div>
-              <div className="text-gray-600">Students</div>
+              <div className="text-lg sm:text-xl md:text-3xl font-bold text-cyan-700">
+                50K+
+              </div>
+              <div className="text-gray-600 text-xs sm:text-sm md:text-base">Students</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-cyan-700">99.9%</div>
-              <div className="text-gray-600">Uptime</div>
+              <div className="text-lg sm:text-xl md:text-3xl font-bold text-cyan-700">
+                99.9%
+              </div>
+              <div className="text-gray-600 text-xs sm:text-sm md:text-base">Uptime</div>
             </div>
           </div>
         </div>
@@ -714,7 +720,7 @@ export default function SignupForm() {
                         type="button"
                         onClick={() => setCurrentStep(2)}
                         className="w-full bg-gradient-to-r from-[#126f77]/80 to-[#EB6319]/80 text-white font-bold py-4 px-6 rounded-xl shadow-lg
-                         hover:shadow-xl transform hover:scale-105 transition-all duration-200 flex items-center justify-center space-x-2 group"
+                         hover:shadow-xl transform hover:scale-105 transition-all duration-200 flex items-center justify-center space-x-2 group  cursor-pointer"
                       >
                         <span>Continue to Security</span>
                         <Sparkles className="w-5 h-5 group-hover:rotate-12 transition-transform" />
@@ -851,14 +857,16 @@ export default function SignupForm() {
                         <button
                           type="button"
                           onClick={() => setCurrentStep(1)}
-                          className="flex-1 px-6 py-4 border border-gray-300 text-gray-700 font-medium rounded-xl hover:bg-gray-50 transition-all duration-200"
+                          className="flex-1 px-3 py-2 md:px-6 md:py-4 border border-gray-300 text-gray-700 font-medium rounded-xl hover:bg-gray-50 transition-all duration-200  cursor-pointer"
                         >
                           Back
                         </button>
                         <button
                           type="submit"
                           disabled={isLoading}
-                          className="flex-1 bg-gradient-to-r from-[#126f77]/80 to-[#EB6319]/90 text-white font-semibold py-4 px-6 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center space-x-2"
+                          className="flex-1 gap-2 bg-gradient-to-r from-[#126f77]/80 to-[#EB6319]/90 px-3 py-2 rounded-lg md:px-6 md:py-4 text-white
+                           font-semibold md:rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 disabled:opacity-70 
+                           disabled:cursor-not-allowed flex items-center justify-center space-x-2 cursor-pointer"
                         >
                           {isLoading ? (
                             <>
@@ -867,7 +875,7 @@ export default function SignupForm() {
                             </>
                           ) : (
                             <>
-                              <Sparkles className="w-5 h-5" />
+                              <Sparkles className="w-3 h-3 md:w-5 md:h-5 " />
                               Create Account
                             </>
                           )}

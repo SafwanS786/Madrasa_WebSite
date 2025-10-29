@@ -1,20 +1,32 @@
 import React from "react";
-import { Sparkles, TrendingUp, Star, CircleCheckBig } from "lucide-react";
+import {
+  Sparkles,
+  TrendingUp,
+  Star,
+  CircleCheckBig,
+  CheckCircle2,
+} from "lucide-react";
 import details_Img from "../../assets/img/details.png";
 export default function FeaturesDetails() {
   return (
     <>
-      <div className="relative overflow-hidden mt-10 md:mt-20">
+      <div className="relative overflow-hidden mt-8 md:mt-10">
         <div className="absolute inset-0">
-          <div className="absolute top-10 sm:top-12 md:top-16 lg:top-20 xl:top-20 2xl:top-20 left-10 sm:left-12 md:left-16 lg:left-20 xl:left-20 2xl:left-20 w-48 sm:w-64 md:w-72 lg:w-80 xl:w-80 2xl:w-80 h-48 sm:h-64 md:h-72 lg:h-80 xl:h-80 2xl:h-80 bg-[#126F77]/5 rounded-full blur-3xl animate-pulse"></div>
           <div
-            className="absolute bottom-10 sm:bottom-12 md:bottom-16 lg:bottom-20 xl:bottom-20 2xl:bottom-20 right-10 sm:right-12 md:right-16 lg:right-20 xl:right-20 2xl:right-20 w-64 sm:w-80 md:w-88 lg:w-96 xl:w-96 2xl:w-96 h-64 sm:h-80 md:h-88 lg:h-96 xl:h-96 2xl:h-96 bg-[#EB6319]/5 rounded-full blur-3xl animate-pulse"
+            className="absolute top-10 sm:top-12 md:top-16 lg:top-20 xl:top-20 2xl:top-20
+           left-10 sm:left-12 md:left-16 lg:left-20 xl:left-20 2xl:left-20 w-48 sm:w-64 md:w-72 lg:w-80 xl:w-80 2xl:w-80 h-48 
+           sm:h-64 md:h-72 lg:h-80 xl:h-80 2xl:h-80 bg-[#126F77]/5 rounded-full blur-3xl animate-pulse"
+          ></div>
+          <div
+            className="absolute bottom-10 sm:bottom-12 md:bottom-16 lg:bottom-20 xl:bottom-20 
+            2xl:bottom-20 right-10 sm:right-12 md:right-16 lg:right-20 xl:right-20 2xl:right-20 w-64 sm:w-80 
+            md:w-88 lg:w-96 xl:w-96 2xl:w-96 h-64 sm:h-80 md:h-88 lg:h-96 xl:h-96 2xl:h-96 bg-[#EB6319]/5 rounded-full blur-3xl animate-pulse"
             style={{ animationDelay: "1s" }}
           ></div>
         </div>
 
-        <div className="relative z-10 mx-auto px-4 sm:px-6 md:px-8 lg:px-8 xl:px-8 2xl:px-8 max-w-7xl text-center">
-          <div className="relative overflow-hidden mt-10 md:mt-20 lg:mt-32">
+        <div className="relative z-10 mx-auto px-4 sm:px-6 md:px-8 lg:px-8 xl:px-8 2xl:px-8 max-w-7xl text-center ">
+          <div className="relative overflow-hidden mt-10 md:mt-20 lg:mt-22 xl:mt-30">
             <div className="absolute inset-0 pointer-events-none">
               <div className="absolute top-20 left-20 w-80 h-80 bg-[#126F77]/5 rounded-full blur-3xl animate-pulse"></div>
               <div
@@ -24,9 +36,9 @@ export default function FeaturesDetails() {
             </div>
 
             <div className="relative z-10 mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-              <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+              <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 lg:h-[420px]">
                 <div className="flex-1 text-center lg:text-left">
-                  <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-7xl font-bold text-gray-900 leading-tight mb-6 text-start">
+                  <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight mb-6 text-start">
                     Transform Your <br />
                     <span className="bg-gradient-to-r from-[#126F77] to-[#0F5A61] bg-clip-text text-transparent">
                       Madrasa
@@ -43,8 +55,11 @@ export default function FeaturesDetails() {
                 </div>
 
                 <div className="flex-1 w-full max-w-2xl mb-6">
-                  <div className="relative w-full  shadow-2xl p-3 rounded-lg md:p-6 md:rounded-2xl bg-white">
-                    <div className="absolute -top-4 -right-2 md:-right-4  md bg-gradient-to-r from-[#EB6319] to-[#FF8C42] rounded-lg p-2 md:rounded-xl md:p-3 text-white shadow-lg">
+                  <div className="relative w-full  shadow-xl p-3 rounded-lg md:p-6 md:rounded-2xl bg-white">
+                    <div
+                      className="absolute -top-4 -right-2 md:-right-4 lg:-top-2 lg:-right-5
+                     bg-gradient-to-r from-[#EB6319] to-[#FF8C42] rounded-lg p-2 md:rounded-xl md:p-3 text-white shadow-lg"
+                    >
                       <Sparkles size={20} className="w-3 h-3 md:w-5 md:h-5" />
                     </div>
                     <div
@@ -147,8 +162,8 @@ export default function FeaturesDetails() {
       </div>
 
       {/* ✅ Admission System Section */}
-      <div className="py-8 sm:py-10 md:py-12 lg:py-12 xl:py-12 2xl:py-12 px-4 sm:px-6 md:px-8 lg:px-8 xl:px-8 2xl:px-8 mx-auto max-w-7xl">
-        <section className="mb-12 sm:mb-16 md:mb-20 lg:mb-20 xl:mb-20 2xl:mb-20 border-b border-[#E5E7EB] pb-8 sm:pb-10 md:pb-12 lg:pb-12 xl:pb-12 2xl:pb-12">
+      <div className="py-6 sm:py-8 md:py-10 lg:py-12 xl:py-12 2xl:py-12 px-4 sm:px-6 md:px-8 lg:px-8 xl:px-8 2xl:px-8 mx-auto max-w-7xl">
+        <section className="mb-2 sm:mb-4 md:mb-20 lg:mb-20 xl:mb-20 2xl:mb-20 border-b border-[#E5E7EB] pb-4 sm:pb-5 md:pb-12 lg:pb-12 xl:pb-12 2xl:pb-12">
           <div className="flex flex-col md:flex-row items-start gap-6 sm:gap-8 md:gap-10 lg:gap-10 xl:gap-10 2xl:gap-10">
             <div className="flex-1">
               <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-3xl 2xl:text-3xl font-bold font-sen text-[#1A1A1A] mb-4 sm:mb-5 md:mb-6 lg:mb-6 xl:mb-6 2xl:mb-6 leading-tight">
@@ -176,38 +191,49 @@ export default function FeaturesDetails() {
               <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-[#126F77] mb-4">
                 Features of CAMPUSDEAN Online Student Admission System:
               </h3>
-              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5 md:gap-6 lg:gap-6 xl:gap-6 2xl:gap-6 list-disc list-inside">
-                <li className="text-sm sm:text-base md:text-base lg:text-base xl:text-base 2xl:text-base text-[#6B6B6B]">
+              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5 md:gap-6 lg:gap-6 xl:gap-6 2xl:gap-6 list-disc list-inside ">
+                <li className=" list-disc text-sm sm:text-base md:text-base lg:text-base xl:text-base 2xl:text-base text-[#6B6B6B] text-start flex items-start">
+                  <CheckCircle2 className="text-[#126f77] w-4 h-4 mr-2 mt-1" />
                   Online submission of application forms
                 </li>
-                <li className="text-sm sm:text-base md:text-base lg:text-base xl:text-base 2xl:text-base text-[#6B6B6B]">
+                <li className="text-sm sm:text-base md:text-base lg:text-base xl:text-base 2xl:text-base text-[#6B6B6B] text-start flex items-start">
+                  <CheckCircle2 className="text-[#126f77] w-4 h-4 mr-2 mt-1" />{" "}
                   No need to wait in long lines
                 </li>
-                <li className="text-sm sm:text-base md:text-base lg:text-base xl:text-base 2xl:text-base text-[#6B6B6B]">
+                <li className="text-sm sm:text-base md:text-base lg:text-base xl:text-base 2xl:text-base text-[#6B6B6B] text-start flex items-start">
+                  <CheckCircle2 className="text-[#126f77] w-4 h-4 mr-2 mt-1" />{" "}
                   Reduces the need for additional staff
                 </li>
-                <li className="text-sm sm:text-base md:text-base lg:text-base xl:text-base 2xl:text-base text-[#6B6B6B]">
+                <li className="text-sm sm:text-base md:text-base lg:text-base xl:text-base 2xl:text-base text-[#6B6B6B] text-start flex items-start">
+                  <CheckCircle2 className="text-[#126f77] w-4 h-4 mr-2 mt-1" />{" "}
                   Reduces paperwork through digital processing
                 </li>
-                <li className="text-sm sm:text-base md:text-base lg:text-base xl:text-base 2xl:text-base text-[#6B6B6B]">
+                <li className="text-sm sm:text-base md:text-base lg:text-base xl:text-base 2xl:text-base text-[#6B6B6B] text-start flex items-start">
+                  <CheckCircle2 className="text-[#126f77] w-4 h-4 mr-2 mt-1" />
                   Easy to follow up on student inquiries
                 </li>
-                <li className="text-sm sm:text-base md:text-base lg:text-base xl:text-base 2xl:text-base text-[#6B6B6B]">
+                <li className="text-sm sm:text-base md:text-base lg:text-base xl:text-base 2xl:text-base text-[#6B6B6B] text-start flex items-start">
+                  <CheckCircle2 className="text-[#126f77] w-4 h-4 mr-2 mt-1" />{" "}
                   Students can be easily transferred to school records
                 </li>
-                <li className="text-sm sm:text-base md:text-base lg:text-base xl:text-base 2xl:text-base text-[#6B6B6B]">
+                <li className="text-sm sm:text-base md:text-base lg:text-base xl:text-base 2xl:text-base text-[#6B6B6B] text-start flex items-start">
+                  <CheckCircle2 className="text-[#126f77] w-4 h-4 mr-2 mt-1" />{" "}
                   User-friendly interface for both staff and students
                 </li>
-                <li className="text-sm sm:text-base md:text-base lg:text-base xl:text-base 2xl:text-base text-[#6B6B6B]">
+                <li className="text-sm sm:text-base md:text-base lg:text-base xl:text-base 2xl:text-base text-[#6B6B6B] text-start flex items-start">
+                  <CheckCircle2 className="text-[#126f77] w-4 h-4 mr-2 mt-1" />{" "}
                   Admission fees are securely collected online
                 </li>
-                <li className="text-sm sm:text-base md:text-base lg:text-base xl:text-base 2xl:text-base text-[#6B6B6B]">
+                <li className="text-sm sm:text-base md:text-base lg:text-base xl:text-base 2xl:text-base text-[#6B6B6B] text-start flex items-start">
+                  <CheckCircle2 className="text-[#126f77] w-4 h-4 mr-2 mt-1" />{" "}
                   Fast handling of new student inquiries
                 </li>
-                <li className="text-sm sm:text-base md:text-base lg:text-base xl:text-base 2xl:text-base text-[#6B6B6B]">
+                <li className="text-sm sm:text-base md:text-base lg:text-base xl:text-base 2xl:text-base text-[#6B6B6B] text-start flex items-start">
+                  <CheckCircle2 className="text-[#126f77] w-4 h-4 mr-2 mt-1" />{" "}
                   Automatically create student merit lists
                 </li>
-                <li className="text-sm sm:text-base md:text-base lg:text-base xl:text-base 2xl:text-base text-[#6B6B6B]">
+                <li className="text-sm sm:text-base md:text-base lg:text-base xl:text-base 2xl:text-base text-[#6B6B6B] text-start flex items-start">
+                  <CheckCircle2 className="text-[#126f77] w-4 h-4 mr-2 mt-1" />{" "}
                   Instantly generate and send admission letters
                 </li>
               </ul>

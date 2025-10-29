@@ -16,12 +16,12 @@ export default function HomePages() {
   return (
     <div>
       <Home />
-      <section className="py-10 lg:py-24 bg-gradient-to-b from-white to-[#F8F9FA] relative overflow-hidden">
+      <section className="py-10 lg:py-12 bg-gradient-to-b from-white to-[#F8F9FA] relative overflow-hidden">
         <Features />
         <Features_Card />
         <Features_Btn />
       </section>
-      <section className="py-10 lg:py-24 bg-gradient-to-b from-white to-[#F8F9FA] relative overflow-hidden">
+      <section className="py-10 lg:py-12 bg-gradient-to-b from-white to-[#F8F9FA] relative overflow-hidden">
         <Trusted />
       </section>
       <section className="py-10 md:py-24 bg-gradient-to-b from-white to-[#F8F9FA] relative overflow-hidden">

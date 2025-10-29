@@ -574,19 +574,20 @@ export default function Main_Features_Card() {
   ];
   return (
     <>
-      <div className="py-8 sm:py-10 md:py-12 lg:py-12 xl:py-12 2xl:py-12 px-4 sm:px-6 md:px-8 lg:px-8 xl:px-8 2xl:px-8 mx-auto w-[80%]">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-8 xl:gap-8 2xl:gap-8">
+      <div className="py-8 sm:py-10 md:py-12 lg:py-6 xl:py-12 2xl:py-12 px-4 sm:px-6 md:px-8 lg:px-2 xl:px-8 2xl:px-8 mx-auto w-[80%]">
+        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-8 xl:gap-8 2xl:gap-8">
           {card.map((item, index) => {
             return (
               <div
                 key={index}
-                className="p-4 sm:p-5 md:p-6 lg:p-6 xl:p-6 2xl:p-6 min-h-[200px]  rounded-2xl shadow-lg bg-white hover:shadow-2xl
+                className="p-4 sm:p-5 md:p-6 lg:p-6 xl:p-6 2xl:p-6 min-h-[200px] rounded-2xl shadow-lg bg-white hover:shadow-2xl
                  transition-all duration-500 transform hover:scale-105 group relative cursor-pointer"
                 onClick={() => Navigate(`${item.Path}`)}
               >
-                <div className="flex flex-col justify-center items-center md:flex-row gap-4 sm:gap-5 md:gap-6 lg:gap-6 xl:gap-6 2xl:gap-6">
+                <div className="flex flex-col justify-center items-center  gap-4 sm:gap-5 md:gap-6 lg:gap-6 xl:gap-6 2xl:gap-6 2xl:items-start items-start">
                   <div
-                    className="w-12 sm:w-14 md:w-16 lg:w-16 xl:w-16 2xl:w-16 h-12 sm:h-14 md:h-16 lg:h-16 xl:h-16 2xl:h-16 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg text-white group-hover:shadow-xl transition-all duration-500 group-hover:scale-110"
+                    className="w-12 sm:w-14 md:w-16 lg:w-16 xl:w-16 2xl:w-16 h-12 sm:h-14 md:h-16 lg:h-16 xl:h-16 2xl:h-16 rounded-2xl flex items-center 
+                    justify-center flex-shrink-0 shadow-lg text-white group-hover:shadow-xl transition-all duration-500 group-hover:scale-110"
                     style={{
                       background: `linear-gradient(to right,${item.gradientFrom},${item.gradientTo})`,
                     }}
@@ -594,7 +595,7 @@ export default function Main_Features_Card() {
                     <item.icon className="w-6 sm:w-7 md:w-8 lg:w-8 xl:w-8 2xl:w-8 h-6 sm:h-7 md:h-8 lg:h-8 xl:h-8 2xl:h-8" />
                   </div>
                   <div className="flex flex-col">
-                    <h1 className="text-lg sm:text-xl md:text-2xl lg:text-2xl xl:text-2xl 2xl:text-2xl font-bold group-hover:text-[#126F77]">
+                    <h1 className="text-lg sm:text-xl md:text-2xl lg:text-2xl xl:text-2xl 2xl:text-2xl font-bold lg:h-18 xl:h-auto group-hover:text-[#126F77]">
                       {item.Head}
                     </h1>
                     <p className="text-sm sm:text-sm md:text-base lg:text-base xl:text-base 2xl:text-base text-[#6B6B6B] leading-relaxed">

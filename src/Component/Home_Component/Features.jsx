@@ -4,7 +4,7 @@ import { Zap } from "lucide-react";
 export default function Features() {
   return (
     <div className="md:mt-8 px-4 sm:px-6 md:px-12 lg:px-20 xl:px-28 2xl:px-40 mx-auto">
-      <div className="text-center mb-16 sm:mb-20">
+      <div className="text-center mb-2 sm:mb-6 md:mb-8 lg:mb-10">
         <div
           className="inline-flex items-center gap-2 bg-gradient-to-r from-[#126f77]/10 to-[#EB6319]/10 rounded-full
         py-3 sm:py-3 px-6 mb-6 border border-[#126f77]/20"
@@ -22,7 +22,7 @@ export default function Features() {
             Run Your Madrasa Smoothly
           </span>
         </h2>
-        <p className="text-base md:text-xl text-[#6B6B6B] max-w-3xl mx-auto leading-relaxed">
+        <p className="text-base md:text-xl text-[#6B6B6B] max-w-3xl mx-auto leading-relaxed text-start ">
           Our complete management system helps you handle students, maulana,
           staff, classes and finances — all from one simple, easy-to-use
           dashboard.

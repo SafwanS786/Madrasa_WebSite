@@ -453,7 +453,7 @@ export default function Footer() {
     <footer className="bg-gradient-to-b from-[#0a2f34] to-[#083033] text-white px-6 md:px-10 lg:px-16 py-12 relative overflow-hidden">
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Top Section */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-16 mb-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-16 mb-10">
           {/* Logo and Description */}
           <div>
             <img

@@ -34,9 +34,9 @@ export default function Home() {
   return (
     <div>
       <section
-        className="relative min-h-screen flex flex-col md:flex-col md:gap-12 lg:flex-row lg:gap-10 2xl:flex-row items-center justify-between 
+        className="relative min-h-screen lg:min-h-[80vh] flex flex-col md:flex-col md:gap-12 lg:flex-row lg:gap-10 2xl:flex-row items-center justify-between 
         bg-gradient-to-br from-[#F8F9FA] via-white to-[#F8F9FA] overflow-hidden
-        px-4 sm:px-8 xl:px-32"
+        px-4 sm:px-6 xl:px-32 mt-20 lg:mt-0"
       >
         {/* Background Blobs */}
         <div
@@ -66,10 +66,10 @@ export default function Home() {
         />
 
         {/* Left Content */}
-        <div className="flex-1 flex flex-col items-start justify-center z-10 mt-10 md:mt-15">
+        <div className="flex-1 flex flex-col items-start justify-center z-10 mt-10 lg:mt-0">
           <div
             className="inline-flex items-center gap-2 bg-gradient-to-r from-[#126F77]/10 to-[#EB6319]/10 backdrop-blur-sm
-            rounded-full px-4 sm:px-6 py-2 sm:py-3 border border-[#126F77]/20 shadow-sm mb-6 sm:mb-8"
+            rounded-full px-2 sm:px-4 py-2 sm:py-3 border border-[#126F77]/20 shadow-sm mb-6 sm:mb-8"
           >
             <Sparkles className="text-[#EB6319] w-4 h-4 sm:w-5 sm:h-5" />
             <span className="text-[#126F77] font-medium text-sm sm:text-base">

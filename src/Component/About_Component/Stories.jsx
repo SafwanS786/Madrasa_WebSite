@@ -24,7 +24,10 @@ export default function Stories() {
               Education Worldwide
             </span>
           </h2>
-          <p className="text-[#6B6B6B] max-w-3xl mx-auto  text-base sm:text-base md:text-lg lg:text-xl xl:text-xl 2xl:text-xl leading-relaxed">
+          <p
+            className="text-[#6B6B6B] max-w-3xl mx-auto  text-base sm:text-base
+           md:text-lg lg:text-xl xl:text-xl 2xl:text-xl leading-relaxed text-start pl-5 md:pl-0"
+          >
             We are dedicated to transforming Islamic education through
             innovation and faith helping madrasas manage daily operations
             effortlessly while preserving core Islamic values and strengthening
@@ -33,7 +36,7 @@ export default function Stories() {
         </div>
       </div>
       <div
-        className="mb-12 sm:mb-16 md:mb-18 lg:mb-20 xl:mb-20 2xl:mb-20 mt-12 p-5 sm:mt-16 md:mt-20 lg:mt-24
+        className="mb-4 sm:mb-16 md:mb-18 lg:mb-20 xl:mb-20 2xl:mb-20 mt-12 p-5 sm:mt-16 md:mt-20 lg:mt-24
         xl:mt-24 2xl:mt-24 w-full sm:w-[80%] md:w-[70%] lg:w-[60%] xl:w-[60%] 2xl:w-[60%] mx-auto justify-center"
       >
         <div

@@ -825,7 +825,7 @@ export default function Login() {
                     <p className="text-gray-600 text-sm">
                       Don't have an account?{" "}
                       <Link
-                        to="/form"
+                        to="/sign_up"
                         className="text-[#126f77] font-semibold hover:text-[#126f77]/80 hover:underline transition-all"
                         aria-label="Sign up"
                       >

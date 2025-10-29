@@ -35,14 +35,16 @@ export default function Pricing_Card() {
           }`}
         >
           <Check className="w-5 h-5 text-green-500 flex-shrink-0" />
-          <span className="text-gray-700 font-medium">{feature}</span>
+          <span className="text-gray-700 font-medium text-sm md:text-base lg:text-lg text-start">
+            {feature}
+          </span>
         </div>
       ))}
     </div>
   );
 
   return (
-    <div className="mx-auto px-4 py-16 max-w-7xl">
+    <div className="mx-auto px-4 py-8 md:py-16 max-w-7xl">
       {/* Header Badge */}
       <div className="text-center mb-12">
         <div className="inline-flex items-center gap-2 bg-gradient-to-r from-[#126f77]/10 to-[#eb6319]/10 text-[#126f77] rounded-full py-2 px-4">
@@ -58,8 +60,10 @@ export default function Pricing_Card() {
         {/* Free Plan Card */}
         <div className="bg-white rounded-xl shadow-lg border border-gray-200 p-8 text-center relative overflow-hidden">
           <div className="absolute top-0 left-0 right-0 h-1 bg-green-500"></div>
-          <h3 className="text-xl font-bold text-gray-800 mb-4">Free Plan</h3>
-          <div className="flex items-center justify-center mb-4">
+          <h3 className="text-base md:text-xl font-bold text-gray-800 mb-4">
+            Free Plan
+          </h3>
+          <div className="flex justify-center mb-4 items-end">
             <span className="text-4xl font-bold text-green-600">₹0</span>
             <span className="ml-2 text-gray-500">/ for 15 days</span>
           </div>
@@ -68,42 +72,48 @@ export default function Pricing_Card() {
           </p>
           {renderFeatureList(freeFeatures)}
           <Link
-            to="/onboard" // Redirect to customer onboarding form
-            className="w-full inline-flex items-center justify-center gap-2 bg-green-600 text-white font-semibold py-3 px-6 rounded-md hover:bg-green-700 transition-colors"
+            to="/contact" // Redirect to customer onboarding form
+            className="w-full inline-flex items-center justify-center gap-2
+             bg-green-600 text-white font-semibold py-1 px-3 md:py-3 md:px-6 rounded-md hover:bg-green-700 transition-colors"
           >
             Start Free Trial
             <ArrowRight className="w-4 h-4" />
           </Link>
-          <div className="mt-6 text-xs text-gray-500">
-            <p className="flex items-center justify-center gap-2 mb-2">
-              <Check className="w-4 h-4 text-green-500" />
-              No setup fees
-            </p>
-            <p className="flex items-center justify-center gap-2">
-              <Check className="w-4 h-4 text-green-500" />
-              Upgrade anytime
-            </p>
+          <div className="flex flex-col gap-1 items-center text-start mt-6 text-xs text-gray-500">
+            <div>
+              <p className="flex justify-center gap-2 mb-2 ">
+                <Check className="w-4 h-4 text-green-500" />
+                No setup fees
+              </p>
+            </div>
+            <div>
+              <p className="flex items-center justify-center gap-2">
+                <Check className="w-4 h-4 text-green-500" />
+                Upgrade anytime
+              </p>
+            </div>
           </div>
         </div>
 
         {/* Standard Plan Card */}
         <div className="bg-white rounded-xl shadow-lg border border-gray-200 p-8 text-center relative overflow-hidden md:hover:shadow-xl transition-shadow">
           <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#126f77] to-[#eb6319]"></div>
-          <h3 className="text-xl font-bold text-gray-800 mb-4">
+          <h3 className="text-base md:text-xl font-bold text-gray-800 mb-4">
             Standard Plan
           </h3>
-          <div className="flex items-center justify-center mb-4">
+          <div className="flex justify-center mb-4 items-end">
             <span className="text-4xl font-bold text-[#126f77]">₹300</span>
-            <span className="ml-2 text-gray-500">/ per student / year</span>
+            <span className="ml-2 text-gray-500 ">/ per student / year</span>
           </div>
-          <p className="text-gray-600 mb-6">
+          <p className="text-gray-600 mb-6 text-sm md:text-base">
             A complete yearly plan for madrasas of every size—simple, secure and
             scalable.
           </p>
           {renderFeatureList(standardFeatures, true)}
           <Link
             to="/checkout" // Redirect to checkout for purchase
-            className="w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#eb6319] to-[#126f77] text-white font-semibold py-3 px-6 rounded-md hover:from-[#126f77] hover:to-[#eb6319] transition-all"
+            className="w-full inline-flex items-center justify-center gap-2
+             bg-gradient-to-r from-[#eb6319] to-[#126f77] text-white font-semibold py-1 px-3 md:py-3 md:px-6 rounded-md hover:from-[#126f77] hover:to-[#eb6319] transition-all"
           >
             Get Started
             <ArrowRight className="w-4 h-4" />
@@ -124,12 +134,12 @@ export default function Pricing_Card() {
       {/* Join 500+ Trust Badge - Made Better! */}
       <div className="text-center mt-12 p-6 bg-gradient-to-r from-gray-50 to-blue-50 rounded-xl">
         <div className="inline-flex items-center gap-3 bg-white p-4 rounded-lg shadow-md">
-          <Users className="w-6 h-6 text-[#126f77]" />
-          <span className="text-lg font-bold text-gray-800">
+          <Users className="w-6 h-6 md:w-7 md:h-7  text-[#126f77]" />
+          <span className="text-sm md:text-base lg:text-lg font-bold text-gray-800">
             Join 500+ madrasas already transforming their management with
             DeenNest
           </span>
-          <Star className="w-5 h-5 text-yellow-400 fill-current" />
+          <Star className="w-6 h-6 md:w-7 md:h-7 text-yellow-400 fill-current" />
         </div>
       </div>
     </div>

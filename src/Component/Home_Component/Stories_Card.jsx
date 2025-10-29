@@ -57,7 +57,7 @@ export default function Stories_Card() {
         {Stories_data.map((item, index) => (
           <div key={index} className="relative group rounded-2xl">
             <div
-              className="text-[#1A1A1A] flex flex-col gap-4 sm:gap-5 md:gap-6 lg:gap-6 xl:gap-6 2xl:gap-6 rounded-xl group relative border-0 bg-card 
+              className="text-[#1A1A1A] flex flex-col gap-2 sm:gap-5 md:gap-6 lg:gap-6 xl:gap-6 2xl:gap-6 rounded-xl group relative border-0 bg-card 
                   shadow-[0_0_40px_rgba(18,111,119,0.15)] 
                   hover:bg-card/95 h-full mb-4 sm:mb-6 md:mb-8 lg:mb-8 xl:mb-8 2xl:mb-8
                   transition-all duration-300 hover:-translate-y-2"
@@ -87,7 +87,7 @@ export default function Stories_Card() {
                     ))}
                 </div>
               </div>
-              <p className="text-foreground leading-relaxed p-4">
+              <p className="text-foreground leading-relaxed p-4 pt-0">
                 {item.title}
               </p>
               <div className="w-fit ml-4 inline-flex items-center gap-2 bg-secondary/10 text-secondary px-3 py-1 rounded-full text-sm font-medium ">

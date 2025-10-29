@@ -20,7 +20,6 @@ export default function Card() {
         }
       }, increment);
     };
-    // const end =
 
     Counter_Time(10, setYears);
     Counter_Time(25, setCountries);

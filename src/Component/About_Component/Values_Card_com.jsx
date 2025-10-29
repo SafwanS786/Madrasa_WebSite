@@ -48,7 +48,6 @@ export default function Values_Card_com() {
               className="group relative flex flex-col items-center p-4 sm:p-5 md:p-6 
               rounded-2xl shadow-md hover:shadow-xl transition-all duration-500 bg-white hover:scale-105 min-h-[240px] sm:min-h-[260px] md:min-h-[280px] lg:min-h-[300px]"
             >
-              {/* Icon wrapper */}
               <div className="relative">
                 <div
                   className=" w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 flex items-center justify-center shadow-lg rounded-2xl mb-4 sm:mb-5 md:mb-6
@@ -69,7 +68,6 @@ export default function Values_Card_com() {
                 />
               </div>
 
-              {/* Card content */}
               <h3 className="text-lg sm:text-xl md:text-2xl font-bold  mb-3 sm:mb-3.5 md:mb-4 text-center group-hover:text-[#126f77] transition-colors duration-300">
                 {item.head}
               </h3>
