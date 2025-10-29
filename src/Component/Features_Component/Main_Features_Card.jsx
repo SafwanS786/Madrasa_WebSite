@@ -584,7 +584,7 @@ export default function Main_Features_Card() {
                  transition-all duration-500 transform hover:scale-105 group relative cursor-pointer"
                 onClick={() => Navigate(`${item.Path}`)}
               >
-                <div className="flex flex-col justify-center items-center  gap-4 sm:gap-5 md:gap-6 lg:gap-6 xl:gap-6 2xl:gap-6 2xl:items-start items-start">
+                <div className="flex flex-col justify-center items-center  gap-4 sm:gap-5 md:gap-6 lg:gap-6 xl:gap-6 2xl:gap-6 2xl:items-start">
                   <div
                     className="w-12 sm:w-14 md:w-16 lg:w-16 xl:w-16 2xl:w-16 h-12 sm:h-14 md:h-16 lg:h-16 xl:h-16 2xl:h-16 rounded-2xl flex items-center 
                     justify-center flex-shrink-0 shadow-lg text-white group-hover:shadow-xl transition-all duration-500 group-hover:scale-110"
