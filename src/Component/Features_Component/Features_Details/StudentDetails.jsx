@@ -1,18 +1,42 @@
 import React from "react";
-import {
-  Sparkles,
-  TrendingUp,
-  Star,
-  CircleCheckBig,
-  Users,
-  BookOpen,
-  UserCheck,
-  Calendar,
-} from "lucide-react";
+
 import studentImg from "../../../assets/img/student.png";
 import { useNavigate } from "react-router-dom";
+import StdProfile from "../../../assets/img/complete.png";
+import Admission from "../../../assets/img/Admission.png";
+import Parent from "../../../assets/img/Parenticon.jpg";
+import History from "../../../assets/img/history.jpg";
+import Doc from "../../../assets/img/document.png";
+
 export default function StudentDetails() {
   const navigate = useNavigate();
+  const StudentFData = [
+    {
+      icon: StdProfile,
+      Title: " Complete Student Profiles",
+      Head: "Maintain student details, photos, contact info and enrollment data in one place.",
+    },
+    {
+      icon: Admission,
+      Title: "Admission & Enrollment Tracking",
+      Head: "Automate registration, assign classes and generate admission records.",
+    },
+    {
+      icon: Parent,
+      Title: "Parent & Guardian Details",
+      Head: " Store and manage parent or guardian contact information for communication and updates.",
+    },
+    {
+      icon: History,
+      Title: "Academic History",
+      Head: "Maintain each student’s learning timeline and class participation records.",
+    },
+    {
+      icon: Doc,
+      Title: "Document Management",
+      Head: " Upload and store essential student documents safely in the cloud.",
+    },
+  ];
   return (
     <>
       <div className="relative overflow-hidden mt-10 md:mt-20">
@@ -35,21 +59,28 @@ export default function StudentDetails() {
                 </span>
                 <br /> System
               </h1>
-
+              <h1 className="text-2xl font-semibold bg-gradient-to-r from-[#126f77] to-[#eb6319] bg-clip-text text-transparent  mb-6">
+                Simplify Student Records with One Unified Platform
+              </h1>
               <p className="text-base sm:text-lg text-[#6B6B6B] leading-relaxed max-w-2xl mx-auto lg:mx-0 mb-8 text-start">
-                Complete student lifecycle management from admission to
-                graduation. Track academic progress, manage profiles, and
-                maintain comprehensive records in one platform.
+                DeenNest’s Student Management System helps Islamic institutions
+                manage every stage of a student’s journey - from admission to
+                attendance - in one secure, easy-to-use dashboard.
               </p>
 
               <div className="flex flex-row sm:flex-row gap-4">
                 <button
                   className="bg-gradient-to-r from-[#126F77] to-[#0F5A61] text-white px-2 py-1 rounded-md md:px-8 md:py-3 md:rounded-lg 
-                font-semibold hover:shadow-lg transition-all"
+                font-semibold hover:shadow-lg transition-all cursor-pointer"
+                  onClick={() => navigate("/sign_up")}
                 >
                   Start Free Trial
                 </button>
-                <button className="border-2 border-[#126F77] text-[#126F77] px-2 py-1 rounded-md md:px-8 md:py-3 md:rounded-lg font-semibold hover:bg-[#126F77] hover:text-white transition-all">
+                <button
+                  className="border-2 border-[#126F77] text-[#126F77] px-2 py-1 rounded-md md:px-8 md:py-3 md:rounded-lg 
+                font-semibold hover:bg-[#126F77] hover:text-white transition-all cursor-pointer"
+                  onClick={() => navigate("/video-tutorial")}
+                >
                   Watch Demo
                 </button>
               </div>
@@ -72,81 +103,43 @@ export default function StudentDetails() {
         <section className="mb-6 md:mb-16 border-b border-[#E5E7EB] pb-4 md:pb-12">
           <div className="flex flex-col md:flex-row items-start gap-10">
             <div className="flex-1">
-              <h2 className="text-2xl md:text-3xl font-bold text-[#1A1A1A] mb-6 leading-tight">
-                <span className="bg-gradient-to-r from-[#126F77] to-[#EB6319] bg-clip-text text-transparent">
-                  Complete Student Management Solution
-                </span>
-              </h2>
-              <p className="text-base md:text-xl text-[#6B6B6B] mb-6 leading-relaxed">
-                DeenNest's Student Management system provides Islamic
-                educational institutions with a comprehensive platform to manage
-                every aspect of student lifecycle - from admission and
-                enrollment to academic tracking and graduation.
-              </p>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-5 md:gap-6 md:mb-8">
-                <div className="flex items-center gap-3">
-                  <Users className="w-4 h-4 md:w-5 md:h-5 text-[#126F77]" />
-                  <span className="text-[#6B6B6B] text-sm md:text-base lg:text-lg">
-                    Student Profiles & Photos
-                  </span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <BookOpen className="w-4 h-4 md:w-6 md:h-6 text-[#126F77]" />
-                  <span className="text-[#6B6B6B] text-sm md:text-base lg:text-lg">
-                    Enrollment Tracking
-                  </span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <UserCheck className="w-4 h-4 md:w-6 md:h-6 text-[#126F77]" />
-                  <span className="text-[#6B6B6B] text-sm md:text-base lg:text-lg">
-                    Academic History
-                  </span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <Calendar className="w-4 h-4 md:w-6 md:h-6 text-[#126F77]" />
-                  <span className="text-[#6B6B6B] text-sm md:text-base lg:text-lg">
-                    Parent & Guardian Details
-                  </span>
-                </div>
-              </div>
-
               <h3 className="text-lg md:text-2xl font-semibold text-[#126F77] mb-4">
-                Key Benefits:
+                Key Capabilities:
               </h3>
-              <ul className="grid grid-cols-1 gap-4 list-disc list-inside">
-                <li className="text-sm md:text-base lg:text-lg text-[#6B6B6B]">
-                  Centralized student database with complete profiles
-                </li>
-                <li className="text-sm md:text-base lg:text-lg text-[#6B6B6B]">
-                  Automated enrollment and admission process
-                </li>
-                <li className="text-sm md:text-base lg:text-lg text-[#6B6B6B]">
-                  Real-time academic progress tracking
-                </li>
-                <li className="text-sm md:text-base lg:text-lg text-[#6B6B6B]">
-                  Parent and guardian communication portal
-                </li>
-                <li className="text-sm md:text-base lg:text-lg text-[#6B6B6B]">
-                  Document management for certificates and records
-                </li>
-                <li className="text-sm md:text-base lg:text-lg text-[#6B6B6B]">
-                  Attendance and performance analytics
-                </li>
-              </ul>
-
-              <div className="mt-8 p-6 bg-gradient-to-r from-[#126F77]/10 to-[#EB6319]/10 rounded-2xl">
-                <h3 className="text-lg md:text-xl font-semibold text-[#126F77] mb-3">
-                  Perfect For Islamic Institutions
-                </h3>
-                <p className="text-[#6B6B6B] text-sm">
-                  Whether you run a Madrasa, Islamic school, Quran academy, or
-                  Islamic college, our Student Management system is designed to
-                  meet your specific needs while maintaining Islamic values and
-                  educational standards.
-                </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6">
+                {StudentFData.map((value, i) => {
+                  return (
+                    <div className="" key={i}>
+                      <div className="flex flex-col gap-3">
+                        <div className="flex flex-row gap-3 items-center">
+                          <div className="">
+                            <img src={value.icon} className="w-7 h-7" />
+                          </div>
+                          <div>
+                            <h1 className="bg-gradient-to-r from-[#126F77] to-[#0F5A61] bg-clip-text text-transparent text-xl">
+                              {value.Title}
+                            </h1>
+                          </div>
+                        </div>
+                        <div>
+                          <h3 className="text-base max-w-md">{value.Head}</h3>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
               </div>
             </div>
+          </div>
+          <div className="mt-10 ">
+            <h3 className="text-lg md:text-2xl font-semibold text-[#126F77] mb-6">
+              Why It Matters
+            </h3>
+            <h4 className="text-base text-[#6b6b6b] font-semibold">
+              A well-organized student database reduces paperwork, saves time
+              for Maulanas and administrators and ensures that every student’s
+              record remains accessible, accurate and secure. (edited){" "}
+            </h4>
           </div>
           <div className="mt-4 md:mt-8 text-center">
             <button

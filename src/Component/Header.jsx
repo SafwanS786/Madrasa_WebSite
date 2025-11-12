@@ -350,9 +350,9 @@ export default function EnhancedHeader() {
 
   const navigationLinks = [
     { path: "/features", label: "Features" },
-    { path: "/pricing", label: "Pricing" },
     { path: "/about", label: "About Us" },
-    { path: "/contact", label: "Contact Us" },
+    { path: "/pricing", label: "Pricing" },
+    { path: "/contact", label: "Contact" },
   ];
 
   /* --------------------------------------------------------------

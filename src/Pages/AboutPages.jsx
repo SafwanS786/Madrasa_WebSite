@@ -19,7 +19,7 @@ export default function AboutPages() {
           <Values />
           <Values_Card_com />
           <Journey />
-          <Team />
+          {/* <Team /> */}
         </section>
       </div>
       <Last_Card />

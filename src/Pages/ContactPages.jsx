@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Contact_First_Part from "../Component/Contact_Component/Contact_First_Part";
 import Card from "../Component/Contact_Component/Card";
 import Message_Form from "../Component/Contact_Component/Message_Form";
@@ -8,6 +8,9 @@ import Form1 from "../Component/Contact_Component/form1";
 import Last_Card from "../Component/Contact_Component/Last_Card";
 
 export default function ContactPages() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="min-h-screen bg-gradient-to-b from-white via-[#F8F9FA] to-white">
       <section className="py-12 lg:py-24 relative overflow-hidden">

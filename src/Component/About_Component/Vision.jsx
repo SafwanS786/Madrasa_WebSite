@@ -36,10 +36,10 @@ export default function Vision() {
       </div>
 
       <div
-        className="mb-12 sm:mb-16 md:mb-18 lg:mb-20 xl:mb-20 2xl:mb-20 mt-12 p-5 sm:mt-16 md:mt-20 lg:mt-24
+        className="mb-12 sm:mb-16 md:mb-18 lg:mb-20 xl:mb-20 2xl:mb-20 mt-12 p-5 sm:mt-16 md:mt-10 
         xl:mt-24 2xl:mt-24 w-full sm:w-[80%] md:w-[70%] lg:w-[60%] xl:w-[60%] 2xl:w-[60%] mx-auto justify-center"
       >
-        <div
+        {/* <div
           className="text-foreground flex flex-col items-center justify-center gap-4 sm:gap-5 md:gap-6
           rounded-xl border-0 bg-gradient-to-r from-primary/5 to-secondary/5 p-6 sm:p-6 md:p-8"
         >
@@ -74,7 +74,7 @@ export default function Vision() {
               Empowering Future Generations{" "}
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );

@@ -71,7 +71,7 @@ export default function Mission() {
             <button
               className="group inline-flex items-center justify-center gap-2 border-2 sm:px-7 md:px-8 px-6 py-1.5 sm:py-2 rounded-md
              text-primary border-primary hover:bg-primary hover:text-white cursor-pointer"
-              onClick={() => navigate("/contact")}
+              onClick={() => navigate("/about")}
             >
               Read More About Our Story
               <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4 group-hover:translate-x-1 transition-transform" />
