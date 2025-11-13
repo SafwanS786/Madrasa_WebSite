@@ -78,8 +78,8 @@ export default function Main_Features_Card() {
       ],
       gradientFrom: "#126f77",
       gradientTo: "#Eb6319",
-      // Path: "/maulanaDetails",
-      Path: "/studentDetails",
+      Path: "/maulanaDetails",
+      // Path: "/studentDetails",
     },
     {
       icon: Wallet,

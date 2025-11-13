@@ -1,7 +1,7 @@
 import React from "react";
 import { Quote, CircleCheckBig, Star } from "lucide-react";
-import Stories_img_1 from "./img/Stories1.jpg";
-import Stories_img_2 from "./img/demo2.jpg";
+// import Stories_img_1 from "./img/Stories1.jpg";
+// import Stories_img_2 from "./img/demo2.jpg";
 export default function Stories_Card() {
   const Stories_data = [
     {
@@ -14,7 +14,7 @@ export default function Stories_Card() {
       Name: "Mo. Abdullah Sahab",
       work: "Principal",
       work_Place: "Dar-e-Arqam Academy India",
-      img: Stories_img_1,
+      // img: Stories_img_1,
       gradientFrom: "#126f77",
       gradientTo: "#eb6319",
     },
@@ -29,7 +29,7 @@ export default function Stories_Card() {
       Name: "Toshif Shahab",
       work: "Administrator",
       work_Place: "Jamia Arabia Islamia Darul Uloom Bhavnagar Gujarat",
-      img: Stories_img_2,
+      // img: Stories_img_2,
       gradientFrom: "#126f77",
       gradientTo: "#eb6319",
     },
@@ -43,7 +43,7 @@ export default function Stories_Card() {
       Name: "Mo. Ayyub",
       work: "Administrator",
       work_Place: "Madrasa-e-Talimul Islam",
-      img: Stories_img_1,
+      // img: Stories_img_1,
       gradientFrom: "#126f77",
       gradientTo: "#eb6319",
     },

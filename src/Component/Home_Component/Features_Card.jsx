@@ -6,8 +6,9 @@ import {
   Wallet,
   MessageCircle,
 } from "lucide-react";
-
+import { useNavigate } from "react-router-dom";
 export default function Features_Card() {
+  const Navigate = useNavigate();
   const cards = [
     {
       title: "Student, Maulana & Staff Records",
@@ -83,7 +84,11 @@ export default function Features_Card() {
             <p className="text-[#6B6B6B] text-xs text-start items-center pl-3 md:text-sm  2xl:text-base leading-relaxed lg:mb-6">
               {card.description}
             </p>
-            <div className="flex items-center justify-center text-[#126F77] opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-all duration-300 cursor-pointer">
+            <div
+              className="flex items-center justify-center text-[#126F77] opacity-0 group-hover:opacity-100 
+            group-active:opacity-100 transition-all duration-300 cursor-pointer"
+              onClick={() => Navigate("/features")}
+            >
               <span className="text-xs md:text-sm font-medium mr-2">
                 Learn More
               </span>

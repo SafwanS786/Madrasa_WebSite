@@ -9,7 +9,7 @@ export default function Card() {
       description: "Speak directly with our support team for quick help.",
       title_down: "+91 (7575068585)",
       smt_Head: " Available: ",
-      smt: " Monday to Friday, 10 AM – 6 PM (IST)",
+      smt: "  Mon-Fri,10 AM - 6 PM IST",
       gradientFrom: "#126F77",
       gradientTo: "#0F5A61",
     },
@@ -90,7 +90,10 @@ export default function Card() {
               </p>
             </div>
             <div className="mt-5">
-              <span className=" text-primary font-semibold mb-2 sm:mb-2.5 md:mb-3 lg:mb-3 xl:mb-3 2xl:mb-3 text-sm sm:text-sm md:text-base lg:text-base xl:text-base 2xl:text-base">
+              <span
+                className="text-primary font-semibold mb-2 sm:mb-2.5 md:mb-3 lg:mb-3 xl:mb-3 2xl:mb-3 
+              text-sm sm:text-sm md:text-base lg:text-base xl:text-base 2xl:text-base cursor-pointer"
+              >
                 {card.title_down}
               </span>
             </div>
